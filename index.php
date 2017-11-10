@@ -10,13 +10,13 @@
     <table width="1000" align="center" cellspacing="0" cellpadding="0">
       <tr>
         <td width="36%">
-          <a href="./user/home.html">
+          <a href="./index.php">
             <img src="./res/common/datashelf_logo.png" alt="DataShelf Company Logo" height="45" title="DataShelf">
           </a>
         </td>
 
         <td width="8%" align="center">
-          <a href="index.php"><h3><font face="calibri" color="#444444">Home</font></h3></a>
+          <a href="./index.php"><h3><font face="calibri" color="#444444">Home</font></h3></a>
         </td>
 
         <td width="12%" align="center">
@@ -24,15 +24,15 @@
         </td>
 
         <td width="13%" align="center">
-          <a href="./user/competetions.html"><h3><font face="calibri" color="#888888">Competetions</font></h3></a>
+          <a href="./competitions.php"><h3><font face="calibri" color="#888888">Competitions</font></h3></a>
         </td>
 
         <td width="12%" align="center">
-          <a href="./user/descussions.html"><h3><font face="calibri" color="#888888">Discussions</font></h3></a>
+          <a href="./user/discussions.php"><h3><font face="calibri" color="#888888">Discussions</font></h3></a>
         </td>
 
         <td width="9%" align="center">
-          <a href="./user/contact.html"><h3><font face="calibri" color="#888888">Contact</font></h3></a>
+          <a href="./user/contact.php"><h3><font face="calibri" color="#888888">Contact</font></h3></a>
         </td>
 
         <td width="3%" align="center">
@@ -40,7 +40,7 @@
         </td>
 
         <td width="7%" align="center">
-          <a href="./user/login.html"><h3><font face="calibri" color="#888888">Login</font></h3></a>
+          <a href="./user/login.php"><h3><font face="calibri" color="#888888">Login</font></h3></a>
         </td>
       </tr>
 
