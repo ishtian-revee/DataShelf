@@ -10,7 +10,7 @@
     <table width="1000" align="center" cellspacing="0" cellpadding="0">
       <tr>
         <td width="36%">
-          <a href="./user/home.php">
+          <a href="./user/home.html">
             <img src="./res/common/datashelf_logo.png" alt="DataShelf Company Logo" height="45" title="DataShelf">
           </a>
         </td>
@@ -20,7 +20,7 @@
         </td>
 
         <td width="12%" align="center">
-          <a href="./marketplace"><h3><font face="calibri" color="#888888">Marketplace</font></h3></a>
+          <a href="./marketplace.php"><h3><font face="calibri" color="#888888">Marketplace</font></h3></a>
         </td>
 
         <td width="13%" align="center">
