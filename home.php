@@ -1,4 +1,3 @@
-<--!test-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,29 +10,29 @@
     <table width="1000" align="center" cellspacing="0" cellpadding="0">
       <tr>
         <td width="36%">
-          <a href="../user/home.html">
-            <img src="../res/datashelf_logo.png" alt="DataShelf Company Logo" height="45" title="DataShelf">
+          <a href="./user/home.php">
+            <img src="./res/common/datashelf_logo.png" alt="DataShelf Company Logo" height="45" title="DataShelf">
           </a>
         </td>
 
         <td width="8%" align="center">
-          <a href="../user/home.html"><h3><font face="calibri" color="#444444">Home</font></h3></a>
+          <a href="index.php"><h3><font face="calibri" color="#444444">Home</font></h3></a>
         </td>
 
         <td width="12%" align="center">
-          <a href="../user/marketplace.html"><h3><font face="calibri" color="#888888">Marketplace</font></h3></a>
+          <a href="./marketplace"><h3><font face="calibri" color="#888888">Marketplace</font></h3></a>
         </td>
 
         <td width="13%" align="center">
-          <a href="../user/competetions.html"><h3><font face="calibri" color="#888888">Competetions</font></h3></a>
+          <a href="./user/competetions.html"><h3><font face="calibri" color="#888888">Competetions</font></h3></a>
         </td>
 
         <td width="12%" align="center">
-          <a href="../user/descussions.html"><h3><font face="calibri" color="#888888">Discussions</font></h3></a>
+          <a href="./user/descussions.html"><h3><font face="calibri" color="#888888">Discussions</font></h3></a>
         </td>
 
         <td width="9%" align="center">
-          <a href="../user/contact.html"><h3><font face="calibri" color="#888888">Contact</font></h3></a>
+          <a href="./user/contact.html"><h3><font face="calibri" color="#888888">Contact</font></h3></a>
         </td>
 
         <td width="3%" align="center">
@@ -41,7 +40,7 @@
         </td>
 
         <td width="7%" align="center">
-          <a href="../user/login.html"><h3><font face="calibri" color="#888888">Login</font></h3></a>
+          <a href="./user/login.html"><h3><font face="calibri" color="#888888">Login</font></h3></a>
         </td>
       </tr>
 
@@ -59,21 +58,21 @@
           <table width="100%" align="center" cellspacing="15" cellpadding="0">
             <tr>
               <td width="33%" align="center">
-                <img width="100" src="../res/ic_data_science.png" alt="Data Science Icon">
+                <img width="100" src="./res/homepage/ic_data_science.png" alt="Data Science Icon">
                 <h1><font face="calibri" color="#444444">Data Science</font></h1>
                 <p><font face="calibri" color="#888888" size="5"><b>Datashelf offers data scientists to contribute and share their precious datasets,
                   trained data etc. which could be utilize in creating modules and finding effective solutions with high accuracy</b></font></p>
               </td>
 
               <td width="34%" align="center">
-                <img width="100" src="../res/ic_machine_learning.png" alt="Machine Learning Icon">
+                <img width="100" src="./res/homepage/ic_machine_learning.png" alt="Machine Learning Icon">
                 <h1><font face="calibri" color="#444444">Machine Learning</font></h1>
                 <p><font face="calibri" color="#888888" size="5"><b>To acquire the trained data from these raw datasets data scientists and engineers uses
                   machine learning technology which can learn from data, instead of explicitly programmed instructions</b></font></p>
               </td>
 
               <td width="33%" align="center">
-                <img width="100" src="../res/ic_predictive_modelling.png" alt="Predictive Modelling Icon">
+                <img width="100" src="./res/homepage/ic_predictive_modelling.png" alt="Predictive Modelling Icon">
                 <h1><font face="calibri" color="#444444">Predictive Modelling</font></h1>
                 <p><font face="calibri" color="#888888" size="5"><b>Datashelf is a platform for predictive modelling and analytics competitions in which
                   statisticians and data miners compete to produce the best models for predicting and describing the datasets</b></font></p>
@@ -102,7 +101,7 @@
 
             <tr>
               <td width="40%" align="center" valign="center">
-                <img width="150" src="../res/ic_marketplace.png" alt="Marketplace Icon">
+                <img width="150" src="./res/homepage/ic_marketplace.png" alt="Marketplace Icon">
               </td>
 
               <td colspan="2">
@@ -125,7 +124,7 @@
               </td>
 
               <td width="40%" align="center" valign="center">
-                <img width="150" src="../res/ic_competetions.png" alt="Competetions Icon">
+                <img width="150" src="./res/homepage/ic_competetions.png" alt="Competetions Icon">
               </td>
             </tr>
 
@@ -135,7 +134,7 @@
 
             <tr>
               <td width="40%" align="center" valign="center">
-                <img width="150" src="../res/ic_discussions.png" alt="Discussions Icon">
+                <img width="150" src="./res/homepage/ic_discussions.png" alt="Discussions Icon">
               </td>
 
               <td colspan="2">
@@ -168,7 +167,7 @@
             <tr>
               <td width="20%">
                 <a href="../user/home.html">
-                  <img src="../res/datashelf_logo.png" alt="DataShelf Company Logo" height="30" title="DataShelf">
+                  <img src="./res/homepage/datashelf_logo.png" alt="DataShelf Company Logo" height="30" title="DataShelf">
                 </a>
               </td>
 
