@@ -42,10 +42,10 @@ those raw data.
 
 ## Important Websites
 
-Kaggle: `https://www.kaggle.com/`
+Kaggle: https://www.kaggle.com/
 
-Dawex: `https://www.dawex.com/en/`
+Dawex: https://www.dawex.com/en/
 
-Qlik: `https://www.qlik.com/us/`
+Qlik: https://www.qlik.com/us/
 
-Data Hub: `https://datahub.io/`
+Data Hub: https://datahub.io/
