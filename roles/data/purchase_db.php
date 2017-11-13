@@ -19,12 +19,21 @@
                 $sql = "DELETE FROM carts where username = '$username' and mds_id = '$mds_id'";
                 if(execute_query($sql))
                 {
-                    $success = TRUE;
+                    $sql ="UPDATE marketplace_datasets SET downloads=downloads+1 where mds_id = '$mds_id'";
+                    if(execute_query($sql))
+                    {
+                         $success = TRUE;
+                    }
                 }
             }
 
        } 
       return $success;
+    }
+
+    function get_daily_transection()
+    {
+        return true;
     }
 
 

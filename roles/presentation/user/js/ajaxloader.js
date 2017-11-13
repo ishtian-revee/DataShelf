@@ -1,3 +1,23 @@
+function deal_with_day(day)
+{
+    day= Math.abs(day)
+    if(day>=365)
+    {
+        year = parseInt((day/365));
+        return year==1?year+" year ago":year+" years ago";
+    }
+    else if(day>=30)
+    {
+        month = parseInt((day/30));
+        return month==1?month+" month ago":month+" months ago";
+
+    }
+    else
+    {
+        return day==0?"Today":(day==1?day+" day ago":day+" days ago");
+    }
+    
+}
  function add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path)
       {
         console.log('div-id form add');
@@ -57,7 +77,7 @@
               console.log(title);
               var short_description = ds[i].short_description;
               var price = ds[i].price;
-              var upload_date = ds[i].upload_date==0?"Today":ds[i].upload_date+" days ago";
+              var upload_date = deal_with_day(ds[i].upload_date);
               
               var uploader = ds[i].uploader;
               var downloads = ds[i].downloads;
@@ -100,7 +120,8 @@
               var content = ds[i].content;
               var downloads = ds[i].downloads;
               var tags = ds[i].tags;
-              var upload_date = ds[i].upload_date==0?"Today":ds[i].upload_date+" days ago";
+              var upload_date = deal_with_day(ds[i].upload_date);
+
               var pp_path = ds[i].pp_path;
               //add_dataset(id,title,short_description,upload,date,price,uploader,downloads,tags,div_id);
               add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path);
@@ -143,7 +164,8 @@
               var downloads = ds[i].downloads;
               var tags = ds[i].tags;
               var pp_path = ds[i].pp_path;
-              var upload_date = ds[i].upload_date==0?"Today":ds[i].upload_date+" days ago";             
+              var upload_date = deal_with_day(ds[i].upload_date);
+            
               add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path);             
               
            }
