@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>DataShelf-Admin(edit profile)</title>
+    <title>DataShelf-Admin(user profile)</title>
   </head>
 
   <body>
@@ -16,7 +16,7 @@
         </td>
 
         <td align="center">
-          <a href="../admin/admin_profile.html"><h3><font face="calibri" color="#444444">Admin</font></h3></a>
+          <a href="../admin/admin_profile.html"><h3><font face="calibri" color="#888888">Admin</font></h3></a>
         </td>
 
         <td width="36" align="center">
@@ -52,7 +52,7 @@
                 </td>
 
                 <td>
-                  <a href="../admin/admin_profile.html"><h3><font face="calibri" color="#444444">My Profile</font></h3></a>
+                  <a href="../admin/admin_profile.html"><h3><font face="calibri" color="#888888">My Profile</font></h3></a>
                 </td>
               </tr>
 
@@ -62,7 +62,7 @@
                 </td>
 
                 <td>
-                  <a href="../admin/admin_users.html"><h3><font face="calibri" color="#888888">Users</font></h3></a>
+                  <a href="../admin/admin_users.html"><h3><font face="calibri" color="#444444">Users</font></h3></a>
                 </td>
               </tr>
 
@@ -106,7 +106,7 @@
             <tr>
               <td colspan="4">
                 <fieldset align="center">
-                  <h3><font face="calibri" color="#444444">Edit Profile</font></h3>
+                  <h3><font face="calibri" color="#444444">User Profile</font></h3>
                 </fieldset>
               </td>
             </tr>
@@ -118,40 +118,34 @@
               </td>
 
               <td width="20%" align="center">
-                <a href="../admin/admin_change_password.html">
-                  <h3><font face="calibri" color="#888888">Change Password</font></h3>
-                </a>
+
               </td>
 
               <td width="3%" align="center">
-                <h3><font face="calibri" color="#444444">&middot;</font></h3>
+
               </td>
 
               <td width="12%" align="center">
-                <a href="../admin/admin_edit_profile.html">
-                  <h3><font face="calibri" color="#444444">Edit Profile</font></h3>
-                </a>
+
               </td>
             </tr>
 
             <tr>
               <td colspan="4">
                 <br>
-                <table width="100%" cellspacing="10" cellpadding="0">
-                  <form action="" method="">
+                <form action="">
+                  <table width="100%" cellspacing="10" cellpadding="0">
                     <tr>
                       <td width="25%">
                         <h3><font face="calibri" color="#444444">Name:</font></h3>
                       </td>
 
                       <td width="45%">
-                      <input name="name" type="text" size="30" value="Bruce Wayne">
+                        <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
                       </td>
 
                       <td width="30%" align="center" valign="center" rowspan="4">
                         <img src="../../res/admin/temp_user.png" alt="Profile Picture" height="220">
-                        <br><br>
-                        <input type="file" name="profile_picture">
                       </td>
                     </tr>
 
@@ -161,7 +155,7 @@
                       </td>
 
                       <td width="45%">
-                        <input name="username" type="text" size="30" value="bruce">
+                        <p><font face="calibri" color="#888888" size="4"><b>bruce</b></font></p>
                       </td>
                     </tr>
 
@@ -171,7 +165,7 @@
                       </td>
 
                       <td width="45%">
-                        <input name="email" type="text" size="30" value="bruce@wayne.batman">
+                        <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
                       </td>
                     </tr>
 
@@ -181,7 +175,7 @@
                       </td>
 
                       <td width="45%">
-                       <input name="phone" type="text" value="01777777777">
+                        <p><font face="calibri" color="#888888" size="4"><b>01777777777</b></font></p>
                       </td>
                     </tr>
 
@@ -191,11 +185,7 @@
                       </td>
 
                       <td colspan="2">
-                        <select name="gender">
-                            <option>Female</option>
-                            <option selected>Male</option>
-                            <option>Other</option>
-                        </select>
+                        <p><font face="calibri" color="#888888" size="4"><b>Male</b></font></p>
                       </td>
                     </tr>
 
@@ -205,26 +195,19 @@
                       </td>
 
                       <td colspan="2">
-                        <input type="text" name="day" value="1" size="10">
-                        <label><font face="calibri" color="#444444" size="4">/</font></label>
-                        <input type="text" name="month" value="1" size="10">
-                        <label><font face="calibri" color="#444444" size="4">/</font></label>
-                        <input type="text" name="year" value="1990" size="10">
-                        <label>
-                          <font face="calibri" color="#888888" size="4"><i>(dd/mm/yyyy)</i></font>
-                        </label>
+                        <p><font face="calibri" color="#888888" size="4"><b>01.01.2000</b></font></p>
                       </td>
                     </tr>
 
                     <tr>
-                      <td colspan="3" align="right">
+                      <td colspan="2" align="right">
                         <br>
-                        <input name="reset" type="reset" value="Reset">
-                        <input name="save_changes" type="submit" value="Save Changes">
+                        <input type="submit" name="edit" value="Edit">
+                        <input type="submit" name="delete" value="Delete">
                       </td>
                     </tr>
-                  </form>
-                </table>
+                  </table>
+                </form>
               </td>
             </tr>
           </table>
