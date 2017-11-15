@@ -18,12 +18,13 @@ __Use .php instead of .html  and use .php in all the hrefs__
 
 ### Changelog
 
-- Changed the directory sturcture
-- Resouces are organized with sections resuser/.. , res/admin/.. ,res/common/..
+- Changed the directory structure
+- Resources are organized with sections resuser/.. , res/admin/.. ,res/common/..
 - Created skeleton for other sections and added to hrefs. i.e contact.php, marketplace.php
 - All the to be displayed after login authentication will go inside roles folder
-- Admin page templated are shifted in roles/admin folder
-- Some of the images may seem broken in admin panel due to directory structure. Fix them if possible or i'll fix the image path in href later.
+- Admin page templates are shifted in roles/admin folder
+- Some of the images may seem broken in admin panel due to directory structure. Fix them if possible or
+I'll fix the image path in href later.
 
 ## Niaz
 
@@ -42,3 +43,19 @@ Example: change `../res/datashelf_admin_logo.png` to `../../res/admin/datashelf_
 
 
 ## Raihana
+
+**Task 01:**
+
+Clone the project and get all the files in your computer. Use `git clone` command.
+
+**Task 02:**
+
+A default html file is already created for changing the password for admin panel which is
+in `admin_change_password.html`. But there are no form of changing the password
+is implemented yet. Implement the change password form just like you did in the
+individual assignment. Write your necessary code from **line 140** in
+`admin_change_password.html`.
+
+**Task 03:**
+
+After doing task 2, push all the files in guthub. Use `git push` command.
