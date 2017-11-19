@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>DataShelf-Admin(users)</title>
+    <title>DataShelf-Admin(posts_competitions)</title>
   </head>
 
   <body>
@@ -62,7 +62,7 @@
                 </td>
 
                 <td>
-                  <a href="../admin/admin_users.html"><h3><font face="calibri" color="#444444">Users</font></h3></a>
+                  <a href="../admin/admin_users.html"><h3><font face="calibri" color="#888888">Users</font></h3></a>
                 </td>
               </tr>
 
@@ -72,7 +72,7 @@
                 </td>
 
                 <td>
-                  <a href="../admin/admin_posts.html"><h3><font face="calibri" color="#888888">Posts</font></h3></a>
+                  <a href="../admin/admin_posts.html"><h3><font face="calibri" color="#444444">Posts</font></h3></a>
                 </td>
               </tr>
 
@@ -106,15 +106,17 @@
             <tr>
               <td colspan="4">
                 <fieldset align="center">
-                  <h3><font face="calibri" color="#444444">Users</font></h3>
+                  <h3><font face="calibri" color="#444444">Posts</font></h3>
                 </fieldset>
               </td>
             </tr>
 
+            <!-- necessary codes of users table and admin table will be written from here -->
+
             <tr>
-              <td width="8%" align="center">
-                <a href="../admin/admin_users.html">
-                  <h3><font face="calibri" color="#444444">Users</font></h3>
+              <td width="10%" align="center">
+                <a href="../admin/admin_posts.html">
+                  <h3><font face="calibri" color="#888888">Datasets</font></h3>
                 </a>
               </td>
 
@@ -122,16 +124,14 @@
                 <h3><font face="calibri" color="#444444">&middot;</font></h3>
               </td>
 
-              <td width="68%">
-                <a href="../admin/admin_users_admins.html">
-                  <h3><font face="calibri" color="#888888">Admins</font></h3>
+              <td width="66%">
+                <a href="../admin/admin_posts_competitions.html">
+                  <h3><font face="calibri" color="#444444">Competitions</font></h3>
                 </a>
               </td>
 
               <td width="20%" align="right">
-                <a href="../admin/admin_users_add_admin.html">
-                  <h3><font face="calibri" color="#888888">+ Add Admin</font></h3>
-                </a>
+                <h3><font face="calibri" color="#888888">103 competitions</font></h3>
               </td>
             </tr>
 
@@ -158,9 +158,9 @@
                 <table border="1" width="100%" cellspacing="0" cellpadding="0">
                   <tr>
                     <th width="4%"><font face="calibri" color="#444444">SL.</font></th>
-                    <th width="42%"><font face="calibri" color="#444444">Name</font></th>
-                    <th width="28%"><font face="calibri" color="#444444">Email</font></th>
-                    <th width="26%"><font face="calibri" color="#444444">Action</font></th>
+                    <th width="60%"><font face="calibri" color="#444444">Competition</font></th>
+                    <th width="12%"><font face="calibri" color="#444444">Prize</font></th>
+                    <th width="24%"><font face="calibri" color="#444444">Action</font></th>
                   </tr>
 
                   <tr>
@@ -169,18 +169,18 @@
                     </td>
 
                     <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b>Passenger Screening Algorithm Challenge</b></font></p>
                     </td>
 
                     <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b>$29000</b></font></p>
                     </td>
 
                     <td align="center">
                       <table width="100%" cellspacing="0">
                         <tr>
                           <td align="center">
-                            <a href="../admin/admin_user_profile.html">
+                            <a href="../admin/admin_posts_competition_page.html">
                               <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
                             </a>
                           </td>
@@ -188,15 +188,7 @@
                           <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
 
                           <td align="center">
-                            <a href="../admin/admin_user_profile.html">
-                              <p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p>
-                            </a>
-                          </td>
-
-                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
-
-                          <td align="center">
-                            <a href="../admin/admin_user_profile.html">
+                            <a href="../admin/admin_posts_competition_page.html">
                               <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
                             </a>
                           </td>
@@ -213,18 +205,18 @@
                     </td>
 
                     <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>Barry Allen</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b>Passenger Screening Algorithm Challenge</b></font></p>
                     </td>
 
                     <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>barry@allen.flash</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b>$27600</b></font></p>
                     </td>
 
                     <td align="center">
                       <table width="100%" cellspacing="0">
                         <tr>
                           <td align="center">
-                            <a href="../admin/admin_user_profile.html">
+                            <a href="../admin/admin_posts_competition_page.html">
                               <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
                             </a>
                           </td>
@@ -232,15 +224,7 @@
                           <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
 
                           <td align="center">
-                            <a href="../admin/admin_user_profile.html">
-                              <p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p>
-                            </a>
-                          </td>
-
-                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
-
-                          <td align="center">
-                            <a href="../admin/admin_user_profile.html">
+                            <a href="../admin/admin_posts_competition_page.html">
                               <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
                             </a>
                           </td>
@@ -255,18 +239,18 @@
                     </td>
 
                     <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b>Passenger Screening Algorithm Challenge</b></font></p>
                     </td>
 
                     <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b>$23560</b></font></p>
                     </td>
 
                     <td align="center">
                       <table width="100%" cellspacing="0">
                         <tr>
                           <td align="center">
-                            <a href="../admin/admin_user_profile.html">
+                            <a href="../admin/admin_posts_competition_page.html">
                               <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
                             </a>
                           </td>
@@ -274,15 +258,7 @@
                           <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
 
                           <td align="center">
-                            <a href="../admin/admin_user_profile.html">
-                              <p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p>
-                            </a>
-                          </td>
-
-                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
-
-                          <td align="center">
-                            <a href="../admin/admin_user_profile.html">
+                            <a href="../admin/admin_posts_competition_page.html">
                               <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
                             </a>
                           </td>
@@ -297,18 +273,18 @@
                     </td>
 
                     <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>Barry Allen</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b>Passenger Screening Algorithm Challenge</b></font></p>
                     </td>
 
                     <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>barry@allen.flash</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b>$19800</b></font></p>
                     </td>
 
                     <td align="center">
                       <table width="100%" cellspacing="0">
                         <tr>
                           <td align="center">
-                            <a href="../admin/admin_user_profile.html">
+                            <a href="../admin/admin_posts_competition_page.html">
                               <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
                             </a>
                           </td>
@@ -316,15 +292,7 @@
                           <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
 
                           <td align="center">
-                            <a href="../admin/admin_user_profile.html">
-                              <p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p>
-                            </a>
-                          </td>
-
-                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
-
-                          <td align="center">
-                            <a href="../admin/admin_user_profile.html">
+                            <a href="../admin/admin_posts_competition_page.html">
                               <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
                             </a>
                           </td>
@@ -339,18 +307,18 @@
                     </td>
 
                     <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b>Passenger Screening Algorithm Challenge</b></font></p>
                     </td>
 
                     <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b>$16280</b></font></p>
                     </td>
 
                     <td align="center">
                       <table width="100%" cellspacing="0">
                         <tr>
                           <td align="center">
-                            <a href="../admin/admin_user_profile.html">
+                            <a href="../admin/admin_posts_competition_page.html">
                               <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
                             </a>
                           </td>
@@ -358,15 +326,7 @@
                           <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
 
                           <td align="center">
-                            <a href="../admin/admin_user_profile.html">
-                              <p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p>
-                            </a>
-                          </td>
-
-                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
-
-                          <td align="center">
-                            <a href="../admin/admin_user_profile.html">
+                            <a href="../admin/admin_posts_competition_page.html">
                               <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
                             </a>
                           </td>
@@ -380,6 +340,7 @@
                 </table>
               </td>
             </tr>
+
           </table>
         </td>
       </tr>
