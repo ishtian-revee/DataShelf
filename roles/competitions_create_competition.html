@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>DataShelf(marketplace_new_dataset)</title>
+    <title>DataShelf(competitions_create_competition)</title>
   </head>
 
   <body>
@@ -20,11 +20,11 @@
         </td>
 
         <td width="12%" align="center">
-          <a href="../roles/marketplace.html"><h3><font face="calibri" color="#444444">Marketplace</font></h3></a>
+          <a href="../roles/marketplace.html"><h3><font face="calibri" color="#888888">Marketplace</font></h3></a>
         </td>
 
         <td width="13%" align="center">
-          <a href="../roles/competitions.html"><h3><font face="calibri" color="#888888">Competitions</font></h3></a>
+          <a href="../roles/competitions.html"><h3><font face="calibri" color="#444444">Competitions</font></h3></a>
         </td>
 
         <td width="12%" align="center">
@@ -47,10 +47,9 @@
       <tr>
         <td colspan="8" align="center">
           <br><br>
-          <h1><font face="calibri" color="#444444">Welcome To DataShelf Marketplace</font></h1>
-          <h2><font face="calibri" color="#888888">Expand your data sourcing and access a diverse array of data providers who are ready
-            to distribute their data</font></h2>
-            <br>
+          <h1><font face="calibri" color="#444444">Welcome To DataShelf Competitions</font></h1>
+          <h2><font face="calibri" color="#888888">Challenge yourself with real-world machine learning problems</font></h2>
+            <br><br>
             <hr width="250" align="center" noshade="noshade">
         </td>
       </tr>
@@ -64,8 +63,8 @@
           <table width="100%" cellspacing="0" cellpadding="0">
             <tr>
               <td width="9%" align="center">
-                <a href="../roles/marketplace.html">
-                  <h4><font face="calibri" color="#888888">Featured</font></h4>
+                <a href="../roles/competitions.html">
+                  <h4><font face="calibri" color="#888888">Active</font></h4>
                 </a>
               </td>
 
@@ -74,7 +73,7 @@
               </td>
 
               <td width="5%" align="center">
-                <a href="../roles/marketplace_all.html">
+                <a href="../roles/competitions_all.html">
                   <h4><font face="calibri" color="#888888">All</font></h4>
                 </a>
               </td>
@@ -84,16 +83,18 @@
               </td>
 
               <td width="6%" align="center">
-                <a href="../roles/marketplace_mine.html">
+                <a href="../roles/competitions_mine.html">
                   <h4><font face="calibri" color="#888888">Mine</font></h4>
                 </a>
               </td>
 
-              <td width="60%"></td>
+              <td width="56%%">
 
-              <td width="12%" align="right">
-                <a href="../roles/user/user_marketplace_new_dataset.html">
-                  <h3><font face="calibri" color="#444444">New Dataset</font></h3>
+              </td>
+
+              <td width="16%" align="right">
+                <a href="../roles/user/user_competitions_create_competition.html">
+                  <h3><font face="calibri" color="#444444">Create Competition</font></h3>
                 </a>
               </td>
             </tr>
@@ -104,7 +105,7 @@
 
             <tr>
               <td colspan="7" align="center">
-                <h2><font face="calibri" color="#444444">Add A New Dataset</font></h2>
+                <h2><font face="calibri" color="#444444">Create A Competition</font></h2>
               </td>
             </tr>
 
@@ -137,19 +138,31 @@
 
                     <tr>
                       <td colspan="2">
-                        <h2><font face="calibri" color="#444444">Description</font></h2>
+                        <h2><font face="calibri" color="#444444">Overview</font></h2>
                         <hr width="300" noshade="noshade" align="left">
                       </td>
                     </tr>
 
                     <tr>
                       <td width="50%">
-                        <p><font face="calibri" color="#888888" size="4"><b>Context</b></font></p>
+                        <p><font face="calibri" color="#888888" size="4"><b>Description</b></font></p>
                         <textarea name="context" rows="12" cols="60"></textarea>
                       </td>
 
                       <td width="50%">
-                        <p><font face="calibri" color="#888888" size="4"><b>Contents</b></font></p>
+                        <p><font face="calibri" color="#888888" size="4"><b>Evaluation</b></font></p>
+                        <textarea name="contents" rows="12" cols="60"></textarea>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="50%">
+                        <p><font face="calibri" color="#888888" size="4"><b>Submission Files</b></font></p>
+                        <textarea name="context" rows="12" cols="60"></textarea>
+                      </td>
+
+                      <td width="50%">
+                        <p><font face="calibri" color="#888888" size="4"><b>Timeline</b></font></p>
                         <textarea name="contents" rows="12" cols="60"></textarea>
                       </td>
                     </tr>
@@ -166,14 +179,25 @@
                     </tr>
 
                     <tr>
-                      <td width="50%">
+                      <td>
                         <p><font face="calibri" color="#888888" size="4"><b>Files</b></font></p>
                         <input type="file" name="data_file">
                       </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2"><br></td>
+                    </tr>
+
+                    <tr>
+                      <td width="50%">
+                        <p><font face="calibri" color="#888888" size="4"><b>Data Description</b></font></p>
+                        <textarea name="context" rows="12" cols="60"></textarea>
+                      </td>
 
                       <td width="50%">
-                        <p><font face="calibri" color="#888888" size="4"><b>Screenshots</b></font></p>
-                        <input type="file" name="data_screenshots">
+                        <p><font face="calibri" color="#888888" size="4"><b>Prizes</b></font></p>
+                        <textarea name="contents" rows="12" cols="60"></textarea>
                       </td>
                     </tr>
 
@@ -202,7 +226,7 @@
                     <tr>
                       <td colspan="2" align="right">
                         <input type="reset" name="reset" value="Reset">
-                        <input type="submit" name="add_dataset" value="Add Dataset">
+                        <input type="submit" name="add_dataset" value="Create">
                       </td>
                     </tr>
                   </table>
