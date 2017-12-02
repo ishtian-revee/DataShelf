@@ -49,3 +49,5 @@ Dawex: https://www.dawex.com/en/
 Qlik: https://www.qlik.com/us/
 
 Data Hub: https://datahub.io/
+
+Data world: https://data.world/
