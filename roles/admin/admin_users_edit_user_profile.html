@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>DataShelf-Admin(user profile)</title>
+    <title>DataShelf-Admin(edit user profile)</title>
   </head>
 
   <body>
@@ -106,7 +106,7 @@
             <tr>
               <td colspan="4">
                 <fieldset align="center">
-                  <h3><font face="calibri" color="#444444">User Profile</font></h3>
+                  <h3><font face="calibri" color="#444444">Edit User Profile</font></h3>
                 </fieldset>
               </td>
             </tr>
@@ -133,7 +133,7 @@
             <tr>
               <td colspan="4">
                 <br>
-                <form action="">
+                <form action="admin_users.html">
                   <table width="100%" cellspacing="10" cellpadding="0">
                     <tr>
                       <td width="25%">
@@ -141,11 +141,13 @@
                       </td>
 
                       <td width="45%">
-                        <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
+                        <input name="name" type="text" size="30" value="Bruce Wayne">
                       </td>
 
                       <td width="30%" align="center" valign="center" rowspan="4">
                         <img src="../../res/admin/temp_user.png" alt="Profile Picture" height="220">
+                        <br><br>
+                        <input type="file" name="profile_picture">
                       </td>
                     </tr>
 
@@ -155,7 +157,7 @@
                       </td>
 
                       <td width="45%">
-                        <p><font face="calibri" color="#888888" size="4"><b>bruce</b></font></p>
+                        <input name="username" type="text" size="30" value="bruce">
                       </td>
                     </tr>
 
@@ -165,7 +167,7 @@
                       </td>
 
                       <td width="45%">
-                        <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
+                        <input name="email" type="text" size="30" value="bruce@wayne.batman">
                       </td>
                     </tr>
 
@@ -175,7 +177,17 @@
                       </td>
 
                       <td width="45%">
-                        <p><font face="calibri" color="#888888" size="4"><b>01777777777</b></font></p>
+                        <input name="phone" type="text" value="01777777777">
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="25%">
+                        <h3><font face="calibri" color="#444444">Profession:</font></h3>
+                      </td>
+
+                      <td width="45%">
+                        <input name="profession" type="text" size="30" value="Machine Learning Engineer">
                       </td>
                     </tr>
 
@@ -185,17 +197,25 @@
                       </td>
 
                       <td colspan="2">
-                        <p><font face="calibri" color="#888888" size="4"><b>Male</b></font></p>
+                        <select name="gender">
+                            <option>Female</option>
+                            <option selected>Male</option>
+                            <option>Other</option>
+                        </select>
                       </td>
                     </tr>
 
                     <tr>
                       <td width="25%">
-                        <h3><font face="calibri" color="#444444">Hire Date:</font></h3>
+                        <h3><font face="calibri" color="#444444">Date of Birth:</font></h3>
                       </td>
 
                       <td colspan="2">
-                        <p><font face="calibri" color="#888888" size="4"><b>01.01.2000</b></font></p>
+                        <input type="text" name="day" size="5" value="1">
+                        <label><font face="calibri" color="#444444" size="4">/</font></label>
+                        <input type="text" name="month" size="5" value="1">
+                        <label><font face="calibri" color="#444444" size="4">/</font></label>
+                        <input type="text" name="year" size="5" value="1990">
                       </td>
                     </tr>
 
@@ -204,10 +224,14 @@
                     </tr>
 
                     <tr>
-                      <td colspan="3" align="right">
-                        <br>
-                        <input type="submit" name="edit" value="Edit">
-                        <input type="submit" name="delete" value="Delete">
+                      <td>
+                        <a href="admin_users.html">
+                          <p><font face="calibri" color="#888888" size="4"><b>Back</b></font></p>
+                        </a>
+                      </td>
+
+                      <td colspan="2" align="right">
+                        <input type="submit" name="save" value="Save Changes">
                       </td>
                     </tr>
                   </table>
