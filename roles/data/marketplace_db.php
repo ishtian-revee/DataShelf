@@ -6,5 +6,13 @@
 
    }
 
+   function get_mp_datasets()
+   {
+       $sql = "SELECT * from marketplace_datasets";
+
+       return execute_query($sql);
+
+   }
+
 
 ?>
