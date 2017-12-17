@@ -12,7 +12,11 @@
         {
             if($password == (get_user_password($username)))
             {
-                echo "Login Sucessful";
+                session_start();
+                $_SESSION['is_logged_in'] =  true;
+                $_SESSION['username'] = $username;
+             
+                header('location:../presentation/user/home.php');
             }
         }
         else

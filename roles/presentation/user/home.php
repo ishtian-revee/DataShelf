@@ -1,3 +1,6 @@
+<?php
+  require "../../control/logincheck.php"
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,34 +8,34 @@
     <title>DataShelf(home)</title>
   </head>
 
-  <body onload="check_if_logged_in()">
+  <body>
     <br>
     <table width="1000" align="center" cellspacing="0" cellpadding="0">
       <tr>
         <td width="36%">
-          <a href="home.html">
+          <a href="home.php">
             <img src="../res/website/datashelf_logo.png" alt="DataShelf Company Logo" height="45" title="DataShelf">
           </a>
         </td>
 
         <td width="8%" align="center">
-          <a href="home.html"><h3><font face="calibri" color="#444444">Home</font></h3></a>
+          <a href="home.php"><h3><font face="calibri" color="#444444">Home</font></h3></a>
         </td>
 
         <td width="12%" align="center">
-          <a href="marketplace.html"><h3><font face="calibri" color="#888888">Marketplace</font></h3></a>
+          <a href="marketplace.php"><h3><font face="calibri" color="#888888">Marketplace</font></h3></a>
         </td>
 
         <td width="13%" align="center">
-          <a href="competitions.html"><h3><font face="calibri" color="#888888">Competitions</font></h3></a>
+          <a href="competitions.php"><h3><font face="calibri" color="#888888">Competitions</font></h3></a>
         </td>
 
         <td width="12%" align="center">
-          <a href="discussions.html"><h3><font face="calibri" color="#888888">Discussions</font></h3></a>
+          <a href="discussions.php"><h3><font face="calibri" color="#888888">Discussions</font></h3></a>
         </td>
 
         <td width="9%" align="center">
-          <a href="cart.html"><h3><font face="calibri" color="#888888">Cart</font></h3></a>
+          <a href="cart.php"><h3><font face="calibri" color="#888888">Cart</font></h3></a>
         </td>
 
         <td width="3%" align="center">
@@ -40,7 +43,7 @@
         </td>
 
         <td width="7%" align="center">
-          <a href="login.html"><h3><font face="calibri" color="#888888">Login</font></h3></a>
+          <a href="<?= $target ?>"><h3><font face="calibri" color="#888888"><?=$context?></font></h3></a>
         </td>
       </tr>
 
@@ -166,7 +169,7 @@
 
             <tr>
               <td width="20%">
-                <a href="home.html">
+                <a href="home.php">
                   <img src="../res/website/datashelf_logo.png" alt="DataShelf Company Logo" height="30" title="DataShelf">
                 </a>
               </td>
@@ -185,13 +188,13 @@
                     </td>
 
                     <td width="32%" align="center">
-                      <a href="team.html">
+                      <a href="team.php">
                         <p><font face="calibri" color="#888888" size="4"><b>Team</b></font></p>
                       </a>
                     </td>
 
                     <td width="36%" align="center">
-                      <a href="contact.html">
+                      <a href="contact.php">
                         <p><font face="calibri" color="#888888" size="4"><b>Contact</b></font></p>
                       </a>
                     </td>

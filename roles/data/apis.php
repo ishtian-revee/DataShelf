@@ -18,12 +18,16 @@
             header('Content-type: text/javascript');
             echo json_encode($rows,JSON_PRETTY_PRINT);
         }
+        else if($api_name='cptds')
+        {
+            echo "";
+        }
 
     }
     
     else
     {
-        header('Content-type: text/javascript');        
+        header('Content-type: text/javascript');
         echo json_encode(array('error'=>'invalid request'));
     }
 
