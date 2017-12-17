@@ -6,6 +6,7 @@
   <head>
     <meta charset="utf-8">
     <title>DataShelf(marketplace_featured_post)</title>
+    <link rel="stylesheet" type="text/css" href="dpbtn.css">
   </head>
 
   <body onload="load_marketplace_datasets()">
@@ -123,7 +124,7 @@
 
             <tr>
               <td colspan="7">
-                <div id="mp-ds"></div>
+                <div id="mp-ds" align="center"></div>
               </td>
             </tr>
           </table>
@@ -232,16 +233,19 @@
 
     function load_marketplace_datasets()
     {
+      d1 = document.getElementById('mp-ds');
+      d1.innerHTML= '<img src="https://i.pinimg.com/originals/05/74/15/05741525b70c7ca6bcb88afd4aa16632.gif"/>';
 
       var request = new XMLHttpRequest();
 
       request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=mpds',true);
       request.send();
-
+    
       request.onreadystatechange = function()
       {
           if (this.readyState == 4 && this.status == 200)
           {
+            d1.innerHTML = "";
             var ds = JSON.parse(request.responseText);
            console.log(ds.length);
            for(i=0;i<ds.length;i++)
@@ -258,8 +262,6 @@
 
               add_dataset(title,short_description,price,uploader,downloads,tags);
            }
-
-
         }
       }
     }

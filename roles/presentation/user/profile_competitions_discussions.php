@@ -1,11 +1,13 @@
 <?php
   require "../../control/logincheck.php"
 ?>
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>DataShelf(user profile - competitions discussions)</title>
+    <link rel="stylesheet" type="text/css" href="dpbtn.css">
   </head>
 
   <body>

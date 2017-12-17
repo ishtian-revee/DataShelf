@@ -6,6 +6,7 @@
   <head>
     <meta charset="utf-8">
     <title>DataShelf(user profile - competitions details)</title>
+    <link rel="stylesheet" type="text/css" href="dpbtn.css">
   </head>
 
   <body>

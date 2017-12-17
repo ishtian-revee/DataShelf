@@ -6,6 +6,7 @@
   <head>
     <meta charset="utf-8">
     <title>DataShelf(marketplace_mine_post)</title>
+    <link rel="stylesheet" type="text/css" href="dpbtn.css">
   </head>
 
   <body>

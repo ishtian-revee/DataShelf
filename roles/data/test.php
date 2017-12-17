@@ -1,5 +1,8 @@
 <?php
 
+    session_start();
+    session_destroy();
+    echo die();
     require "dbcon.php";
 
     $sql = "SELECT name from users";

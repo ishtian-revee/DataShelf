@@ -18,9 +18,20 @@
             header('Content-type: text/javascript');
             echo json_encode($rows,JSON_PRETTY_PRINT);
         }
-        else if($api_name='cptds')
+        else if($api_name =='cptds')
         {
             echo "";
+        }
+        else if($api_name == 'logged')
+        {
+
+            if(isset($_SESSION['is_logged_in']))
+            {
+                echo "{ status: true }";
+            }
+            else{
+                echo "{ status: false }";
+            }
         }
 
     }

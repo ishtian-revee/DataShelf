@@ -6,6 +6,7 @@
   <head>
     <meta charset="utf-8">
     <title>DataShelf(competitions_post_submissions)</title>
+    <link rel="stylesheet" type="text/css" href="dpbtn.css">
   </head>
 
   <body>

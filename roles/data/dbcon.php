@@ -1,8 +1,12 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "datashelf";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "datashelf";
+$servername = "db4free.net:3307";
+$username = "dshelf";
+$password = "dshelf1234";
+$dbname = "dshelf";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
