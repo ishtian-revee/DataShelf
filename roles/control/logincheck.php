@@ -16,9 +16,6 @@
     }
     else
     {
-        echo "Not set";
-        var_dump ($_SESSION);
-        echo die();
             $context = 'Login';
             $target = 'login.php';
     }
