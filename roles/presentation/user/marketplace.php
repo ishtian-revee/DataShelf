@@ -43,7 +43,7 @@
         </td>
 
         <td width="7%" align="center">
-          <a href="login.php"><h3><font face="calibri" color="#888888">Login</font></h3></a>
+          <a href="<?= $target ?>"><h3><font face="calibri" color="#888888"><?=$context?></font></h3></a>
         </td>
       </tr>
 
@@ -193,10 +193,10 @@
     <script type="text/javascript">
       function add_dataset(title,short_description,price,uploader,downloads,tags)
       {
-        
-       var  template = 
+
+       var  template =
         `
-      
+
         <table width="100%" cellspacing="5" cellpadding="0">
             <tr>
               <td width="10%" align="center">
@@ -218,18 +218,18 @@
                 </a>
               </td>
             </tr>
-           
+
           </table>
 
         `;
         d1 = document.getElementById('mp-ds');
         d1.insertAdjacentHTML('afterend', template);
- 
+
       }
 
-      
 
-    
+
+
     function load_marketplace_datasets()
     {
 
@@ -238,11 +238,11 @@
       request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=mpds',true);
       request.send();
 
-      request.onreadystatechange = function() 
+      request.onreadystatechange = function()
       {
-          if (this.readyState == 4 && this.status == 200) 
+          if (this.readyState == 4 && this.status == 200)
           {
-            var ds = JSON.parse(request.responseText);  
+            var ds = JSON.parse(request.responseText);
            console.log(ds.length);
            for(i=0;i<ds.length;i++)
            {
@@ -259,12 +259,12 @@
               add_dataset(title,short_description,price,uploader,downloads,tags);
            }
 
-           
+
         }
       }
     }
 
-      
+
 
 
     </script>
