@@ -41,7 +41,7 @@
         </td>
 
         <td width="7%" align="center">
-          <a href="<?= $target ?>"><h3><font face="calibri" color="#888888"><?=$context?></font></h3></a>
+          <a href="<?= $target ?>"><h3><font face="calibri" color="#444444"><?=$context?></font></h3></a>
         </td>
       </tr>
 
