@@ -5,16 +5,17 @@
         if($_SESSION['is_logged_in'])
         {
             $username = $_SESSION["username"];
-            $context = 
+            $context =
             '
             <div class="dropdown">
-            <button class="dropbtn">'.$username.'&#x25BC;</button>
-            <div class="dropdown-content">
-              <a href="profile.php">Profile</a>
-              <a href="logout.php">Logout</a>
-            </div>
-          </div>
+              <button class="dropbtn">'.$username.'&#9662;</button>
 
+              <div class="dropdown-content">
+                <a href="profile.php">Profile</a>
+
+                <a href="logout.php">Logout</a>
+              </div>
+            </div>
             '
             ;
         //    $context = '';
