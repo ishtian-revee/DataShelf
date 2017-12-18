@@ -21,7 +21,7 @@
         }
         else
         {
-           
+           echo die("login failed");
         }
     }
 

@@ -41,7 +41,7 @@
     {
         
         $sql = "SELECT password from users where username = '$username'";
-        $result = (execute_query($sql));
+        $result = execute_query($sql);
         
         if (mysqli_num_rows($result) > 0)
         {

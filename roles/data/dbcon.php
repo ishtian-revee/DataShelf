@@ -1,20 +1,17 @@
 <?php
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "datashelf";
-$servername = "db4free.net:3307";
-$username = "dshelf";
-$password = "dshelf1234";
-$dbname = "dshelf";
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+//Local MySQL Server
+define("SERVERNAME", "localhost", true);
+define("USERNAME", "root", true);
+define("PASSWORD", "", true);
+define("DBNAME","datashelf",true);
 
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+//Remote MySQL Server
+// define("SERVERNAME", "db4free.net:3307", true);
+// define("USERNAME", "dshelf", true);
+// define("PASSWORD", "dshelf", true);
+// define("DBNAME","dshelf",true);
+
 
     function destroy_connection()
     {
@@ -24,17 +21,19 @@ if (!$conn) {
 
     function execute_query($sql)
     {   
-        global  $servername;
-        global $username; 
-        global $password;
-        global  $dbname;
-        global $conn;
-
-        $conn = mysqli_connect($servername, $username, $password, $dbname);
+       
+       // global $conn;
+       $servername = "localhost";
+       $username = "root";
+       $password = "";
+       $dbname = "datashelf";
+        $conn = mysqli_connect(SERVERNAME, USERNAME, PASSWORD, DBNAME) or die("<h1 align='center'>503 Service Unavailable<h1><hr>");
+        
         $result = mysqli_query($conn,$sql);
         mysqli_close($conn);
         
         return $result;
     }
+
 
 ?>
