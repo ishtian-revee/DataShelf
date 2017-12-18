@@ -48,7 +48,7 @@
       <tr>
         <td colspan="8">
           <br><br><br><br><br>
-          <form action="../../control/registration_control.php" method="POST">
+          <form name="signup_form" action="../../control/registration_control.php" onsubmit="return validateForm()" method="POST">
             <table width="400" align="center" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="20%">
