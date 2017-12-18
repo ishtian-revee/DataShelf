@@ -1,6 +1,8 @@
 <?php
-  require "../../control/logincheck.php"
+  require "../../control/logincheck.php";
+  require "../../control/marketplace_post_controller.php";
 ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -58,17 +60,17 @@
             <table width="100%" cellspacing="0" cellpadding="0">
               <tr>
                 <td>
-                  <h1><font face="calibri" color="#444444">Global Terrorism Database</font></h1>
+                  <h1><font face="calibri" color="#444444"><?=$title?></font></h1>
                 </td>
 
                 <td align="right">
-                  <h2><font face="calibri" color="#888888">$1200</font></h2>
+                  <h2><font face="calibri" color="#888888">$<?=$price?></font></h2>
                 </td>
               </tr>
 
               <tr>
                 <td colspan="2">
-                  <h2><font face="calibri" color="#888888">More than 170,000 terrorist attacks worldwide, 1970-2016</font></h2>
+                  <h2><font face="calibri" color="#888888"><?=$short_description?></font></h2>
                 </td>
               </tr>
 
@@ -77,7 +79,7 @@
                   <table width="100%" cellspacing="0" cellpadding="0">
                     <tr>
                       <td>
-                        <p><font face="calibri" color="#888888" size="4">Updated on October 30, 2017</font></p>
+                        <p><font face="calibri" color="#888888" size="4"><?=$upload_date?></font></p>
                       </td>
 
                       <td align="right">
@@ -101,7 +103,7 @@
           <table width="100%" cellspacing="0" cellpadding="0">
             <tr>
               <td width="10%" align="center">
-                <a href="marketplace_post.php">
+                <a href="marketplace_post.php?id=<?=$mds_id?>">
                   <h4><font face="calibri" color="#444444">Overview</font></h4>
                 </a>
               </td>
@@ -111,7 +113,7 @@
               </td>
 
               <td width="6%" align="center">
-                <a href="marketplace_post_data.php">
+                <a href="marketplace_post_data.php?id=<?=$mds_id?>">
                   <h4><font face="calibri" color="#888888">Data</font></h4>
                 </a>
               </td>
@@ -121,7 +123,7 @@
               </td>
 
               <td width="10%" align="center">
-                <a href="marketplace_post_discussions.php">
+                <a href="marketplace_post_discussions.php?id=<?=$mds_id?>">
                   <h4><font face="calibri" color="#888888">Discussions</font></h4>
                 </a>
               </td>
@@ -143,25 +145,11 @@
               <td colspan="7">
                 <h2><font face="calibri" color="#444444">Context</font></h2>
 
-                <p><font face="calibri" color="#888888" size="4">Information on more than 170,000 Terrorist Attacks
-The Global Terrorism Database (GTD) is an open-source database including information on terrorist attacks around the world
-from 1970 through 2016 (with annual updates planned for the future). The GTD includes systematic data on domestic as well
-as international terrorist incidents that have occurred during this time period and now includes more than 170,000 cases.
-The database is maintained by researchers at the National Consortium for the Study of Terrorism and Responses to Terrorism
-(START), headquartered at the University of Maryland.</font></p>
+                <p><font face="calibri" color="#888888" size="4"><?=$contextd?></font></p>
 
                 <h2><font face="calibri" color="#444444">Contents</font></h2>
 
-                <p><font face="calibri" color="#888888" size="4">Geography: Worldwide.
-Time period: 1970-2016, except 1993 (2017 in progress, publication expected June 2018).
-Unit of analysis: Attack.
-Variables: >100 variables on location, tactics, perpetrators, targets, and outcomes.
-Sources: Unclassified media articles (Note: Please interpret changes over time with caution. Global patterns are driven
-by diverse trends in particular regions, and data collection is influenced by fluctuations in access to media coverage
-over both time and place).
-Definition of terrorism: "The threatened or actual use of illegal force and violence by a non-state actor to attain a
-political, economic, religious, or social goal through fear, coercion, or intimidation."
-See the GTD Codebook for important details on data collection methodology, definitions, and coding schema.</font></p>
+                <p><font face="calibri" color="#888888" size="4"><?=$contentd?></font></p>
               </td>
             </tr>
           </table>

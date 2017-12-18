@@ -1,5 +1,6 @@
 <?php
-  require "../../control/logincheck.php"
+  require "../../control/logincheck.php";
+  require "../../control/marketplace_post_discussions_controller.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -51,24 +52,23 @@
       <tr>
         <td colspan="8"><br><br></td>
       </tr>
-
       <tr>
         <td colspan="8">
           <fieldset>
             <table width="100%" cellspacing="0" cellpadding="0">
               <tr>
                 <td>
-                  <h1><font face="calibri" color="#444444">Global Terrorism Database</font></h1>
+                  <h1><font face="calibri" color="#444444"><?=$title?></font></h1>
                 </td>
 
                 <td align="right">
-                  <h2><font face="calibri" color="#888888">$1200</font></h2>
+                  <h2><font face="calibri" color="#888888">$<?=$price?></font></h2>
                 </td>
               </tr>
 
               <tr>
                 <td colspan="2">
-                  <h2><font face="calibri" color="#888888">More than 170,000 terrorist attacks worldwide, 1970-2016</font></h2>
+                  <h2><font face="calibri" color="#888888"><?=$short_description?></font></h2>
                 </td>
               </tr>
 
@@ -77,7 +77,7 @@
                   <table width="100%" cellspacing="0" cellpadding="0">
                     <tr>
                       <td>
-                        <p><font face="calibri" color="#888888" size="4">Updated on October 30, 2017</font></p>
+                        <p><font face="calibri" color="#888888" size="4"><?=$upload_date?></font></p>
                       </td>
 
                       <td align="right">
@@ -101,7 +101,7 @@
           <table width="100%" cellspacing="0" cellpadding="0">
             <tr>
               <td width="10%" align="center">
-                <a href="marketplace_post.php">
+                <a href="marketplace_post.php?id=<?=$mds_id?>">
                   <h4><font face="calibri" color="#888888">Overview</font></h4>
                 </a>
               </td>
@@ -111,7 +111,7 @@
               </td>
 
               <td width="6%" align="center">
-                <a href="marketplace_post_data.php">
+                <a href="marketplace_post_data.php?id=<?=$mds_id?>">
                   <h4><font face="calibri" color="#888888">Data</font></h4>
                 </a>
               </td>

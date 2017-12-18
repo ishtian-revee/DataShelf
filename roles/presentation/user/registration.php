@@ -1,3 +1,6 @@
+<?php
+  require "../../control/logincheck.php"
+?>
 <!DOCTYPE html>
 <html>
   <head>

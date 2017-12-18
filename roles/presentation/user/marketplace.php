@@ -192,7 +192,7 @@
     </table>
 
     <script type="text/javascript">
-      function add_dataset(title,short_description,price,uploader,downloads,tags)
+      function add_dataset(id,title,short_description,price,uploader,downloads,tags)
       {
 
        var  template =
@@ -205,7 +205,7 @@
               </td>
 
               <td width="72%" valign="top">
-                <a href="marketplace_post.php">
+                <a href="marketplace_post.php?id=${id}">
                   <p><font face="calibri" color="#444444" size="4"><b>${title}</b><br>${short_description}</font></p>
                 </a>
                 <p><font face="calibri" color="#888888" size="3"><b>${uploader}</b> &middot; updated 2 days ago &middot; <b>Tags:</b> ${tags}</font></p>
@@ -227,10 +227,6 @@
         d1.insertAdjacentHTML('afterend', template);
 
       }
-
-
-
-
     function load_marketplace_datasets()
     {
       d1 = document.getElementById('mp-ds');
@@ -250,6 +246,8 @@
            console.log(ds.length);
            for(i=0;i<ds.length;i++)
            {
+              var id = ds[i].mds_id;
+              //console.log(id);
               var title = (ds[i].title);
               console.log(title);
               var short_description = ds[i].short_description;
@@ -260,7 +258,7 @@
               var downloads = ds[i].downloads;
               var tags = ds[i].tags;
 
-              add_dataset(title,short_description,price,uploader,downloads,tags);
+              add_dataset(id,title,short_description,price,uploader,downloads,tags);
            }
         }
       }

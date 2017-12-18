@@ -24,9 +24,16 @@ if (!$conn) {
 
     function execute_query($sql)
     {   
+        global  $servername;
+        global $username; 
+        global $password;
+        global  $dbname;
         global $conn;
+
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
         $result = mysqli_query($conn,$sql);
         mysqli_close($conn);
+        
         return $result;
     }
 
