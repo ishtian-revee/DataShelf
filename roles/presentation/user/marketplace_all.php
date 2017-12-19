@@ -1,5 +1,7 @@
 <?php
-  require "../../control/logincheck.php"
+  require "../../control/logincheck.php";
+  require '../../control/marketplace_all_controller.php';
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -95,15 +97,7 @@
                 </a>
               </td>
 
-              <td width="4%" align="center">
-                <h4><font face="calibri" color="#444444">&middot;</font></h4>
-              </td>
-
-              <td width="6%" align="center">
-                <a href="marketplace_mine.php">
-                  <h4><font face="calibri" color="#888888">Mine</font></h4>
-                </a>
-              </td>
+              <?=$mine?>
 
               <td width="36%%" align="right">
                 <p><font face="calibri" color="#888888" size="4"><b>Search</b></font></p>
