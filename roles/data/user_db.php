@@ -61,5 +61,17 @@
         $sql = "";
     }
 
+    function get_name($username)
+    {
+        $sql = "SELECT name from users where username = '$username'";
+        
+        $result = execute_query($sql);
+        
+        if (mysqli_num_rows($result) > 0)
+        {
+            return mysqli_fetch_assoc($result)['name'];
+        }
+    }
+
 
 ?>

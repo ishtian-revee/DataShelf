@@ -15,6 +15,7 @@
                 session_start();
                 $_SESSION['is_logged_in'] =  true;
                 $_SESSION['username'] = $username;
+                $_SESSION['name'] = get_name($username);
              
                 header('location:../presentation/user/home.php');
             }

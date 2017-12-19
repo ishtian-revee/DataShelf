@@ -79,7 +79,7 @@
                   <table width="100%" cellspacing="0" cellpadding="0">
                     <tr>
                       <td>
-                        <p><font face="calibri" color="#888888" size="4"><?=$upload_date?></font></p>
+                        <p><font face="calibri" color="#888888" size="4">Uploaded : <?=$upload_date?></font></p>
                       </td>
 
                       <td align="right">

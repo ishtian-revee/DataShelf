@@ -1,5 +1,6 @@
 <?php
-  require "../../control/logincheck.php"
+  require "../../control/logincheck.php";
+  require "../../control/discussion_controller.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -68,9 +69,7 @@
         </td>
 
         <td colspan="3" align="center">
-          <a href="competitions_post_discussions.php">
-            <h3><font face="calibri" color="#888888">New Topic</font></h3>
-          </a>
+          <?=$new_topic?>
         </td>
       </tr>
 

@@ -1,5 +1,6 @@
 <?php
-  require "../../control/logincheck.php"
+  require "../../control/logincheck.php";
+  require "../../control/marketplace_new_dataset_controller.php";
 ?>
 
 <!DOCTYPE html>
@@ -115,7 +116,7 @@
 
             <tr>
               <td colspan="7">
-                <form action="marketplace.php">
+                <form action="../../control/new_mp_post.php" method="POST" enctype="multipart/form-data">
                   <table width="100%" cellspacing="0" cellpadding="0">
                     <tr>
                       <td colspan="2">

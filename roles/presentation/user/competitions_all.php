@@ -1,5 +1,6 @@
 <?php
-  require "../../control/logincheck.php"
+  require "../../control/logincheck.php";
+  require "../../control/competitions_controller.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -70,11 +71,7 @@
                 <h3><font face="calibri" color="#888888">103 total competitions</font></h3>
               </td>
 
-              <td align="right">
-                <a href="competitions_create_competition.php">
-                  <h3><font face="calibri" color="#888888">Create Competition</font></h3>
-                </a>
-              </td>
+              <?$create_competitions?>
             </tr>
 
             <tr>
@@ -94,15 +91,8 @@
                 </a>
               </td>
 
-              <td width="4%" align="center">
-                <h4><font face="calibri" color="#444444">&middot;</font></h4>
-              </td>
-
-              <td width="6%" align="center">
-                <a href="competitions_mine.php">
-                  <h4><font face="calibri" color="#888888">Mine</font></h4>
-                </a>
-              </td>
+             
+            <?=$mine?>
 
               <td width="36%%" align="right">
                 <p><font face="calibri" color="#888888" size="4"><b>Search</b></font></p>

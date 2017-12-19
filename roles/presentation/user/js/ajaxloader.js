@@ -30,7 +30,7 @@
 
         `;
         d1 = document.getElementById(div_id);
-        d1.insertAdjacentHTML('beforeend', template);
+        d1.insertAdjacentHTML('afterend', template);
 
       }
     function load_marketplace_datasets()

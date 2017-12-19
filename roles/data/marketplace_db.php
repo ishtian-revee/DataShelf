@@ -1,6 +1,15 @@
 <?php
     require "dbcon.php";
 
+
+    function add_mp_dataset($title,$short_description,$price,$uploader,$context,$content,$data_path,$ss_path,$tags)
+    {
+        $sql = "INSERT INTO `marketplace_datasets` (`title`, `short_description`, `price`, `uploader`, `context`, `content`, `data_path`, `ss_path`, `tags`)
+         VALUES ('$title','$short_description',$price,'$uploader','$context','$content','$data_path','$ss_path','$tags')";
+        
+    
+        return execute_query($sql);
+    }
    function get_mp_titles()
    {
 
@@ -64,7 +73,7 @@
    function get_upload_date_by_id($id)
    {
 
-        $sql = "SELECT upload_date from marketplace_datasets where mds_id = $id";
+        $sql = "SELECT DATEDIFF(upload_date,CURRENT_TIMESTAMP) as upload_date from marketplace_datasets where mds_id = $id";
         $result = execute_query($sql);
 
         return mysqli_fetch_assoc($result)['upload_date'];
