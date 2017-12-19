@@ -53,12 +53,12 @@
         {
             if(add_mp_dataset($title,$short_description,$price,$uploader,$context,$content,$data_file_dest,$data_sc_dest,$tags))
             {
-                header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_new_dataset.php?status=success');
+                header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_new_dataset.php?status=success#status');
             }
         }
         else
         {
-        header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_new_dataset.php?status=failed');
+        header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_new_dataset.php?status=failed#status');
             
         }
         
@@ -66,7 +66,7 @@
     }
     else
     {
-        header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_new_dataset.php?status=failed');
+        header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_new_dataset.php?status=failed#status');
     }
 
 ?>
