@@ -3,7 +3,7 @@
     {
         $mine = 
         '
-        <td width="4%" align="center">
+              <td width="4%" align="center">
                 <h4><font face="calibri" color="#444444">&middot;</font></h4>
               </td>
 
@@ -13,9 +13,18 @@
                 </a>
               </td>
         ';
+        $newdataset = 
+        '
+        <td align="right">
+        <a href="marketplace_new_dataset.php">
+          <h3><font face="calibri" color="#888888">New Dataset</font></h3>
+        </a>
+      </td>
+        ';
     }
     else
     {
         $mine='';
+        $newdataset = '';
     }
 ?>

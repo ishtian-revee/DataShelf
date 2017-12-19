@@ -73,11 +73,7 @@
                 <h3><font face="calibri" color="#888888">5792 total datasets</font></h3>
               </td>
 
-              <td align="right">
-                <a href="marketplace_new_dataset.php">
-                  <h3><font face="calibri" color="#888888">New Dataset</font></h3>
-                </a>
-              </td>
+              <?=$newdataset?>
             </tr>
 
             <tr>

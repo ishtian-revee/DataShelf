@@ -1,4 +1,4 @@
 <?php
 	
-	header("location:roles/presentation/user/home.html");
+	header("location:roles/presentation/user/home.php");
 ?>
