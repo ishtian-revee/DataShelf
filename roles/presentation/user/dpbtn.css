@@ -2,10 +2,10 @@
 /* Style The Dropdown Button */
 .dropbtn {
     background-color: transparent;
-    font-family: Calibri;
+    /* font-family: Calibri;
     color: #888888;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: bold; */
     border: none;
     cursor: pointer;
 }
@@ -29,6 +29,7 @@
 /* Links inside the dropdown */
 .dropdown-content a {
     font-family: Calibri;
+    font-weight: bold;
     color: #888888;
     font-size: 18px;
     padding: 10px 10px;
