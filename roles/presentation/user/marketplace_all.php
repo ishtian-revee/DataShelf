@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="dpbtn.css">
   </head>
 
-  <body>
+  <body onload=load_marketplace_datasets_all()>
     <br>
     <table width="1000" align="center" cellspacing="0" cellpadding="0">
       <tr>
@@ -120,240 +120,16 @@
 
             <tr>
               <td colspan="7"><br><br></td>
+              
             </tr>
-
             <tr>
               <td colspan="7">
-                <table width="100%" cellspacing="5" cellpadding="0">
-                  <tr>
-                    <td width="10%" align="center">
-                      <img src="../res/website/ic_user_1.png" alt="User Profile Pic" width="60">
-                    </td>
-
-                    <td width="72%" valign="top">
-                      <a href="marketplace_post.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Elon Musk</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                      <br>
-                    </td>
-
-                    <td width="18%" align="center" valign="center">
-                      <a href="marketplace_post.php">
-                        <label><font face="calibri" color="#888888" size="4">$770</font></label><br>
-                        <label><font face="calibri" color="#888888" size="4">120 downloads</font></label>
-                      </a>
-                    </td>
-                  </tr>
-
-                  <!-- temporary -->
-
-                  <tr>
-                    <td width="10%" align="center">
-                      <img src="../res/website/ic_user_2.png" alt="User Profile Pic" width="60">
-                    </td>
-
-                    <td width="72%" valign="top">
-                      <a href="marketplace_post.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Laura Brehm</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                      <br>
-                    </td>
-
-                    <td width="18%" align="center" valign="center">
-                      <a href="marketplace_post.php">
-                        <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                        <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                      </a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td width="10%" align="center">
-                      <img src="../res/website/ic_user_3.png" alt="User Profile Pic" width="60">
-                    </td>
-
-                    <td width="72%" valign="top">
-                      <a href="marketplace_post.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Gylfoil</b> &middot; updated 3 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                      <br>
-                    </td>
-
-                    <td width="18%" align="center" valign="center">
-                      <a href="marketplace_post.php">
-                        <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                        <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                      </a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td width="10%" align="center">
-                      <img src="../res/website/ic_user_4.png" alt="User Profile Pic" width="60">
-                    </td>
-
-                    <td width="72%" valign="top">
-                      <a href="marketplace_post.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Anthony Hopkins</b> &middot; updated 4 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                      <br>
-                    </td>
-
-                    <td width="18%" align="center" valign="center">
-                      <a href="marketplace_post.php">
-                        <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                        <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                      </a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td width="10%" align="center">
-                      <img src="../res/website/ic_user_5.png" alt="User Profile Pic" width="60">
-                    </td>
-
-                    <td width="72%" valign="top">
-                      <a href="marketplace_post.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Bernie Stinson</b> &middot; updated 5 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                      <br>
-                    </td>
-
-                    <td width="18%" align="center" valign="center">
-                      <a href="marketplace_post.php">
-                        <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                        <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                      </a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td width="10%" align="center">
-                      <img src="../res/website/ic_user_2.png" alt="User Profile Pic" width="60">
-                    </td>
-
-                    <td width="72%" valign="top">
-                      <a href="marketplace_post.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Laura Brehm</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                      <br>
-                    </td>
-
-                    <td width="18%" align="center" valign="center">
-                      <a href="marketplace_post.php">
-                        <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                        <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                      </a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td width="10%" align="center">
-                      <img src="../res/website/ic_user_4.png" alt="User Profile Pic" width="60">
-                    </td>
-
-                    <td width="72%" valign="top">
-                      <a href="marketplace_post.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Anthony Hopkins</b> &middot; updated 4 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                      <br>
-                    </td>
-
-                    <td width="18%" align="center" valign="center">
-                      <a href="marketplace_post.php">
-                        <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                        <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                      </a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td width="10%" align="center">
-                      <img src="../res/website/ic_user_1.png" alt="User Profile Pic" width="60">
-                    </td>
-
-                    <td width="72%" valign="top">
-                      <a href="marketplace_post.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Elon Musk</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                      <br>
-                    </td>
-
-                    <td width="18%" align="center" valign="center">
-                      <a href="marketplace_post.php">
-                        <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                        <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                      </a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td width="10%" align="center">
-                      <img src="../res/website/ic_user_3.png" alt="User Profile Pic" width="60">
-                    </td>
-
-                    <td width="72%" valign="top">
-                      <a href="marketplace_post.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Gylfoil</b> &middot; updated 3 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                      <br>
-                    </td>
-
-                    <td width="18%" align="center" valign="center">
-                      <a href="marketplace_post.php">
-                        <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                        <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                      </a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td width="10%" align="center">
-                      <img src="../res/website/ic_user_5.png" alt="User Profile Pic" width="60">
-                    </td>
-
-                    <td width="72%" valign="top">
-                      <a href="marketplace_post.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Bernie Stinson</b> &middot; updated 5 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                      <br>
-                    </td>
-
-                    <td width="18%" align="center" valign="center">
-                      <a href="marketplace_post.php">
-                        <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                        <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                      </a>
-                    </td>
-                  </tr>
-
-                  <!-- temporary -->
-                </table>
+                <div id="mp-ds-all" align="center"></div>
               </td>
             </tr>
-          </table>
-        </td>
-      </tr>
+                
+                  
+
 
       <tr>
         <td colspan="8"><br><br></td>
@@ -414,5 +190,6 @@
         </td>
       </tr>
     </table>
+    <script type="text/javascript" src="./js/ajaxloader.js"></script>
   </body>
 </html>

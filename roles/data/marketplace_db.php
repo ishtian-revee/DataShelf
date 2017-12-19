@@ -13,6 +13,20 @@
        return execute_query($sql);
    }
 
+   function get_mp_featured_datasets()
+   {
+       $sql = "SELECT * from marketplace_datasets";
+       return execute_query($sql);
+        
+   }
+
+   function get_mp_datasets_by_user()
+   {
+       $sql = "SELECT * from marketplace_datasets";
+       return execute_query($sql);
+        
+   }
+
    function get_description_by_id($id)
    {
         $sql = "SELECT short_description from marketplace_datasets where mds_id = $id";
