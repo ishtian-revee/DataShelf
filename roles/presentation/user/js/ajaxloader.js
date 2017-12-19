@@ -3,7 +3,6 @@
 
        var  template =
         `
-
         <table width="100%" cellspacing="5" cellpadding="0">
             <tr>
               <td width="10%" align="center">

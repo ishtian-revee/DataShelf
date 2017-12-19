@@ -53,7 +53,7 @@
         {
             if(add_mp_dataset($title,$short_description,$price,$uploader,$context,$content,$data_file_dest,$data_sc_dest,$tags))
             {
-                header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_mine.php');
+                header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_new_dataset.php?status=success');
             }
         }
         
