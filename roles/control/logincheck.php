@@ -1,10 +1,12 @@
 <?php
     session_start();
+    require "../../data/user_db.php";
     if(isset($_SESSION['is_logged_in']))
     {
         if($_SESSION['is_logged_in'])
         {
             $username = $_SESSION["username"];
+            $name = get_name($username);
             $context =
             '
             <div class="dropdown">

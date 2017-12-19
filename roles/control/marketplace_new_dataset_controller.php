@@ -13,9 +13,20 @@
             <td colspan="7"><hr noshade="noshade"></td>
           </tr>';
         }
-        else
+        else if($_GET['status'] == 'failed')
         {
-            $success ="";
+            $success =
+            '
+            <tr>
+            <td colspan="7" align="center">
+              <h3><font face="calibri" color="RED">Upload Failed !</font></h3>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="7"><hr noshade="noshade"></td>
+          </tr>
+            ';
         }
 
     }
