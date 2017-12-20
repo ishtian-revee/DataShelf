@@ -142,9 +142,11 @@
       return execute_query($sql);
     }
 
-    function update_user_password($password){
+    function update_user_password($username, $password){
 
+      $sql = "UPDATE users SET password='$password' WHERE username='$username'";
 
+      return execute_query($sql);
     }
 
     // update data -------------------------------------------------------------

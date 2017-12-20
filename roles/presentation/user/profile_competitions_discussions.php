@@ -75,7 +75,7 @@
                 <form action="profile_datasets.php">
                   <table width="100%" align="center" cellspacing="0" cellpadding="0">
                     <tr>
-                      <td colspan="9"><br></td>
+                      <td colspan="10"><br></td>
                     </tr>
 
                     <tr>
@@ -115,9 +115,15 @@
                         </a>
                       </td>
 
-                      <td width="40%" align="center"></td>
+                      <td width="30%" align="center"></td>
 
-                      <td width="16%" align="right">
+                      <td width="16%" align="center">
+                        <a href="change_password.php">
+                          <h3><font face="calibri" color="#888888">Change Password</font></h3>
+                        </a>
+                      </td>
+
+                      <td width="10%" align="right">
                         <a href="edit_profile.php">
                           <h3><font face="calibri" color="#888888">Edit Profile</font></h3>
                         </a>
@@ -125,22 +131,22 @@
                     </tr>
 
                     <tr>
-                      <td colspan="9"><hr noshade="noshade"></td>
+                      <td colspan="10"><hr noshade="noshade"></td>
                     </tr>
 
                     <tr>
-                      <td colspan="9">
+                      <td colspan="10">
                         <h2><font face="calibri" color="#444444">Competition Details</font></h2>
                         <hr width="200" align="left" noshade="noshde">
                       </td>
                     </tr>
 
                     <tr>
-                      <td colspan="9"><br></td>
+                      <td colspan="10"><br></td>
                     </tr>
 
                     <tr>
-                      <td colspan="9">
+                      <td colspan="10">
                         <fieldset>
                           <table width="100%" cellspacing="0" cellpadding="0">
                             <tr>
@@ -182,15 +188,15 @@
                         </a>
                       </td>
 
-                      <td colspan="4" align="center"></td>
+                      <td colspan="5" align="center"></td>
                     </tr>
 
                     <tr>
-                      <td colspan="9"><hr noshade="noshade"></td>
+                      <td colspan="10"><hr noshade="noshade"></td>
                     </tr>
 
                     <tr>
-                      <td colspan="9">
+                      <td colspan="10">
                         <table width="100%" cellspacing="0" cellpadding="0">
                           <tr>
                             <td width="10%" valign="top" align="center">

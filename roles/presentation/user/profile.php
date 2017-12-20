@@ -73,7 +73,7 @@
               <td colspan="2">
                 <table width="100%" align="center" cellspacing="0" cellpadding="0">
                   <tr>
-                    <td colspan="9"><br></td>
+                    <td colspan="10"><br></td>
                   </tr>
 
                   <tr>
@@ -113,7 +113,13 @@
                       </a>
                     </td>
 
-                    <td width="46%" align="center"></td>
+                    <td width="30%" align="center"></td>
+
+                    <td width="16%" align="center">
+                      <a href="change_password.php">
+                        <h3><font face="calibri" color="#888888">Change Password</font></h3>
+                      </a>
+                    </td>
 
                     <td width="10%" align="right">
                       <a href="edit_profile.php">
@@ -123,11 +129,11 @@
                   </tr>
 
                   <tr>
-                    <td colspan="9"><hr noshade="noshade"></td>
+                    <td colspan="10"><hr noshade="noshade"></td>
                   </tr>
 
                   <tr>
-                    <td colspan="9">
+                    <td colspan="10">
                       <h2><font face="calibri" color="#444444">Profile Info</font></h2>
                       <hr width="150" align="left" noshade="noshde">
                     </td>
@@ -138,7 +144,7 @@
                       <h3><font face="calibri" color="#444444">Username:</font></h3>
                     </td>
 
-                    <td colspan="5">
+                    <td colspan="6">
                       <p><font face="calibri" color="#888888" size="4"><b><?=$username?></b></font></p>
                     </td>
                   </tr>
@@ -148,7 +154,7 @@
                       <h3><font face="calibri" color="#444444">Email:</font></h3>
                     </td>
 
-                    <td colspan="5">
+                    <td colspan="6">
                       <p><font face="calibri" color="#888888" size="4"><b><?=$email?></b></font></p>
                     </td>
                   </tr>
@@ -158,7 +164,7 @@
                       <h3><font face="calibri" color="#444444">Profession:</font></h3>
                     </td>
 
-                    <td colspan="5">
+                    <td colspan="6">
                       <p><font face="calibri" color="#888888" size="4"><b><?=$profession?></b></font></p>
                     </td>
                   </tr>
@@ -168,7 +174,7 @@
                       <h3><font face="calibri" color="#444444">Phone:</font></h3>
                     </td>
 
-                    <td colspan="5">
+                    <td colspan="6">
                       <p><font face="calibri" color="#888888" size="4"><b><?=$phone?></b></font></p>
                     </td>
                   </tr>
@@ -178,7 +184,7 @@
                       <h3><font face="calibri" color="#444444">Gender:</font></h3>
                     </td>
 
-                    <td colspan="5">
+                    <td colspan="6">
                       <p><font face="calibri" color="#888888" size="4"><b><?=$gender?></b></font></p>
                     </td>
                   </tr>
@@ -188,7 +194,7 @@
                       <h3><font face="calibri" color="#444444">Date of Birth:</font></h3>
                     </td>
 
-                    <td colspan="5">
+                    <td colspan="6">
                       <p><font face="calibri" color="#888888" size="4"><b><?=$dob?></b></font></p>
                     </td>
                   </tr>

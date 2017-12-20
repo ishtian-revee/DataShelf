@@ -1,8 +1,12 @@
+<?php
+  require "../../control/logincheck.php"
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>DataShelf(edit user profile)</title>
+    <title>DataShelf(change password)</title>
+    <link rel="stylesheet" type="text/css" href="dpbtn.css">
   </head>
 
   <body>
@@ -10,29 +14,29 @@
     <table width="1000" align="center" cellspacing="0" cellpadding="0">
       <tr>
         <td width="36%">
-          <a href="home.html">
+          <a href="home.php">
             <img src="../res/website/datashelf_logo.png" alt="DataShelf Company Logo" height="45" title="DataShelf">
           </a>
         </td>
 
         <td width="8%" align="center">
-          <a href="home.html"><h3><font face="calibri" color="#888888">Home</font></h3></a>
+          <a href="home.php"><h3><font face="calibri" color="#888888">Home</font></h3></a>
         </td>
 
         <td width="12%" align="center">
-          <a href="marketplace.html"><h3><font face="calibri" color="#888888">Marketplace</font></h3></a>
+          <a href="marketplace.php"><h3><font face="calibri" color="#888888">Marketplace</font></h3></a>
         </td>
 
         <td width="13%" align="center">
-          <a href="competitions.html"><h3><font face="calibri" color="#888888">Competitions</font></h3></a>
+          <a href="competitions.php"><h3><font face="calibri" color="#888888">Competitions</font></h3></a>
         </td>
 
         <td width="12%" align="center">
-          <a href="discussions.html"><h3><font face="calibri" color="#888888">Discussions</font></h3></a>
+          <a href="discussions.php"><h3><font face="calibri" color="#888888">Discussions</font></h3></a>
         </td>
 
         <td width="9%" align="center">
-          <a href="cart.html"><h3><font face="calibri" color="#888888">Cart</font></h3></a>
+          <a href="cart.php"><h3><font face="calibri" color="#888888">Cart</font></h3></a>
         </td>
 
         <td width="3%" align="center">
@@ -40,24 +44,22 @@
         </td>
 
         <td width="7%" align="center">
-          <a href="login.html"><h3><font face="calibri" color="#888888">Login</font></h3></a>
+          <a href="<?= $target ?>"><h3><font face="calibri" color="#888888"><?=$context?></font></h3></a>
         </td>
       </tr>
 
       <tr>
         <td colspan="8">
           <br><br><br>
-          <form action="profile.html">
+          <form action="../../control/edit_user_password.php" method="POST">
             <table width="100%" align="center" cellspacing="0" cellpadding="0">
               <tr>
                 <td rowspan="2" width="18%" align="center" valign="top">
                   <img src="../res/admin/temp_user.png" alt="Profile Picture" height="150">
-                  <br>
-                  <input type="file" name="profile_picture">
                 </td>
 
                 <td>
-                  <input name="username" type="text" size="30" value="Bruce Wayne">
+                  <h2><font face="calibri" color="#444444"><?=$name?></font></h2>
                 </td>
               </tr>
 
@@ -76,7 +78,7 @@
 
                     <tr>
                       <td width="5%" align="center">
-                        <a href="profile.html">
+                        <a href="profile.php">
                           <h4><font face="calibri" color="#888888">About</font></h4>
                         </a>
                       </td>
@@ -86,7 +88,7 @@
                       </td>
 
                       <td width="7%" align="center">
-                        <a href="profile_datasets.html">
+                        <a href="profile_datasets.php">
                           <h4><font face="calibri" color="#888888">Datasets</font></h4>
                         </a>
                       </td>
@@ -96,7 +98,7 @@
                       </td>
 
                       <td width="10%" align="center">
-                        <a href="profile_competitions.html">
+                        <a href="profile_competitions.php">
                           <h4><font face="calibri" color="#888888">Competitions</font></h4>
                         </a>
                       </td>
@@ -106,7 +108,7 @@
                       </td>
 
                       <td width="10%" align="center">
-                        <a href="profile_bought_items.html">
+                        <a href="profile_bought_items.php">
                           <h4><font face="calibri" color="#888888">Bought Items</font></h4>
                         </a>
                       </td>
@@ -115,7 +117,7 @@
 
                       <td width="16%" align="center">
                         <a href="change_password.php">
-                          <h3><font face="calibri" color="#888888">Change Password</font></h3>
+                          <h3><font face="calibri" color="#444444">Change Password</font></h3>
                         </a>
                       </td>
 
@@ -132,76 +134,38 @@
 
                     <tr>
                       <td colspan="10">
-                        <h2><font face="calibri" color="#444444">Profile Info</font></h2>
+                        <h2><font face="calibri" color="#444444">Password Info</font></h2>
                         <hr width="150" align="left" noshade="noshde">
                       </td>
                     </tr>
 
                     <tr>
                       <td colspan="4">
-                        <h3><font face="calibri" color="#444444">Username:</font></h3>
+                        <h3><font face="calibri" color="#444444">Current Password:</font></h3>
                       </td>
 
                       <td colspan="6">
-                        <input name="username" type="text" size="30" value="bruce">
+                        <input name="current_password" type="password" size="32">
                       </td>
                     </tr>
 
                     <tr>
                       <td colspan="4">
-                        <h3><font face="calibri" color="#444444">Email:</font></h3>
+                        <h3><font face="calibri" color="#444444">New Password:</font></h3>
                       </td>
 
                       <td colspan="6">
-                        <input name="email" type="text" size="30" value="bruce@wayne.batman">
+                        <input name="new_password" type="password" size="32">
                       </td>
                     </tr>
 
                     <tr>
                       <td colspan="4">
-                        <h3><font face="calibri" color="#444444">Profession:</font></h3>
+                        <h3><font face="calibri" color="#444444">Retype Password:</font></h3>
                       </td>
 
                       <td colspan="6">
-                        <input name="username" type="text" size="30" value="MAchine Learning Engineer">
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td colspan="4">
-                        <h3><font face="calibri" color="#444444">Phone:</font></h3>
-                      </td>
-
-                      <td colspan="6">
-                        <input name="phone" type="text" value="01777777777">
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td colspan="4">
-                        <h3><font face="calibri" color="#444444">Gender:</font></h3>
-                      </td>
-
-                      <td colspan="6">
-                        <select name="gender">
-                              <option>Female</option>
-                              <option selected>Male</option>
-                              <option>Other</option>
-                          </select>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td colspan="4">
-                        <h3><font face="calibri" color="#444444">Date of Birth:</font></h3>
-                      </td>
-
-                      <td colspan="6">
-                        <input type="text" name="day" size="5" value="1">
-                        <label><font face="calibri" color="#444444" size="4">/</font></label>
-                        <input type="text" name="month" size="5" value="1">
-                        <label><font face="calibri" color="#444444" size="4">/</font></label>
-                        <input type="text" name="year" size="5" value="1990">
+                        <input name="retype_password" type="password" size="32">
                       </td>
                     </tr>
 
@@ -238,7 +202,7 @@
 
             <tr>
               <td width="20%">
-                <a href="home.html">
+                <a href="home.php">
                   <img src="../res/website/datashelf_logo.png" alt="DataShelf Company Logo" height="30" title="DataShelf">
                 </a>
               </td>
@@ -257,13 +221,13 @@
                     </td>
 
                     <td width="32%" align="center">
-                      <a href="team.html">
+                      <a href="team.php">
                         <p><font face="calibri" color="#888888" size="4"><b>Team</b></font></p>
                       </a>
                     </td>
 
                     <td width="36%" align="center">
-                      <a href="contact.html">
+                      <a href="contact.php">
                         <p><font face="calibri" color="#888888" size="4"><b>Contact</b></font></p>
                       </a>
                     </td>
