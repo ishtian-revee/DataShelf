@@ -2,10 +2,10 @@
 /* Style The Dropdown Button */
 .dropbtn {
     background-color: transparent;
-    /* font-family: Calibri;
+    font-family: Calibri;
     color: #888888;
     font-size: 15px;
-    font-weight: bold; */
+    font-weight: bold;
     border: none;
     cursor: pointer;
 }

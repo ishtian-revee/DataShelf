@@ -145,7 +145,7 @@
       global $errors;
       if(isset($phone)){
 
-        if(strlen($phone) >= 11 && $phone[0] == 0){
+        if(strlen($phone) == 11 && $phone[0] == 0){
 
           for($i=0; $i<strlen($phone); $i++){
 
@@ -230,10 +230,13 @@
         }
     }
 
-    function is_form_data_valid($name,$email,$username,$password1,$password2,$gender,$day,$month,$year)
+    function is_form_data_valid($name, $email, $username, $password1, $password2,
+    $phone, $profession, $gender, $day, $month, $year, $term)
     {
 
-        return is_name_valid($name) and is_email_valid($email) and is_username_valid($username) and is_password_valid($password1)
-        and is_password_matching($password1,$password2) and is_gender_valid($gender) and is_date_valid($day,$month,$year);
+        return is_name_valid($name) and is_email_valid($email) and is_username_valid($username) and
+        is_password_valid($password1) and is_password_matching($password1,$password2) and is_phone_valid($phone) and
+        is_profession_valid($profession) and is_gender_valid($gender) and is_date_valid($day,$month,$year) and
+        is_term_valid($term);
     }
 ?>

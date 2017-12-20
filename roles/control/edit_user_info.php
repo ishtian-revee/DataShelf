@@ -1,6 +1,8 @@
 <?php
 
   require "../data/user_db.php";
+  require "fieldvalidator.php";
+
   session_start();
 
   if(isset($_POST['username']) and isset($_POST['name']) and
@@ -18,17 +20,33 @@
     $day = $_POST['day'];
     $month = $_POST['month'];
     $year = $_POST['year'];
-    $dob = $day."-".$month."-".$year;
 
-    if(update_user_info($username, $name, $email, $phone, $profession, $gender, $dob)){
+    $valid_username = is_username_valid($username);
+    $valid_name = is_name_valid($name);
+    $valid_email = is_email_valid($email);
+    $valid_phone = is_phone_valid($phone);
+    $valid_profession = is_profession_valid($profession);
+    $valid_gender = is_gender_valid($gender);
+    $valid_dob = is_date_valid($day, $month, $year);
 
-      header('location:http://localhost/DataShelf/roles/presentation/user/profile.php');
+    if($valid_username and $valid_name and $valid_email and $valid_phone and
+    $valid_profession and $valid_gender and $valid_dob){
+
+      $dob = $day."-".$month."-".$year;
+
+      if(update_user_info($username, $name, $email, $phone, $profession, $gender, $dob)){
+
+        header('location:http://localhost/DataShelf/roles/presentation/user/profile.php');
+      }else{
+
+        echo "unsuccessful";
+      }
     }else{
 
-      echo "unsuccessful";
+      echo "Invalid inputs!";
     }
   }else{
 
-    echo "data not set";
+    echo "Data not set";
   }
 ?>
