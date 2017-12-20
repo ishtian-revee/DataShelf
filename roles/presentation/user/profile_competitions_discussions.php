@@ -60,7 +60,7 @@
               </td>
 
               <td>
-                <h2><font face="calibri" color="#444444">Bruce Wayne</font></h2>
+                <h2><font face="calibri" color="#444444"><?=$name?></font></h2>
               </td>
             </tr>
 

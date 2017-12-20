@@ -59,7 +59,7 @@
               </td>
 
               <td>
-                <h2><font face="calibri" color="#444444">Bruce Wayne</font></h2>
+                <h2><font face="calibri" color="#444444"><?=$name?></font></h2>
               </td>
             </tr>
 
@@ -139,7 +139,7 @@
                     </td>
 
                     <td colspan="5">
-                      <p><font face="calibri" color="#888888" size="4"><b>bruce</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$username?></b></font></p>
                     </td>
                   </tr>
 
@@ -149,7 +149,7 @@
                     </td>
 
                     <td colspan="5">
-                      <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$email?></b></font></p>
                     </td>
                   </tr>
 
@@ -159,7 +159,7 @@
                     </td>
 
                     <td colspan="5">
-                      <p><font face="calibri" color="#888888" size="4"><b>Machine Learning Engineer</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$profession?></b></font></p>
                     </td>
                   </tr>
 
@@ -169,7 +169,7 @@
                     </td>
 
                     <td colspan="5">
-                      <p><font face="calibri" color="#888888" size="4"><b>01777777777</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$phone?></b></font></p>
                     </td>
                   </tr>
 
@@ -179,7 +179,7 @@
                     </td>
 
                     <td colspan="5">
-                      <p><font face="calibri" color="#888888" size="4"><b>Male</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$gender?></b></font></p>
                     </td>
                   </tr>
 
@@ -189,7 +189,7 @@
                     </td>
 
                     <td colspan="5">
-                      <p><font face="calibri" color="#888888" size="4"><b>01.01.1990</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$dob?></b></font></p>
                     </td>
                   </tr>
                 </table>

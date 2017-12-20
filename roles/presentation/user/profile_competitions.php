@@ -59,7 +59,7 @@
               </td>
 
               <td>
-                <h2><font face="calibri" color="#444444">Bruce Wayne</font></h2>
+                <h2><font face="calibri" color="#444444"><?=$name?></font></h2>
               </td>
             </tr>
 
@@ -147,7 +147,7 @@
                         <p><font face="calibri" color="#444444" size="4"><b>Passenger Screening Algorithm Challenge</b><br>Improve
                           the accuracy of the Department of Homeland Security's threat recognition algorithms</font></p>
                       </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Elon Musk</b> &middot; deadline november 30, 2017
+                      <p><font face="calibri" color="#888888" size="3"><b><?=$name?></b> &middot; deadline november 30, 2017
                         &middot; <b>Tags:</b> terrorism, image, object detection</font></p>
                       <br>
                     </td>
@@ -170,7 +170,7 @@
                         <p><font face="calibri" color="#444444" size="4"><b>Passenger Screening Algorithm Challenge</b><br>Improve
                           the accuracy of the Department of Homeland Security's threat recognition algorithms</font></p>
                       </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Laura Brehm</b> &middot; deadline december 3, 2017
+                      <p><font face="calibri" color="#888888" size="3"><b><?=$name?></b> &middot; deadline december 3, 2017
                         &middot; <b>Tags:</b> terrorism, image, object detection</font></p>
                       <br>
                     </td>
@@ -191,7 +191,7 @@
                         <p><font face="calibri" color="#444444" size="4"><b>Passenger Screening Algorithm Challenge</b><br>Improve
                           the accuracy of the Department of Homeland Security's threat recognition algorithms</font></p>
                       </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Gylfoil</b> &middot; deadline december 13, 2017
+                      <p><font face="calibri" color="#888888" size="3"><b><?=$name?></b> &middot; deadline december 13, 2017
                         &middot; <b>Tags:</b> terrorism, image, object detection</font></p>
                       <br>
                     </td>

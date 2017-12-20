@@ -15,8 +15,15 @@
                 session_start();
                 $_SESSION['is_logged_in'] =  true;
                 $_SESSION['username'] = $username;
+                $_SESSION['password'] = $password;
+
                 $_SESSION['name'] = get_name($username);
-             
+                $_SESSION['email'] = get_email($email);
+                $_SESSION['phone'] = get_phone($phone);
+                $_SESSION['profession'] = get_profession($profession);
+                $_SESSION['gender'] = get_gender($gender);
+                $_SESSION['dob'] = get_dob($dob);
+
                 header('location:../presentation/user/home.php');
             }
         }

@@ -6,7 +6,14 @@
         if($_SESSION['is_logged_in'])
         {
             $username = $_SESSION["username"];
+            $password = $_SESSION["password"];
             $name = get_name($username);
+            $email = get_email($username);
+            $phone = get_phone($username);
+            $profession = get_profession($username);
+            $gender = get_gender($username);
+            $dob = get_dob($username);
+
             $context =
             '
             <div class="dropdown">
@@ -20,7 +27,7 @@
             </div>
             '
             ;
-        //    $context = '';
+
             $target = 'profile.php';
         }
         else
@@ -31,8 +38,7 @@
     }
     else
     {
-            $context = 'Login
-            ';
+            $context = 'Login';
             $target = 'login.php';
     }
 ?>

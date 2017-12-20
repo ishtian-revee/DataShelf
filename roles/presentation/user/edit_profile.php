@@ -61,7 +61,7 @@
                 </td>
 
                 <td>
-                  <input name="username" type="text" size="30" value="Bruce Wayne">
+                  <input name="username" type="text" size="30" value="<?=$name?>">
                 </td>
               </tr>
 
@@ -141,7 +141,7 @@
                       </td>
 
                       <td colspan="5">
-                        <input name="username" type="text" size="30" value="bruce">
+                        <input name="username" type="text" size="30" value="<?=$username?>">
                       </td>
                     </tr>
 
@@ -151,7 +151,7 @@
                       </td>
 
                       <td colspan="5">
-                        <input name="email" type="text" size="30" value="bruce@wayne.batman">
+                        <input name="email" type="text" size="30" value="<?=$email?>">
                       </td>
                     </tr>
 
@@ -161,7 +161,7 @@
                       </td>
 
                       <td colspan="5">
-                        <input name="username" type="text" size="30" value="MAchine Learning Engineer">
+                        <input name="username" type="text" size="30" value="<?=$profession?>">
                       </td>
                     </tr>
 
@@ -171,7 +171,7 @@
                       </td>
 
                       <td colspan="5">
-                        <input name="phone" type="text" value="01777777777">
+                        <input name="phone" type="text" value="<?=$phone?>">
                       </td>
                     </tr>
 

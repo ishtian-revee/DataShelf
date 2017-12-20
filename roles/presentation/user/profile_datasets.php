@@ -59,7 +59,7 @@
               </td>
 
               <td>
-                <h2><font face="calibri" color="#444444">Bruce Wayne</font></h2>
+                <h2><font face="calibri" color="#444444"><?=$name?></font></h2>
               </td>
             </tr>
 
@@ -147,7 +147,7 @@
                         <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
                           labeled as fraudulent or genuine</font></p>
                       </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Bruce Wayne</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
+                      <p><font face="calibri" color="#888888" size="3"><b><?=$name?></b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
                     </td>
 
                     <td align="center">
@@ -168,7 +168,7 @@
                         <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
                           labeled as fraudulent or genuine</font></p>
                       </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Bruce Wayne</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
+                      <p><font face="calibri" color="#888888" size="3"><b><?=$name?></b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
                     </td>
 
                     <td align="center">
@@ -187,7 +187,7 @@
                         <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
                           labeled as fraudulent or genuine</font></p>
                       </a>
-                      <p><font face="calibri" color="#888888" size="3"><b>Bruce Wayne</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
+                      <p><font face="calibri" color="#888888" size="3"><b><?=$name?></b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
                     </td>
 
                     <td align="center">
