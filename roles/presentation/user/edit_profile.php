@@ -1,5 +1,6 @@
 <?php
   require "../../control/logincheck.php"
+  // require "../../edit_user_info.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -51,7 +52,7 @@
       <tr>
         <td colspan="8">
           <br><br><br>
-          <form action="profile.php">
+          <form action="../../control/edit_user_info.php" method="POST" enctype="multipart/form-data">
             <table width="100%" align="center" cellspacing="0" cellpadding="0">
               <tr>
                 <td rowspan="2" width="18%" align="center" valign="top">
@@ -61,7 +62,7 @@
                 </td>
 
                 <td>
-                  <input name="username" type="text" size="30" value="<?=$name?>">
+                  <input name="name" type="text" size="30" value="<?=$name?>">
                 </td>
               </tr>
 
@@ -161,7 +162,7 @@
                       </td>
 
                       <td colspan="5">
-                        <input name="username" type="text" size="30" value="<?=$profession?>">
+                        <input name="profession" type="text" size="30" value="<?=$profession?>">
                       </td>
                     </tr>
 

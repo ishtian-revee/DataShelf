@@ -127,6 +127,26 @@
 
     // update data -------------------------------------------------------------
 
+    function update_user_info($username, $name, $email, $phone, $profession, $gender, $dob){
+
+      $sql = "UPDATE users SET
+      username='$username',
+      name='$name',
+      email='$email',
+      phone='$phone',
+      profession='$profession',
+      gender='$gender',
+      dob=STR_TO_DATE('$dob', '%d-%m-%Y')
+      WHERE username='$username'";
+
+      return execute_query($sql);
+    }
+
+    function update_user_password($password){
+
+
+    }
+
     // update data -------------------------------------------------------------
 
 
