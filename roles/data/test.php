@@ -1,6 +1,7 @@
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <?php
-
-$data_path = '../uploads/niaz_ds/1514025376.0947/DemoData.zip';
-$filesize = filesize(realpath($data_path));
-echo $filesize;
+ if(isset($_REQUEST['name']))
+ {
+     echo "Your name is : ".$_REQUEST['name'];
+ }
 ?>
