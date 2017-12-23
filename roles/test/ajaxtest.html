@@ -7,24 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="aj-test"></div>
-    <hr>
-    <script>
-        var http = new XMLHttpRequest();
-var url = "http://localhost/DataShelf/roles/data/test.php";
-var params = "name=Niaz";
-http.open("POST", url, true);
-
-//Send the proper header information along with the request
-http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-http.onreadystatechange = function() {//Call a function when the state changes.
-    if(http.readyState == 4 && http.status == 200) {
-        alert("response");
-        document.getElementById('aj-test').innerHTML = (http.responseText);
-    }
-}
-http.send(params);
-    </script>
+    
 </body>
 </html>
+<body onload="add(23252)">
+    <div id="result">
+
+    </div>
+    <script>
+    function add(mds_id)
+    {
+        var http = new XMLHttpRequest();
+        var url = "http://localhost/DataShelf/roles/control/cart_controller.php";
+        var params = `mds_id=${mds_id}&action=add`;
+        http.open("POST", url, true);
+    
+    
+        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    
+        http.onreadystatechange = function() {
+            if(http.readyState == 4 && http.status == 200) {
+                alert(JSON.parse((http.responseText)).status);
+            }
+        }
+        http.send(params)
+    }
+    </script>
+</body>

@@ -130,10 +130,9 @@
 
               <td width="52%"></td>
 
-              <td width="16%" align="right">
-                <a href="cart.php">
-                  <button type="button" name="addToCart">Add to Cart</button>
-                </a>
+              <td width="16%" align="right">                
+                  <button type="button" id="cart-add" name="addToCart" onclick="add(<?=$mds_id?>)" >Add to Cart</button>
+                  <button type="button" style="display: none;" id="cart-remove" name="addToCart" onclick="remove(<?=$mds_id?>)" >Remove from Cart</button>                  
               </td>
             </tr>
 
@@ -215,5 +214,6 @@
         </td>
       </tr>
     </table>
+    <script type="text/javascript" src="./js/cart.js"></script>
   </body>
 </html>

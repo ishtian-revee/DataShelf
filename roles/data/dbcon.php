@@ -32,5 +32,21 @@ define("DBNAME","dshelf",true);
         return $result;
     }
 
+    function execute_query_V2($sql)
+    {   
+       
+       // global $conn;
+       $servername = "localhost";
+       $username = "root";
+       $password = "";
+       $dbname = "datashelf";
+        $conn = mysqli_connect(SERVERNAME, USERNAME, PASSWORD, DBNAME) or die("<h1 align='center'>503 Service Unavailable<h1><hr>");
+        
+        $result = mysqli_query($conn,$sql);
+        $rows = mysqli_affected_rows($conn);
+        mysqli_close($conn);
+        
+        return $rows;
+    }
 
 ?>
