@@ -1,7 +1,7 @@
 function add(mds_id)
 {
     var http = new XMLHttpRequest();
-    var url = "http://localhost/DataShelf/roles/control/cart_controller.php";
+    var url = "http://localhost/DataShelf/roles/data/cart_api.php";
     var params = `mds_id=${mds_id}&action=add`;
     http.open("POST", url, true);
 
@@ -24,7 +24,7 @@ function add(mds_id)
 function remove(mds_id)
 {
     var http = new XMLHttpRequest();
-    var url = "http://localhost/DataShelf/roles/control/cart_controller.php";
+    var url = "http://localhost/DataShelf/roles/data/cart_api.php";
     var params = `mds_id=${mds_id}&action=remove`;
     http.open("POST", url, true);
 
