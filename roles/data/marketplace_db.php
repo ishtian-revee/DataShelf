@@ -10,6 +10,14 @@
     
         return execute_query($sql);
     }
+
+    function get_all_info($mds_id)
+    {
+        $sql = "SELECT * from marketplace_datasets where mds_id = $mds_id";
+        $result = execute_query($sql);
+
+        return mysqli_fetch_assoc($result);
+    }
    function get_mp_titles()
    {
 

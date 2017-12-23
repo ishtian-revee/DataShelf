@@ -79,7 +79,7 @@
                   <table width="100%" cellspacing="0" cellpadding="0">
                     <tr>
                       <td>
-                        <p><font face="calibri" color="#888888" size="4">Uploaded : <?=$upload_date?> days ago </font></p>
+                        <p><font face="calibri" color="#888888" size="4">Uploaded : <?=$upload_date?></font></p>
                       </td>
 
                       <td align="right">
@@ -152,7 +152,7 @@
                 <hr width="200" noshade="noshade" align="left">
                 <br>
                 <p><font face="calibri" color="#888888" size="4"><b>Screenshot of the data</font></p>
-                <img src="../res/website/dataset.png" alt="Dataset Screenshot" width="70%">
+                <img src=<?=$ss_src?> alt="Dataset Screenshot" width="50%">
                 <br><br>
               </td>
             </tr>

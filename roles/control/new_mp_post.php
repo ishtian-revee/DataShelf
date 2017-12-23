@@ -57,6 +57,10 @@
 
         if($is_file_uploaded)
         {
+            $data_file_dest = '../'.$file_path.'/'.$datafile_name;
+            $data_sc_dest = '../'.$file_path.'/'.$data_sc_name;
+
+
             if(add_mp_dataset($title,$short_description,$price,$uploader,$context,$content,$data_file_dest,$data_sc_dest,$tags))
             {
                 header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_new_dataset.php?status=success#status');
