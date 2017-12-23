@@ -62,7 +62,7 @@
                 </td>
 
                 <td align="right">
-                  <h2><font face="calibri" color="#888888">$<?=$price?></font></h2>
+                  <h2><font face="calibri" color="#888888"><?=$price?></font></h2>
                 </td>
               </tr>
 
@@ -77,11 +77,11 @@
                   <table width="100%" cellspacing="0" cellpadding="0">
                     <tr>
                       <td>
-                        <p><font face="calibri" color="#888888" size="4">Uploaded : <?=$upload_date?> days ago</font></p>
+                        <p><font face="calibri" color="#888888" size="4">Uploaded : <?=$upload_date?></font></p>
                       </td>
 
                       <td align="right">
-                        <p><font face="calibri" color="#888888" size="4">29 downloads</font></p>
+                        <p><font face="calibri" color="#888888" size="4"><?=$downloads?></font></p>
                       </td>
                     </tr>
                   </table>

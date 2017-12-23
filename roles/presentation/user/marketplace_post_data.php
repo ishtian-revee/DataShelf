@@ -64,7 +64,7 @@
                 </td>
 
                 <td align="right">
-                  <h2><font face="calibri" color="#888888">$<?=$price?></font></h2>
+                  <h2><font face="calibri" color="#888888"><?=$price?></font></h2>
                 </td>
               </tr>
 
@@ -83,7 +83,7 @@
                       </td>
 
                       <td align="right">
-                        <p><font face="calibri" color="#888888" size="4">29 downloads</font></p>
+                        <p><font face="calibri" color="#888888" size="4"><?=$downloads?></font></p>
                       </td>
                     </tr>
                   </table>
@@ -142,7 +142,7 @@
 
             <tr>
               <td colspan="7">
-                <p><font face="calibri" color="#888888" size="4"><b>File Name: </b><?=$filename?>.zip (<?=$filesize?>)</font></p>
+                <p><font face="calibri" color="#888888" size="4"><b>File Name: </b><?=$filename?> (<?=$filesize?>)</font></p>
               </td>
             </tr>
 
