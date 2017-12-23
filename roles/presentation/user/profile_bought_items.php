@@ -155,10 +155,16 @@
                       <p><font face="calibri" color="#888888" size="3"><b>Bruce Wayne</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
                     </td>
 
-                    <td colspan="2" align="center">
+                    <!-- modified code _____________________________________ -->
+                    <td colspan="1" align="center">
                       <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
                       <label><font face="calibri" color="#888888" size="4">all.zip</font></label>
                     </td>
+
+                    <td colspan="1" align="center">
+                      <button type="button" name="download">Download</button>
+                    </td>
+                    <!-- modified code _____________________________________ -->
                   </tr>
 
                   <!-- temporary -->
@@ -174,10 +180,16 @@
                       <p><font face="calibri" color="#888888" size="3"><b>Bruce Wayne</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
                     </td>
 
-                    <td colspan="2" align="center">
+                    <!-- modified code _____________________________________ -->
+                    <td colspan="1" align="center">
                       <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
                       <label><font face="calibri" color="#888888" size="4">all.zip</font></label>
                     </td>
+
+                    <td colspan="1" align="center">
+                      <button type="button" name="download">Download</button>
+                    </td>
+                    <!-- modified code _____________________________________ -->
                   </tr>
 
                   <tr>
@@ -191,10 +203,16 @@
                       <p><font face="calibri" color="#888888" size="3"><b>Bruce Wayne</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
                     </td>
 
-                    <td colspan="2" align="center">
+                    <!-- modified code _____________________________________ -->
+                    <td colspan="1" align="center">
                       <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
                       <label><font face="calibri" color="#888888" size="4">all.zip</font></label>
                     </td>
+
+                    <td colspan="1" align="center">
+                      <button type="button" name="download">Download</button>
+                    </td>
+                    <!-- modified code _____________________________________ -->
                   </tr>
 
                   <!-- temporary -->
