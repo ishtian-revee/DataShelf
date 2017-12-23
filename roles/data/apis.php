@@ -8,7 +8,7 @@
 
         if($api_name == 'mpds')
         {
-            $result = get_mp_datasets();
+            $result = get_mp_datasets_V2();
             $rows = array();
             while($r = mysqli_fetch_assoc($result)) 
             {

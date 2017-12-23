@@ -30,6 +30,14 @@
        return execute_query($sql);
    }
 
+   function get_mp_datasets_V2()
+   {
+       $sql = "SELECT 
+       mds_id,title,short_description,uploader,tags,price,downloads,
+       DATEDIFF(upload_date,CURRENT_TIMESTAMP) as upload_date from marketplace_datasets";
+       return execute_query($sql);
+   }
+
    function get_mp_featured_datasets()
    {
        $sql = "SELECT * from marketplace_datasets";

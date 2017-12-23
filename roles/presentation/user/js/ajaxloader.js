@@ -1,4 +1,4 @@
- function add_dataset(id,title,short_description,price,uploader,downloads,tags,div_id)
+ function add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id)
       {
 
        var  template =
@@ -13,12 +13,12 @@
                 <a href="marketplace_post.php?id=${id}">
                   <p><font face="calibri" color="#444444" size="4"><b>${title}</b><br>${short_description}</font></p>
                 </a>
-                <p><font face="calibri" color="#888888" size="3"><b>${uploader}</b> &middot; updated 2 days ago &middot; <b>Tags:</b> ${tags}</font></p>
+                <p><font face="calibri" color="#888888" size="3"><b>${uploader}</b> &middot; Updated ${upload_date} &middot; <b>Tags:</b> ${tags}</font></p>
                 <br>
               </td>
 
               <td width="18%" align="center" valign="center">
-                <a href="marketplace_post.php">
+                <a href="marketplace_post.php?sid=${id}">
                   <label><font face="calibri" color="#888888" size="4">$${price}</font></label><br>
                   <label><font face="calibri" color="#888888" size="4">${downloads} downloads</font></label>
                 </a>
@@ -58,13 +58,13 @@
               console.log(title);
               var short_description = ds[i].short_description;
               var price = ds[i].price;
+              var upload_date = ds[i].upload_date==0?"Today":ds[i].upload_date+" days ago";
+              
               var uploader = ds[i].uploader;
-              var context = ds[i].context;
-              var content = ds[i].content;
               var downloads = ds[i].downloads;
               var tags = ds[i].tags;
 
-              add_dataset(id,title,short_description,price,uploader,downloads,tags,div_id);
+              add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id);
            }
         }
       }
@@ -101,7 +101,7 @@
               var downloads = ds[i].downloads;
               var tags = ds[i].tags;
 
-              add_dataset(id,title,short_description,price,uploader,downloads,tags,div_id);
+              add_dataset(id,title,short_description,upload,date,price,uploader,downloads,tags,div_id);
            }
         }
       }
