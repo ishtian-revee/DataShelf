@@ -6,12 +6,6 @@
         if($_SESSION['is_logged_in'])
         {
             $username = $_SESSION["username"];
-            $name = get_name($username);
-            $email = get_email($username);
-            $phone = get_phone($username);
-            $profession = get_profession($username);
-            $gender = get_gender($username);
-            $dob = get_dob($username);
 
             $context =
             '

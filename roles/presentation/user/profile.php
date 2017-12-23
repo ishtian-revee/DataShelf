@@ -1,5 +1,6 @@
 <?php
-  require "../../control/logincheck.php"
+  require_once "../../control/logincheck.php";
+  require_once "../../control/profile_controller.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -65,7 +66,7 @@
 
             <tr>
               <td>
-                <p><font face="calibri" color="#888888" size="4">Joined 2 months ago</font></p>
+                <p><font face="calibri" color="#888888" size="4">Joined <?=$joined?></font></p>
               </td>
             </tr>
 
@@ -196,6 +197,15 @@
 
                     <td colspan="6">
                       <p><font face="calibri" color="#888888" size="4"><b><?=$dob?></b></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="4">
+                      <h3><font face="calibri" color="#444444">Joined On :</font></h3>
+                    </td>
+
+                    <td colspan="6">
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$joined?></b></font></p>
                     </td>
                   </tr>
                 </table>

@@ -1,5 +1,6 @@
 <?php
-  require "../../control/logincheck.php"
+  require "../../control/logincheck.php";
+  require "../../control/profile_competitions_controller.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -65,7 +66,7 @@
 
             <tr>
               <td>
-                <p><font face="calibri" color="#888888" size="4">Joined 2 months ago</font></p>
+                <p><font face="calibri" color="#888888" size="4">Joined <?=$joined?></font></p>
               </td>
             </tr>
 

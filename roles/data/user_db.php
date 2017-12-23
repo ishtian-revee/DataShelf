@@ -31,6 +31,18 @@
 
     // retrieve data -----------------------------------------------------------
 
+    function get_user_data_V2($username)
+    {
+      $sql =  "SELECT 
+      `username`,`name`,`email`,`phone`,`profession`,`gender`,`dob`,`pp_path`,
+      DATEDIFF(CURRENT_TIMESTAMP,`registration_date`) as registration_date 
+      FROM users 
+      where username = '$username'";
+      $result = execute_query($sql);
+
+      return mysqli_fetch_assoc($result);
+    }
+
     function get_user_password($username)
     {
 
