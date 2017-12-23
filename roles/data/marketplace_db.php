@@ -34,7 +34,7 @@
    {
        $sql = "SELECT 
        mds_id,title,short_description,uploader,tags,price,downloads,
-       DATEDIFF(upload_date,CURRENT_TIMESTAMP) as upload_date from marketplace_datasets";
+       DATEDIFF(CURRENT_TIMESTAMP,upload_date) as upload_date from marketplace_datasets";
        return execute_query($sql);
    }
 
@@ -89,7 +89,7 @@
    function get_upload_date_by_id($id)
    {
 
-        $sql = "SELECT DATEDIFF(upload_date,CURRENT_TIMESTAMP) as upload_date from marketplace_datasets where mds_id = $id";
+        $sql = "SELECT DATEDIFF(CURRENT_TIMESTAMP,upload_date) as upload_date from marketplace_datasets where mds_id = $id";
         $result = execute_query($sql);
 
         return mysqli_fetch_assoc($result)['upload_date'];
