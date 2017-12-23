@@ -1,23 +1,20 @@
 <?php
 
-// //Local MySQL Server
-// define("SERVERNAME", "localhost", true);
-// define("USERNAME", "root", true);
-// define("PASSWORD", "", true);
-// define("DBNAME","datashelf",true);
-
-//Remote MySQL Server
-define("SERVERNAME", "db4free.net:3307", true);
-define("USERNAME", "dshelf", true);
-define("PASSWORD", "dshelf1234", true);
+//Local MySQL Server
+define("SERVERNAME", "localhost", true);
+define("USERNAME", "root", true);
+define("PASSWORD", "", true);
 define("DBNAME","dshelf",true);
 
+// //Remote MySQL Server
+// define("SERVERNAME", "db4free.net:3307", true);
+// define("USERNAME", "dshelf", true);
+// define("PASSWORD", "dshelf1234", true);
+// define("DBNAME","dshelf",true);
 
-    function destroy_connection()
-    {
-        global $conn;
-        mysqli_close($conn);
-    }
+
+
+
 
     function execute_query($sql)
     {   

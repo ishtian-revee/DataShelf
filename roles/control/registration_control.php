@@ -1,7 +1,7 @@
 <?php
 
-require "fieldvalidator.php";
-require "../data/user_db.php";
+require_once "fieldvalidator.php";
+require_once "../data/user_db.php";
 
 // $name = $_POST['name'];
 // $email = $_POST['email'];

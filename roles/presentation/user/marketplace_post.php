@@ -1,6 +1,6 @@
 <?php
-  require "../../control/logincheck.php";
-  require "../../control/marketplace_post_controller.php";
+  require_once "../../control/logincheck.php";
+  require_once "../../control/marketplace_post_controller.php";
 ?>
 
 <!DOCTYPE html>

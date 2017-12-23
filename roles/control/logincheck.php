@@ -1,12 +1,11 @@
 <?php
     session_start();
-    require "../../data/user_db.php";
+    require_once "../../data/user_db.php";
     if(isset($_SESSION['is_logged_in']))
     {
         if($_SESSION['is_logged_in'])
         {
             $username = $_SESSION["username"];
-            $password = $_SESSION["password"];
             $name = get_name($username);
             $email = get_email($username);
             $phone = get_phone($username);

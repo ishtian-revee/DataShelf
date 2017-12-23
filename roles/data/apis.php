@@ -1,6 +1,6 @@
 <?php
 
-    require "marketplace_db.php";
+    require_once "marketplace_db.php";
 
     if(isset($_GET['api']) and !empty($_GET['api']))
     {

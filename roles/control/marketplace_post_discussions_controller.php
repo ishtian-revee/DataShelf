@@ -1,5 +1,5 @@
 <?php
-require "../../data/marketplace_db.php";
+require_once "../../data/marketplace_db.php";
 
 if(isset($_GET['id']))
 {

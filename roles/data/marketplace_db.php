@@ -1,5 +1,5 @@
 <?php
-    require "dbcon.php";
+    require_once "dbcon.php";
 
 
     function add_mp_dataset($title,$short_description,$price,$uploader,$context,$content,$data_path,$ss_path,$tags)

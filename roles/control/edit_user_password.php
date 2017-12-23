@@ -1,7 +1,7 @@
 <?php
 
-  require "../data/user_db.php";
-  require "fieldvalidator.php";
+  require_once "../data/user_db.php";
+  require_once "fieldvalidator.php";
   session_start();
 
   if(isset($_POST['current_password']) and isset($_POST['new_password']) and

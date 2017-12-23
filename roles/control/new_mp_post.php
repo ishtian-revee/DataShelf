@@ -1,5 +1,5 @@
 <?php
-    require "../data/marketplace_db.php";
+    require_once "../data/marketplace_db.php";
     session_start();
     
     $is_file_uploaded = FALSE;
@@ -31,12 +31,18 @@
        $price = $_POST['price'] ;
        $tags = $_POST['tags'];
         
-       //creating individual folder for each user to store their uploads
-       $file_path = '../uploads/'.$_SESSION['username'];
+       $time    = microtime(true);
+
+       //creating individual folder by username and microtime for each upload to enable 
+       // uploading with the same filename multiple time.
+       // Risky solution for slower processors.
+       $file_path = '../uploads/'.$_SESSION['username']."/".$time;
+
+     
+       
        $data_file_dest = $file_path.'/'.$datafile_name;
        $data_sc_dest = $file_path.'/'.$data_sc_name;
 
-      
         if(!is_dir($file_path))
         {
             
