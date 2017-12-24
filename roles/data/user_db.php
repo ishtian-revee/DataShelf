@@ -3,9 +3,9 @@
 
     // create data -------------------------------------------------------------
 
-    function add_user($name,$email,$username,$password,$phone,$profession,$gender,$dob)
+    function add_user($name,$email,$username,$password,$phone,$profession,$gender,$status,$dob)
     {
-        $sql = "INSERT INTO users(`name`,`email`,`username`,`password`,`phone`,`profession`,`gender`,`dob`)
+        $sql = "INSERT INTO users(`name`,`email`,`username`,`password`,`phone`,`profession`,`gender`,`status`,`dob`)
         VALUES
         (
             '$name',
@@ -15,6 +15,7 @@
             '$phone',
             '$profession',
             '$gender',
+            '$status',
             STR_TO_DATE('$dob', '%d-%m-%Y')
         )
         ";
@@ -22,8 +23,30 @@
         echo $sql;
 
        return execute_query($sql);
-
     }
+
+    // function add_user($name,$email,$username,$password,$phone,$profession,$gender,$dob)
+    // {
+    //
+    //    $sql = "INSERT INTO users(`name`,`email`,`username`,`password`,`phone`,`profession`,`gender`,`dob`)
+    //    VALUES
+    //    (
+    //        '$name',
+    //        '$email',
+    //        '$username',
+    //        '$password',
+    //        '$phone',
+    //        '$profession',
+    //        '$gender',
+    //        STR_TO_DATE('$dob', '%d-%m-%Y')
+    //    )
+    //    ";
+    //
+    //    echo $sql;
+    //
+    //   return execute_query($sql);
+    //
+    // }
 
     // create data -------------------------------------------------------------
 
@@ -33,10 +56,10 @@
 
     function get_user_data_V2($username)
     {
-      $sql =  "SELECT 
+      $sql =  "SELECT
       `username`,`name`,`email`,`phone`,`profession`,`gender`,`dob`,`pp_path`,
-      DATEDIFF(CURRENT_TIMESTAMP,`registration_date`) as registration_date 
-      FROM users 
+      DATEDIFF(CURRENT_TIMESTAMP,`registration_date`) as registration_date
+      FROM users
       where username = '$username'";
       $result = execute_query($sql);
 
@@ -161,6 +184,13 @@
       return execute_query($sql);
     }
 
+    function approve_user($username)
+    {
+
+        $sql = "";
+
+    }
+
     // update data -------------------------------------------------------------
 
 
@@ -179,13 +209,6 @@
 
 
     // other data --------------------------------------------------------------
-
-    function approve_user($username)
-    {
-
-        $sql = "";
-
-    }
 
     // other data --------------------------------------------------------------
 

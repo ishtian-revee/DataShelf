@@ -213,6 +213,26 @@ function is_password_valid(password){
   }
 }
 
+// this function checks if the password is matching or not
+function is_password_matching(password1, password2){
+
+  if(password1 != "" && password2 != ""){
+
+    if(password1 == password2){
+
+      return true;
+    }else{
+
+      alert("Password doesn't match!");
+      return false;
+    }
+  }else{
+
+    alert("Please provide both password section correctly!");
+    return false;
+  }
+}
+
 // this function checks if the password is valid or not
 function is_phone_valid(phone){
 

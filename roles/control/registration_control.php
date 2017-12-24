@@ -54,6 +54,7 @@ $day = $_POST['day'];
 $month = $_POST['month'];
 $year = $_POST['year'];
 $term = $_POST['term'];
+$status = 0;
 
 $valid_form = is_form_data_valid($name, $email, $username, $password, $confirm_pass,
 $phone, $profession, $gender, $day, $month, $year, $term);
@@ -62,9 +63,9 @@ if($valid_form){
 
   $dob = $day."-".$month."-".$year;
 
-  if(add_user($name, $email, $username, $password, $phone, $profession, $gender, $dob)){
+  if(add_user($name, $email, $username, $password, $phone, $profession, $gender, $status, $dob)){
 
-      header("location:../presentation/user/home.html");
+      header("location:../presentation/user/home.php");
   }else{
 
       echo "Registration Failed";
