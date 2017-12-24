@@ -44,7 +44,6 @@
             {
                 $username = $_SESSION['username'];
                 $sql = "SELECT * from cart_view where username = '$username'";
-
                 $result = execute_query($sql);
                 $rows = array();
                 while($r = mysqli_fetch_assoc($result)) 
@@ -59,6 +58,21 @@
             {
                 echo "Unauthorized";
             }
+        }
+        if($action == 'cart_total')
+        {
+            $username = $_SESSION['username'];
+            $sql = "SELECT round(SUM(price),2) as total from cart_view WHERE username='$username'";
+            $result = execute_query($sql);
+            $rows = array();
+            while($r = mysqli_fetch_assoc($result)) 
+            {
+                array_push($rows,$r);
+            }
+
+            header('Content-type: text/javascript');
+            echo json_encode($rows,JSON_PRETTY_PRINT);
+            
         }
         
    }

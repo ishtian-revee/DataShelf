@@ -70,18 +70,16 @@
                       <th width="10%"><font face="calibri" color="#444444">Price</font></th>
                       <th width="12%"><font face="calibri" color="#444444">Action</font></th>
                   </tr>
-                    <!-- <div id="cart">
-                    </div> -->
                   </table>
                 </td>
               </tr>
     
               <tr>
-                <td align="right">
+                <td align="right" id="total">
                   <br><br>
                   <hr width="300" noshade="noshde" align="right">
                   <label><font face="calibri" color="#888888" size="5"><b>Cart Total: </b></font></label>
-                  <label><font face="calibri" color="#444444" size="5"><b>$36000</b></font></label>
+                  <label><font face="calibri" color="#444444" size="5"><b id="ct"></b></font></label>
                 </td>
               </tr>
 
@@ -153,6 +151,6 @@
         </td>
       </tr>
     </table>
-    <script type="text/javascript" src="./js/cart.js"></script>
+    <script type="text/javascript" src="./js/cartV2.js"></script>
   </body>
 </html>
