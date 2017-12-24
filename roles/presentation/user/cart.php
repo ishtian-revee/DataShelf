@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="dpbtn.css">
   </head>
 
-  <body>
+  <body onload="load_cart()">
     <br>
     <table width="1000" align="center" cellspacing="0" cellpadding="0">
       <tr>
@@ -51,7 +51,6 @@
       <tr>
         <td colspan="8">
           <br><br><br>
-          <form action="home.php">
             <table width="100%" align="center" cellspacing="0" cellpadding="0">
               <tr>
                 <td align="center">
@@ -59,52 +58,24 @@
                   <hr noshade="noshade" width="300">
                 </td>
               </tr>
-
               <tr>
                 <td>
                   <br><br>
-                  <table width="100%" align="center" cellspacing="0" cellpadding="0">
-                    <tr>
+                  <table width="100%" align="center" cellspacing="0" cellpadding="0" id='cart'>
+                    
+                  <tr>
                       <th width="4%"><font face="calibri" color="#444444">SL.</font></th>
                       <th width="48%"><font face="calibri" color="#444444">Dataset</font></th>
                       <th width="26%"><font face="calibri" color="#444444">Uploader</font></th>
                       <th width="10%"><font face="calibri" color="#444444">Price</font></th>
                       <th width="12%"><font face="calibri" color="#444444">Action</font></th>
-                    </tr>
-
-                    <tr>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">1.</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">Global Terrorism Database</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">Elon Musk</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">$12000</b></font></p></td>
-                      <td align="center">
-                        <button type="button" name="remove">Remove</button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">2.</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">Global Terrorism Database</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">Elon Musk</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">$12000</b></font></p></td>
-                      <td align="center">
-                        <button type="button" name="remove">Remove</button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">3.</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">Global Terrorism Database</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">Elon Musk</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">$12000</b></font></p></td>
-                      <td align="center">
-                        <button type="button" name="remove">Remove</button>
-                      </td>
-                    </tr>
+                  </tr>
+                    <!-- <div id="cart">
+                    </div> -->
                   </table>
                 </td>
               </tr>
-
+    
               <tr>
                 <td align="right">
                   <br><br>
@@ -128,7 +99,6 @@
                 <td colspan="3"><br><br><br><hr noshade="noshade"></td>
               </tr>
             </table>
-          </form>
         </td>
       </tr>
 
@@ -183,5 +153,6 @@
         </td>
       </tr>
     </table>
+    <script type="text/javascript" src="./js/cart.js"></script>
   </body>
 </html>

@@ -35,6 +35,33 @@
             }
         }       
    }
+   else if(isset($_GET['action']))
+   {
+        $action = $_GET['action'];
+        if($action=='loadcart')
+        {
+            if(isset($_SESSION['username']))
+            {
+                $username = $_SESSION['username'];
+                $sql = "SELECT * from cart_view where username = '$username'";
+
+                $result = execute_query($sql);
+                $rows = array();
+                while($r = mysqli_fetch_assoc($result)) 
+                {
+                    array_push($rows,$r);
+                }
+
+                header('Content-type: text/javascript');
+                echo json_encode($rows,JSON_PRETTY_PRINT);
+            }
+            else
+            {
+                echo "Unauthorized";
+            }
+        }
+        
+   }
    else
    {
        echo "Invalid Request Parameter";
