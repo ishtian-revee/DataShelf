@@ -35,9 +35,7 @@
           <a href="discussions.php"><h3><font face="calibri" color="#888888">Discussions</font></h3></a>
         </td>
 
-        <td width="9%" align="center">
-          <a href="cart.php"><h3><font face="calibri" color="#888888">Cart</font></h3></a>
-        </td>
+        <?=$cart?>
 
         <td width="3%" align="center">
           <h3><font face="calibri" color="#444444">|</font></h3>

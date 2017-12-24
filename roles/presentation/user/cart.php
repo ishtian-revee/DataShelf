@@ -36,7 +36,7 @@
         </td>
 
         <td width="9%" align="center">
-          <a href="cart.php"><h3><font face="calibri" color="#444444">Cart</font></h3></a>
+            <a href="cart.php"><h3><font face="calibri" color="#444444">Cart</font></h3></a>
         </td>
 
         <td width="3%" align="center">
@@ -62,7 +62,7 @@
                 <td>
                   <br><br>
                   <table width="100%" align="center" cellspacing="0" cellpadding="0" id='cart'>
-                    
+
                   <tr>
                       <th width="4%"><font face="calibri" color="#444444">SL.</font></th>
                       <th width="48%"><font face="calibri" color="#444444">Dataset</font></th>
@@ -73,7 +73,7 @@
                   </table>
                 </td>
               </tr>
-    
+
               <tr>
                 <td align="right" id="total">
                   <br><br>
