@@ -89,7 +89,7 @@
 
               <tr>
                 <td align="right">
-                  <input type="submit" name="proceed" value="Proceed To Checkout">
+                  <input type="submit" name="proceed" value="Proceed To Checkout" onclick ='window.location = "../../control/purchase_controller.php"'>
                 </td>
               </tr>
 

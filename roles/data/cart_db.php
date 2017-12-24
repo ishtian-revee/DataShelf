@@ -31,4 +31,11 @@
         return $result==0?false:true;
     }
 
+    function get_all_cart_items_as_Obj()
+    {
+        $username = $_SESSION['username'];
+        $sql = "SELECT * from carts where username = '$username'";
+        return execute_query($sql);
+    }
+
 ?>

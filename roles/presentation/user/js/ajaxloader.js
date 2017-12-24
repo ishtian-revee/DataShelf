@@ -18,7 +18,7 @@
               </td>
 
               <td width="18%" align="center" valign="center">
-                <a href="marketplace_post.php?sid=${id}">
+                <a href="marketplace_post.php?id=${id}">
                   <label><font face="calibri" color="#888888" size="4">$${price}</font></label><br>
                   <label><font face="calibri" color="#888888" size="4">${downloads} downloads</font></label>
                 </a>

@@ -52,7 +52,7 @@ function generate_cart(SL,dataset,uploader,price,mds_id,div_id)
                       <td align="center"><p><font face="calibri" color="#888888" size="4">${SL}.</b></font></p></td>
                       <td align="center"><p><font face="calibri" color="#888888" size="4">${dataset}</b></font></p></td>
                       <td align="center"><p><font face="calibri" color="#888888" size="4">${uploader}</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">${price}</b></font></p></td>
+                      <td align="center"><p><font face="calibri" color="#888888" size="4">$ ${price}</b></font></p></td>
                       <td align="center">
                         <button type="button" name="remove" onclick="remove(${mds_id},${SL})">Remove</button>
                       </td>
