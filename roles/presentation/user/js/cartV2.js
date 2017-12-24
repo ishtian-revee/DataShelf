@@ -81,7 +81,7 @@ function get_cart_total()
             var cart_total = JSON.parse(request.responseText);
             total_price = cart_total[0].total;
            // console.log(cart_total[0].total);
-            document.getElementById('ct').innerHTML = "$ "+total_price;
+            document.getElementById('ct').innerHTML = "$ "+(total_price===null?0:total_price);
           }
           
            
