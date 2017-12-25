@@ -23,6 +23,7 @@ if(isset($_SESSION['is_logged_in']))
     $registration_date = $user_info['registration_date'];
     $joined= deal_with_day($registration_date);
     $joinedon = get_registration_date();
+    $pp_path = $user_info['pp_path'];
 
 }
 

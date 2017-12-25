@@ -192,11 +192,12 @@
       return execute_query($sql);
     }
 
-    function update_pp_path()
+    function update_pp_path($path)
     {
       $username = $_SESSION['username'];
-      $sql = "INSERT into users SET pp_path = '$path' where username = '$username'";
-
+      $sql = "UPDATE users SET pp_path = '$path' where username = '$username'";
+      echo $sql;
+     // die();
       return execute_query($sql);
     }
     function approve_user($username)

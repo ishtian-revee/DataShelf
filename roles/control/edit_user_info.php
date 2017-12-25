@@ -20,6 +20,8 @@
     $day = $_POST['day'];
     $month = $_POST['month'];
     $year = $_POST['year'];
+    
+
 
     $valid_username = is_username_valid($username);
     $valid_name = is_name_valid($name);
@@ -31,6 +33,16 @@
 
     if($valid_username and $valid_name and $valid_email and $valid_phone and
     $valid_profession and $valid_gender and $valid_dob){
+
+      if(isset($_FILES))
+      {
+        $time    = microtime(true);
+        $moving_path ="../uploads/pp/".$_FILES['profile_picture']['name'];
+        $presenatation_rel_path = "../../uploads/pp/".$_FILES['profile_picture']['name'];
+        move_uploaded_file($_FILES['profile_picture']['tmp_name'],$moving_path);
+        update_pp_path($presenatation_rel_path);
+       
+      }
 
       $dob = $day."-".$month."-".$year;
 
