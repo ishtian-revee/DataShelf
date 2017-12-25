@@ -142,78 +142,8 @@
                     <td colspan="10"><br></td>
                   </tr>
 
-                  <tr>
-                    <td colspan="2" align="center">
-                      <img src="../res/website/ic_user_3.png" alt="User Profile Pic" width="50">
-                    </td>
+                  <?php load_bought_items() ?>
 
-                    <td colspan="6">
-                      <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                        labeled as fraudulent or genuine</font></p>
-                      <p><font face="calibri" color="#888888" size="3"><b>Bruce Wayne</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                    </td>
-
-                    <!-- modified code _____________________________________ -->
-                    <td colspan="1" align="center">
-                      <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                      <label><font face="calibri" color="#888888" size="4">all.zip</font></label>
-                    </td>
-
-                    <td colspan="1" align="center">
-                      <button type="button" name="download">Download</button>
-                    </td>
-                    <!-- modified code _____________________________________ -->
-                  </tr>
-
-                  <!-- temporary -->
-
-                  <tr>
-                    <td colspan="2" align="center">
-                      <img src="../res/website/ic_user_5.png" alt="User Profile Pic" width="50">
-                    </td>
-
-                    <td colspan="6">
-                      <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                        labeled as fraudulent or genuine</font></p>
-                      <p><font face="calibri" color="#888888" size="3"><b>Bruce Wayne</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                    </td>
-
-                    <!-- modified code _____________________________________ -->
-                    <td colspan="1" align="center">
-                      <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                      <label><font face="calibri" color="#888888" size="4">all.zip</font></label>
-                    </td>
-
-                    <td colspan="1" align="center">
-                      <button type="button" name="download">Download</button>
-                    </td>
-                    <!-- modified code _____________________________________ -->
-                  </tr>
-
-                  <tr>
-                    <td colspan="2" align="center">
-                      <img src="../res/website/ic_user_1.png" alt="User Profile Pic" width="50">
-                    </td>
-
-                    <td colspan="6">
-                      <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                        labeled as fraudulent or genuine</font></p>
-                      <p><font face="calibri" color="#888888" size="3"><b>Bruce Wayne</b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                    </td>
-
-                    <!-- modified code _____________________________________ -->
-                    <td colspan="1" align="center">
-                      <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                      <label><font face="calibri" color="#888888" size="4">all.zip</font></label>
-                    </td>
-
-                    <td colspan="1" align="center">
-                      <button type="button" name="download">Download</button>
-                    </td>
-                    <!-- modified code _____________________________________ -->
-                  </tr>
-
-                  <!-- temporary -->
                 </table>
               </td>
             </tr>

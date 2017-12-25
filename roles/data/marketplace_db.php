@@ -104,4 +104,11 @@
     return mysqli_fetch_assoc($result)['price'];
    }
 
+   function get_bought_items($username)
+   {
+    $sql = "SELECT * from marketplace_datasets md, purchases pd where pd.mds_id = md.mds_id and pd.username='$username'";
+    $result = execute_query($sql);
+     return $result;    
+   }
+
 ?>
