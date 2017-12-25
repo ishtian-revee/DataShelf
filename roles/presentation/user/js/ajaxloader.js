@@ -1,4 +1,4 @@
- function add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id)
+ function add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path)
       {
 
        var  template =
@@ -6,7 +6,7 @@
         <table width="100%" cellspacing="5" cellpadding="0">
             <tr>
               <td width="10%" align="center">
-                <img src="../res/website/ic_user_1.png" alt="User Profile Pic" width="60">
+                <img src="${pp_path}" alt="User Profile Pic" width="60">
               </td>
 
               <td width="72%" valign="top">
@@ -63,8 +63,9 @@
               var uploader = ds[i].uploader;
               var downloads = ds[i].downloads;
               var tags = ds[i].tags;
+              var pp_path = ds[i].pp_path;
 
-              add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id);
+              add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path);
            }
         }
       }

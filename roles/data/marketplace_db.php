@@ -32,9 +32,7 @@
 
    function get_mp_datasets_V2()
    {
-       $sql = "SELECT 
-       mds_id,title,short_description,uploader,tags,price,downloads,
-       DATEDIFF(CURRENT_TIMESTAMP,upload_date) as upload_date from marketplace_datasets";
+       $sql = "SELECT m.mds_id,m.title,u.pp_path,m.short_description,m.uploader,m.tags,m.price,m.downloads,DATEDIFF(CURRENT_TIMESTAMP,m.upload_date) as upload_date from marketplace_datasets m,users u where m.uploader=u.username;";
        return execute_query($sql);
    }
 
