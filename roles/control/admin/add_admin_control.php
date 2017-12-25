@@ -1,7 +1,7 @@
 <?php
 
   require "admin_field_validator.php";
-  require "../data/admin_db.php";
+  require "../../data/admin_db.php";
 
   $name = $_POST['name'];
   $email = $_POST['email'];

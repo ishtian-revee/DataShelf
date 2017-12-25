@@ -31,6 +31,18 @@
 
     // retrieve data -----------------------------------------------------------
 
+    function get_admin_data_V2($username)
+    {
+      $sql =  "SELECT
+      `username`,`name`,`email`,`phone`,`gender`,`hire_date`,`pp_path`,
+      DATEDIFF(CURRENT_TIMESTAMP,`registration_date`) as registration_date
+      FROM admins
+      where username = '$username'";
+      $result = execute_query($sql);
+
+      return mysqli_fetch_assoc($result);
+    }
+
     function get_admin_password($username)
     {
 
@@ -109,15 +121,14 @@
 
     // update data -------------------------------------------------------------
 
-    function update_admin_info($username, $name, $email, $phone, $gender, $hire_date){
+    function update_admin_info($username, $name, $email, $phone, $gender){
 
       $sql = "UPDATE admins SET
       username='$username',
       name='$name',
       email='$email',
       phone='$phone',
-      gender='$gender',
-      hire_date=STR_TO_DATE('$hire_date', '%d-%m-%Y')
+      gender='$gender'
       WHERE username='$username'";
 
       return execute_query($sql);

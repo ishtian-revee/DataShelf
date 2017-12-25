@@ -1,84 +1,3 @@
-// function validateForm(){
-//
-//   // input data
-//   var name = document.forms["signup_form"]["name"].value;
-//   var email = document.forms["signup_form"]["email"].value;
-//   var username = document.forms["signup_form"]["username"].value;
-//   var password = document.forms["signup_form"]["password"].value;
-//   var phone = document.forms["signup_form"]["phone"].value;
-//   var profession = document.forms["signup_form"]["profession"].value;
-//   var gender = document.forms["signup_form"]["gender"].value;
-//   var day = document.forms["signup_form"]["day"].value;
-//   var month = document.forms["signup_form"]["month"].value;
-//   var year = document.forms["signup_form"]["year"].value;
-//   var term = document.forms["signup_form"]["term"].value;
-//
-//   if(name == ""){
-//
-//     alert("Please provide your name!");
-//     name.focus();
-//     return false;
-//   }
-//
-//   if(email == ""){
-//
-//     alert("Please provide your email!");
-//     email.focus();
-//     return false;
-//   }
-//
-//   if(username == ""){
-//
-//     alert("Please provide your username!");
-//     username.focus();
-//     return false;
-//   }
-//
-//   if(password == ""){
-//
-//     alert("Please provide your password!");
-//     password.focus();
-//     return false;
-//   }
-//
-//   if(phone == ""){
-//
-//     alert("Please provide your phone!");
-//     phone.focus();
-//     return false;
-//   }
-//
-//   if(profession == ""){
-//
-//     alert("Please provide your profession!");
-//     profession.focus();
-//     return false;
-//   }
-//
-//   if(gender == ""){
-//
-//     alert("Please provide your gender!");
-//     gender.focus();
-//     return false;
-//   }
-//
-//   if(day == "" || month == "" || year == ""){
-//
-//     alert("Please provide your date of birth!");
-//     day.focus();
-//     month.focus();
-//     year.focus();
-//     return false;
-//   }
-//
-//   if(term == ""){
-//
-//     alert("Please check the checkbox of terms and services policies!");
-//     term.focus();
-//     return false;
-//   }
-// }
-
 // this function checks if the name is valid or not
 function is_name_valid(name){
 
@@ -376,4 +295,27 @@ function is_term_valid(term){
 
     return true;
   }
+}
+
+// this function will validate every input
+function validateForm(){
+
+  // input data
+  var name = document.forms["signup_form"]["name"].value;
+  var email = document.forms["signup_form"]["email"].value;
+  var username = document.forms["signup_form"]["username"].value;
+  var password = document.forms["signup_form"]["password"].value;
+  var confirm = document.forms["signup_form"]["confirm"].value;
+  var phone = document.forms["signup_form"]["phone"].value;
+  var profession = document.forms["signup_form"]["profession"].value;
+  var gender = document.forms["signup_form"]["gender"].value;
+  var day = document.forms["signup_form"]["day"].value;
+  var month = document.forms["signup_form"]["month"].value;
+  var year = document.forms["signup_form"]["year"].value;
+  var term = document.forms["signup_form"]["term"].value;
+
+  return is_name_valid(name) && is_email_valid(email) && is_username_valid(username)
+  && is_password_valid(password) && is_password_matching(password, confirm) &&
+  is_phone_valid(phone) && is_profession_valid(profession) && is_gender_valid(gender)
+  && is_dob_valid(day, month, year) && is_term_valid(term);
 }

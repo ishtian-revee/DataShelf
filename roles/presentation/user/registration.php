@@ -190,5 +190,7 @@
         </td>
       </tr>
     </table>
+
+    <script src="/js/field_validator.js"></script>
   </body>
 </html>

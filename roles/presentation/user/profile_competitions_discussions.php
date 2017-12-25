@@ -1,5 +1,6 @@
 <?php
-  require "../../control/logincheck.php"
+  require_once "../../control/logincheck.php";
+  require_once "../../control/profile_controller.php";
 ?>
 
 <!DOCTYPE html>
