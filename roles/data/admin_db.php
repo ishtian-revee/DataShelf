@@ -33,8 +33,7 @@
     function get_admin_data_V2($username)
     {
       $sql =  "SELECT
-      `username`,`name`,`email`,`phone`,`gender`,`hire_date`,`pp_path`,
-      DATEDIFF(CURRENT_TIMESTAMP,`registration_date`) as registration_date
+      `username`,`name`,`email`,`phone`,`gender`,`hire_date`,`pp_path`
       FROM admins
       where username = '$username'";
       $result = execute_query($sql);

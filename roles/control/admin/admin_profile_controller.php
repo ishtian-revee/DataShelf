@@ -1,6 +1,5 @@
 <?php
 require "../../data/admin_db.php";
-// require "login_control.php";
 
 if(isset($_SESSION['is_admin'])){
 

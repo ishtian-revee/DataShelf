@@ -1,4 +1,7 @@
-<?php require_once "../../control/admin/login_check.php" ?>
+<?php
+require_once "../../control/admin/login_check.php";
+require_once "../../control/admin/admin_profile_controller.php"
+?>
 
 <!DOCTYPE html>
 <html>
@@ -140,14 +143,14 @@
               <td colspan="4">
                 <br>
                 <table width="100%" cellspacing="10" cellpadding="0">
-                  <form action="admin_profile.php">
+                  <form action="../../control/admin/edit_admin_info.php" method="POST" enctype="multipart/form-data">
                     <tr>
                       <td width="25%">
                         <h3><font face="calibri" color="#444444">Name:</font></h3>
                       </td>
 
                       <td width="45%">
-                      <input name="name" type="text" size="30" value="Bruce Wayne">
+                      <input name="name" type="text" size="30" value="<?=$name?>">
                       </td>
 
                       <td width="30%" align="center" valign="center" rowspan="4">
@@ -163,7 +166,7 @@
                       </td>
 
                       <td width="45%">
-                        <input name="username" type="text" size="30" value="bruce">
+                        <input name="username" type="text" size="30" value="<?=$username?>">
                       </td>
                     </tr>
 
@@ -173,7 +176,7 @@
                       </td>
 
                       <td width="45%">
-                        <input name="email" type="text" size="30" value="bruce@wayne.batman">
+                        <input name="email" type="text" size="30" value="<?=$email?>">
                       </td>
                     </tr>
 
@@ -183,7 +186,7 @@
                       </td>
 
                       <td width="45%">
-                       <input name="phone" type="text" value="01777777777">
+                       <input name="phone" type="text" value="<?=$phone?>">
                       </td>
                     </tr>
 

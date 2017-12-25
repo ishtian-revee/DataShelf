@@ -28,5 +28,8 @@
 
         echo "Registration Failed";
     }
+  }else{
+
+    echo "Invalid input.";
   }
 ?>
