@@ -199,11 +199,11 @@
                   </tr>
                   <tr>
                     <td colspan="4">
-                      <h3><font face="calibri" color="#444444">Joined On :</font></h3>
+                      <h3><font face="calibri" color="#444444">Joined On : </font></h3>
                     </td>
 
                     <td colspan="6">
-                      <p><font face="calibri" color="#888888" size="4"><b><?=$joined?></b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$joinedon?></b></font></p>
                     </td>
                   </tr>
                 </table>
