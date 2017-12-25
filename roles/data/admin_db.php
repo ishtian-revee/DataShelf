@@ -13,7 +13,6 @@
             '$username',
             '$password',
             '$phone',
-            '$profession',
             '$gender',
             STR_TO_DATE('$hire_date', '%d-%m-%Y')
         )

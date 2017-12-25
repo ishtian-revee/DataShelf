@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DataShelf-Admin(pending posts details)</title>
+  </head>
+
+  <body>
+    <br>
+    <table width="1000" align="center" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="800">
+          <a href="admin_dashboard.php">
+            <img src="../res/admin/datashelf_admin_logo.png" alt="DataShelf Company Logo" height="45" title="DataShelf Admin">
+          </a>
+        </td>
+
+        <td align="center">
+          <a href="admin_profile.php"><h3><font face="calibri" color="#888888">Admin</font></h3></a>
+        </td>
+
+        <td width="36" align="center">
+          <a href="admin_profile.php"><img src="../res/admin/ic_admin.png" alt="Admin Logo" width="22"></a>
+        </td>
+
+        <td width="10" align="center"><h3><font face="calibri" color="#444444"> | </font></h3></td>
+
+        <td width="80" align="center">
+          <a href="admin_login.php"><h3><font face="calibri" color="#444444">Logout</font></h3></a>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <table width="1000" align="center" cellspacing="0" cellpadding="0">
+      <tr height="400">
+        <td width="220" valign="top">
+          <fieldset>
+            <table width="100%" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../res/admin/ic_dashboard.png" alt="Dashboard Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_dashboard.php"><h3><font face="calibri" color="#888888">Dashboard</font></h3></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../res/admin/ic_profile.png" alt="Profile Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_profile.php"><h3><font face="calibri" color="#888888">My Profile</font></h3></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../res/admin/ic_users.png" alt="Users Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_users.php"><h3><font face="calibri" color="#888888">Users</font></h3></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../res/admin/ic_posts.png" alt="Posts Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_posts.php"><h3><font face="calibri" color="#888888">Posts</font></h3></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../res/admin/ic_pendings.png" alt="Pendings Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_pendings.php"><h3><font face="calibri" color="#444444">Pendings</font></h3></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../res/admin/ic_history.png" alt="History Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_history.php"><h3><font face="calibri" color="#888888">History</font></h3></a>
+                </td>
+              </tr>
+            </table>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </fieldset>
+        </td>
+
+        <td valign="top">
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="2">
+                <fieldset align="center">
+                  <h3><font face="calibri" color="#444444">Pending Post Details</font></h3>
+                </fieldset>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <form action="admin_pendings_posts.php">
+                  <table width="100%" cellspacing="0" cellpadding="8">
+                    <tr>
+                      <td colspan="2">
+                        <h2><font face="calibri" color="#444444">Dataset Info</font></h2>
+                        <hr width="150" align="left" noshade="noshde">
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="15%" valign="top">
+                        <h3><font face="calibri" color="#444444">Title:</font></h3>
+                      </td>
+
+                      <td>
+                        <p><font face="calibri" color="#888888" size="4"><b>Global Terrorism Database</b></font></p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="15%" valign="top">
+                        <h3><font face="calibri" color="#444444">Short Desc:</font></h3>
+                      </td>
+
+                      <td>
+                        <p><font face="calibri" color="#888888" size="4"><b>More than 170,000 terrorist attacks worldwide, 1970-2016</b></font></p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="15%" valign="top">
+                        <h3><font face="calibri" color="#444444">Tags:</font></h3>
+                      </td>
+
+                      <td>
+                        <p><font face="calibri" color="#888888" size="4"><b>terrorism, image, object detection</b></font></p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="15%" valign="top">
+                        <h3><font face="calibri" color="#444444">Price:</font></h3>
+                      </td>
+
+                      <td>
+                        <p><font face="calibri" color="#888888" size="4"><b>$12000</b></font></p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="15%" valign="top">
+                        <h3><font face="calibri" color="#444444">Context:</font></h3>
+                      </td>
+
+                      <td>
+                        <p><font face="calibri" color="#888888" size="4"><b>Information on more than 170,000 Terrorist Attacks The Global
+                          Terrorism Database (GTD) is an open-source database including information on terrorist attacks around the world
+                          from 1970 through 2016 (with annual updates planned for the future). The GTD includes systematic data on domestic
+                          as well as international terrorist incidents that have occurred during this time period and now includes more
+                          than 170,000 cases. The database is maintained by researchers at the National Consortium for the Study of
+                          Terrorism and Responses to Terrorism (START), headquartered at the University of Maryland.</b></font></p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="15%" valign="top">
+                        <h3><font face="calibri" color="#444444">Contents:</font></h3>
+                      </td>
+
+                      <td>
+                        <p><font face="calibri" color="#888888" size="4"><b>Geography: Worldwide. Time period: 1970-2016, except 1993
+                          (2017 in progress, publication expected June 2018). Unit of analysis: Attack. Variables: >100 variables on
+                          location, tactics, perpetrators, targets, and outcomes. Sources: Unclassified media articles (Note: Please
+                          interpret changes over time with caution. Global patterns are driven by diverse trends in particular regions,
+                          and data collection is influenced by fluctuations in access to media coverage over both time and place).
+                          Definition of terrorism: "The threatened or actual use of illegal force and violence by a non-state actor to
+                          attain a political, economic, religious, or social goal through fear, coercion, or intimidation." See the GTD
+                          Codebook for important details on data collection methodology, definitions, and coding schema.</b></font></p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="15%" valign="top">
+                        <h3><font face="calibri" color="#444444">Files:</font></h3>
+                      </td>
+
+                      <td>
+                        <p><font face="calibri" color="#888888" size="4"><b>all.zip</b></font></p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="15%" valign="top">
+                        <h3><font face="calibri" color="#444444">Screenshot:</font></h3>
+                      </td>
+
+                      <td>
+                        <img src="../../res/website/dataset.png" alt="Dataset Screenshot" width="70%">
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2"><br><hr noshade="noshade"></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <a href="admin_pendings_posts.php">
+                          <p><font face="calibri" color="#888888" size="4"><b>Back</b></font></p>
+                        </a>
+                      </td>
+
+                      <td align="right">
+                        <input type="submit" name="reject" value="Reject">
+                        <input type="submit" name="approve" value="Approve">
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

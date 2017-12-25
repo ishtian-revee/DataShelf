@@ -21,9 +21,9 @@
 
     $hire_date = $day."-".$month."-".$year;
 
-    if(add_user($name, $email, $username, $password, $phone, $profession, $gender, $hire_date)){
+    if(add_admin($name, $email, $username, $password, $phone, $gender, $hire_date)){
 
-        header("location:../presentation/admin/admin_users_admin.php");
+        header("location:../../presentation/admin/admin_users_admins.php");
     }else{
 
         echo "Registration Failed";

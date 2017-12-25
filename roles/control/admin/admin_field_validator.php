@@ -189,7 +189,7 @@
 
       if(isset($day) and !empty($day) and isset($month) and !empty($month) and isset($month) and !empty($month))
       {
-          if($day>0 and $day<=31 and $month>0 and $month<=12 and $year>=1960 and $year<=1999)
+          if($day>0 and $day<=31 and $month>0 and $month<=12 and $year>=1960 and $year<=2017)
           {
               return true;
           }
