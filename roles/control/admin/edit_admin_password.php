@@ -1,6 +1,6 @@
 <?php
 
-  require_once "../data/admin_db.php";
+  require_once "../../data/admin_db.php";
   require_once "admin_field_validator.php";
   session_start();
 

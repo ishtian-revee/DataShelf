@@ -138,7 +138,7 @@
 
             <tr>
               <td colspan="4">
-                <form action="admin_profile.php">
+                <form action="../../control/admin/edit_admin_password.php" method="POST">
                   <table width="100%" cellspacing="0" cellpadding="0">
                     <tr>
                       <td width="30%"><h3><font face="calibri" color="#444444">Current Password:</font></h3></td>

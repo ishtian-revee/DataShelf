@@ -1,4 +1,7 @@
-<?php require_once "../../control/admin/login_check.php" ?>
+<?php
+require_once "../../control/admin/login_check.php";
+require_once "../../control/admin/admin_profile_controller.php";
+?>
 
 <!DOCTYPE html>
 <html>
@@ -146,7 +149,7 @@
                     </td>
 
                     <td width="45%">
-                      <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$name?></b></font></p>
                     </td>
 
                     <td width="30%" align="center" valign="center" rowspan="4">
@@ -164,7 +167,7 @@
                     </td>
 
                     <td width="45%">
-                      <p><font face="calibri" color="#888888" size="4"><b>bruce</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$username?></b></font></p>
                     </td>
                   </tr>
 
@@ -174,7 +177,7 @@
                     </td>
 
                     <td width="45%">
-                      <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$email?></b></font></p>
                     </td>
                   </tr>
 
@@ -184,7 +187,7 @@
                     </td>
 
                     <td width="45%">
-                      <p><font face="calibri" color="#888888" size="4"><b>01777777777</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$phone?></b></font></p>
                     </td>
                   </tr>
 
@@ -194,7 +197,7 @@
                     </td>
 
                     <td colspan="2">
-                      <p><font face="calibri" color="#888888" size="4"><b>Male</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$gender?></b></font></p>
                     </td>
                   </tr>
 
@@ -204,7 +207,7 @@
                     </td>
 
                     <td colspan="2">
-                      <p><font face="calibri" color="#888888" size="4"><b>01.01.2000</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$hire_date?></b></font></p>
                     </td>
                   </tr>
                 </table>
