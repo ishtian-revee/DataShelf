@@ -13,9 +13,9 @@
             if($password == (get_admin_password($username)))
             {
                 session_start();
-                $_SESSION['is_logged_in'] = true;
-                $_SESSION['username'] = $username;
-                $_SESSION['name'] = get_name($username);
+                $_SESSION['admin_logged_in'] = true;
+                $_SESSION['admin_name'] = $username;
+                // $_SESSION['name'] = get_name($username);
 
                 header('location:../../presentation/admin/admin_dashboard.php');
             }
