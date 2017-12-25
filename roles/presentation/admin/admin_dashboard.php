@@ -28,7 +28,7 @@
         <td width="10" align="center"><h3><font face="calibri" color="#444444"> | </font></h3></td>
 
         <td width="80" align="center">
-          <a href="admin_login.php"><h3><font face="calibri" color="#444444">Logout</font></h3></a>
+          <a href="logout.php"><h3><font face="calibri" color="#444444">Logout</font></h3></a>
         </td>
       </tr>
     </table>
