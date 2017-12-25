@@ -200,11 +200,11 @@
                       </td>
 
                       <td colspan="6">
-                        <input type="text" name="day" size="5" value="1">
+                        <input type="text" name="day" size="5" value="<?=$day?>">
                         <label><font face="calibri" color="#444444" size="4">/</font></label>
-                        <input type="text" name="month" size="5" value="1">
+                        <input type="text" name="month" size="5" value="<?=$month?>">
                         <label><font face="calibri" color="#444444" size="4">/</font></label>
-                        <input type="text" name="year" size="5" value="1990">
+                        <input type="text" name="year" size="5" value="<?=$year?>">
                       </td>
                     </tr>
 
