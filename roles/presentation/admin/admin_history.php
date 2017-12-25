@@ -1,3 +1,4 @@
+<?php require_once "../../control/admin/logincheck.php" ?>
 <!DOCTYPE html>
 <html>
   <head>
