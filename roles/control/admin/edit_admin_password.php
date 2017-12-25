@@ -7,7 +7,7 @@
   if(isset($_POST['current_password']) and isset($_POST['new_password']) and
   isset($_POST['retype_password'])){
 
-    $username = $_SESSION['admin_name'];
+    $username = $_SESSION['admin_username'];
     $current_password = $_POST['current_password'];
     $new_password = $_POST['new_password'];
     $retype_password = $_POST['retype_password'];
