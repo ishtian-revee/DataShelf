@@ -1,5 +1,6 @@
 <?php
-  require "../../control/logincheck.php"
+  require_once "../../control/logincheck.php";
+  require_once "../../control/competitions_mine_controller.php";
 ?>
 <!DOCTYPE html>
 <html>

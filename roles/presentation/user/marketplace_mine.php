@@ -1,5 +1,6 @@
 <?php
-  require "../../control/logincheck.php"
+  require "../../control/logincheck.php";
+  require "../../control/marketplace_mine_controller.php";
 ?>
 <!DOCTYPE html>
 <html>
