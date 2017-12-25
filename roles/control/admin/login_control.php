@@ -15,7 +15,7 @@
                 session_start();
                 $_SESSION['is_admin'] = true;
                 $_SESSION['admin_username'] = $username;
-                $_SESSION['name'] = get_name($username);
+                // $_SESSION['name'] = get_name($username);
 
                 header('location:../../presentation/admin/admin_dashboard.php');
             }
