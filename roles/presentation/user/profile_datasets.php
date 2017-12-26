@@ -54,7 +54,7 @@
 
             <tr>
               <td rowspan="2" width="18%" align="center" valign="top">
-                <img src="../res/admin/temp_user.png" alt="Profile Picture" height="150">
+                <img src='<?=$pp_path?>' alt="Profile Picture" height="150">
               </td>
 
               <td>
@@ -141,66 +141,7 @@
                   <tr>
                     <td colspan="10"><br></td>
                   </tr>
-
-                  <tr>
-                    <td colspan="2" align="center">
-                      <img src="../res/website/ic_user_3.png" alt="User Profile Pic" width="50">
-                    </td>
-
-                    <td colspan="6">
-                      <a href="profile_datasets_details.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b><?=$name?></b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                    </td>
-
-                    <td colspan="2" align="center">
-                      <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                      <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                    </td>
-                  </tr>
-
-                  <!-- temporary -->
-
-                  <tr>
-                    <td colspan="2" align="center">
-                      <img src="../res/website/ic_user_3.png" alt="User Profile Pic" width="50">
-                    </td>
-
-                    <td colspan="6">
-                      <a href="profile_datasets_details.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b><?=$name?></b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                    </td>
-
-                    <td colspan="2" align="center">
-                      <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                      <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td colspan="2" align="center">
-                      <img src="../res/website/ic_user_3.png" alt="User Profile Pic" width="50">
-                    </td>
-
-                    <td colspan="6">
-                      <a href="profile_datasets_details.php">
-                        <p><font face="calibri" color="#444444" size="4"><b>Credit Card Fraud Detection</b><br>Anonymized credit card transactions
-                          labeled as fraudulent or genuine</font></p>
-                      </a>
-                      <p><font face="calibri" color="#888888" size="3"><b><?=$name?></b> &middot; updated 2 days ago &middot; <b>Tags:</b> crime, finance</font></p>
-                    </td>
-
-                    <td colspan="2" align="center">
-                      <label><font face="calibri" color="#888888" size="4">$1200</font></label><br>
-                      <label><font face="calibri" color="#888888" size="4">3011 downloads</font></label>
-                    </td>
-                  </tr>
-
+                  <?php load_datasets() ?>
                   <!-- temporary -->
                 </table>
               </td>

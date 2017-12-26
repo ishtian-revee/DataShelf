@@ -6,15 +6,19 @@ if(isset($_SESSION['is_logged_in']))
 {
     $user_info = get_user_data_V2($_SESSION['username']);
     $name = $user_info['name'];
-    
     $phone = $user_info['phone'];
     $registration_date = $user_info['registration_date'];
     $joined= deal_with_day($registration_date);
+    $pp_path = get_pp_path();
+    
 }
 
 function load_bought_items()
 {
     $result = get_bought_items($_SESSION['username']);
+    //$pp_path = get_pp_path();
+    
+    
 
     while($all_info = mysqli_fetch_assoc($result))
     {
@@ -30,6 +34,9 @@ function load_bought_items()
         $date = get_upload_date_by_id($mds_id);
         $upload_date = ($date == 0 ? "Today" : $date." days ago");
         $data_path = $all_info['data_path'];
+        //$pp_path = get_pp_path();
+        
+      
         $data = '
         
         <tr>

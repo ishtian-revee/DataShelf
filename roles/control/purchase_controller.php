@@ -6,7 +6,7 @@
        
         if(add_to_purchased())
         {
-            header("location:../presentation/userprofile_bought_items.php");
+            header("location:../presentation/user/profile_bought_items.php");
         }
         else
         {

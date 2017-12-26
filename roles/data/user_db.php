@@ -185,6 +185,13 @@
       return execute_query($sql);
     }
 
+    function get_pp_path()
+    {
+      $username = $_SESSION['username'];
+      $sql = "SELECT pp_path from users where username ='$username'";
+      $result = execute_query($sql);
+      return mysqli_fetch_assoc($result)['pp_path'];
+    }
     function update_user_password($username, $password){
 
       $sql = "UPDATE users SET password='$password' WHERE username='$username'";

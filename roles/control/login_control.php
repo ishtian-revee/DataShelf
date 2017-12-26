@@ -16,6 +16,8 @@
                 $_SESSION['is_logged_in'] =  true;
                 $_SESSION['username'] = $username;
                 $_SESSION['name'] = get_name($username);
+                $_SESSION['pp_path'] = get_pp_path();
+
 
                 header('location:../presentation/user/home.php');
             }

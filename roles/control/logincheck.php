@@ -6,6 +6,7 @@
         if($_SESSION['is_logged_in'])
         {
             $username = $_SESSION["username"];
+            
 
             $context =
             '

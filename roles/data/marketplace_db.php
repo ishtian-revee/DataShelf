@@ -6,8 +6,6 @@
     {
         $sql = "INSERT INTO `marketplace_datasets` (`title`, `short_description`, `price`, `uploader`, `context`, `content`, `data_path`, `ss_path`, `tags`)
          VALUES ('$title','$short_description',$price,'$uploader','$context','$content','$data_path','$ss_path','$tags')";
-        
-    
         return execute_query($sql);
     }
 
@@ -21,6 +19,14 @@
    function get_mp_titles()
    {
 
+   }
+
+   function get_user_datasets()
+   {
+      $uploader = $_SESSION['username'];
+      $sql = "SELECT * from marketplace_datasets where uploader = '$uploader'";
+
+      return execute_query($sql);       
    }
 
    function get_mp_datasets()
