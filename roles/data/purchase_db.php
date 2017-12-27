@@ -19,12 +19,24 @@
                 $sql = "DELETE FROM carts where username = '$username' and mds_id = '$mds_id'";
                 if(execute_query($sql))
                 {
-                    $success = TRUE;
+                    $sql ="UPDATE marketplace_datasets SET downloads=downloads+1 where mds_id = '$mds_id'";
+                    if(execute_query($sql))
+                    {
+                         $success = TRUE;
+                    }
                 }
             }
 
        } 
       return $success;
+    }
+
+    function get_daily_transection()
+    {
+        $sql = "SELECT sum(price) as total from purchases where CAST(purchase_date AS DATE)=CURRENT_DATE()";
+        $result = execute_query($sql);
+        return mysqli_fetch_assoc($result)['total'];
+
     }
 
 

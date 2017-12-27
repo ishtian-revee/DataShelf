@@ -23,7 +23,7 @@
             }
             else if($filter=='all')
             {
-                $result = get_mp_datasets_V2();
+                $result = get_mp_all_datasets_V2();
                 $rows = array();
                 while($r = mysqli_fetch_assoc($result)) 
                 {
@@ -35,7 +35,7 @@
             }
            else  if($filter=='featured')
             {
-                $result = get_mp_datasets_V2();
+                $result = get_mp_featured_datasets_V2();
                 $rows = array();
                 while($r = mysqli_fetch_assoc($result)) 
                 {

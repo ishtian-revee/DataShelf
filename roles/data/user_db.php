@@ -206,6 +206,19 @@
       $_SESSION['pp_path'] = $path;
       return execute_query($sql);
     }
+    function get_pending_user_count()
+    {
+      $sql = "SELECT COUNT(*) as pending from users where status=0";
+      $result = execute_query($sql);
+      return mysqli_fetch_assoc($result)['pending'];
+
+    }
+    function get_daily_pending_user_count()
+    {
+      $sql = "SELECT COUNT(*) as total FROM users where  CAST(registration_date AS DATE) = CURRENT_DATE() and status=0";
+      $result = execute_query($sql);
+      return mysqli_fetch_assoc($result)['total'];
+    }
     function approve_user($username)
     {
 
