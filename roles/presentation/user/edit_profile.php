@@ -54,7 +54,7 @@
             <table width="100%" align="center" cellspacing="0" cellpadding="0">
               <tr>
                 <td rowspan="2" width="18%" align="center" valign="top">
-                  <img src="../res/admin/temp_user.png" alt="Profile Picture" height="150">
+                  <img src="<?=$pp_path?>" alt="Profile Picture" height="150">
                   <br>
                   <input type="file" name="profile_picture">
                 </td>

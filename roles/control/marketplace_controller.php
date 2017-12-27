@@ -1,4 +1,6 @@
+
 <?php
+    require_once '../../data/marketplace_db.php';
     if(isset($_SESSION['is_logged_in']))
     {
         $mine = 
@@ -21,6 +23,9 @@
         </a>
       </td>
         ';
+
+        $total_featured = get_mp_featured_count();
+
     }
     else
     {

@@ -4,4 +4,8 @@
         echo "<h1 align='center'>Access Forbidden</h1><hr>";
         die();
     }
+    else
+    {
+        
+    }
 ?>

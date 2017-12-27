@@ -1,6 +1,6 @@
  function add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path)
       {
-
+        console.log('div-id form add');
        var  template =
         `
         <table width="100%" cellspacing="5" cellpadding="0">
@@ -26,7 +26,6 @@
             </tr>
 
           </table>
-
         `;
         d1 = document.getElementById(div_id);
         d1.insertAdjacentHTML('afterend', template);
@@ -40,7 +39,7 @@
 
       var request = new XMLHttpRequest();
 
-      request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=mpds',true);
+      request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=mpds&filter=featured',true);
       request.send();
     
       request.onreadystatechange = function()
@@ -78,7 +77,7 @@
 
       var request = new XMLHttpRequest();
 
-      request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=mpds',true);
+      request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=mpds&filter=all',true);
       request.send();
     
       request.onreadystatechange = function()
@@ -101,9 +100,12 @@
               var content = ds[i].content;
               var downloads = ds[i].downloads;
               var tags = ds[i].tags;
-
-              add_dataset(id,title,short_description,upload,date,price,uploader,downloads,tags,div_id);
-           }
+              var upload_date = ds[i].upload_date;
+              var pp_path = ds[i].pp_path;
+              //add_dataset(id,title,short_description,upload,date,price,uploader,downloads,tags,div_id);
+              add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path);
+            
+            }
         }
       }
 
@@ -111,13 +113,13 @@
 
     function load_marketplace_datasets_mine()
     {
-      div_id="mp-ds-mine";
+      div_id='mp-ds-mine';
       d1 = document.getElementById(div_id);
       d1.innerHTML= '<img src="https://i.pinimg.com/originals/05/74/15/05741525b70c7ca6bcb88afd4aa16632.gif"/>';
 
       var request = new XMLHttpRequest();
 
-      request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=mpds',true);
+      request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=mpds&filter=mine',true);
       request.send();
     
       request.onreadystatechange = function()
@@ -140,8 +142,10 @@
               var content = ds[i].content;
               var downloads = ds[i].downloads;
               var tags = ds[i].tags;
-
-              add_dataset(id,title,short_description,price,uploader,downloads,tags,div_id);
+              var pp_path = ds[i].pp_path;
+              var upload_date = ds[i].upload_date;
+              add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path);             
+              
            }
         }
       }

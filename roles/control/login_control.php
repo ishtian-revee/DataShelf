@@ -18,7 +18,6 @@
                 $_SESSION['name'] = get_name($username);
                 $_SESSION['pp_path'] = get_pp_path();
 
-
                 header('location:../presentation/user/home.php');
             }
         }

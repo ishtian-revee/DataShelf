@@ -68,7 +68,7 @@
           <table width="100%" cellspacing="0" cellpadding="0">
             <tr>
               <td colspan="6">
-                <h3><font face="calibri" color="#888888">5792 total datasets</font></h3>
+                <h3><font face="calibri" color="#888888"><?=$total?> total datasets</font></h3>
               </td>
 
               <?=$newdataset?>

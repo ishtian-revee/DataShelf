@@ -48,6 +48,27 @@
        return execute_query($sql);
         
    }
+   function get_mp_featured_datasets_V2()
+   {
+      // $sql = "SELECT m.mds_id,m.title,u.pp_path,m.short_description,m.uploader,m.tags,m.price,m.downloads,DATEDIFF(CURRENT_TIMESTAMP,m.upload_date) as upload_date from marketplace_datasets m,users u where  m.status=1;";
+      $sql = "SELECT m.mds_id,m.title,u.pp_path,m.short_description,m.uploader,m.tags,m.price,m.downloads,DATEDIFF(CURRENT_TIMESTAMP,m.upload_date) as upload_date from marketplace_datasets m,users u where m.status=1";
+  
+       return execute_query($sql);
+   }
+   function get_mp_all_datasets_V2()
+   {
+       $sql = "SELECT m.mds_id,m.title,u.pp_path,m.short_description,m.uploader,m.tags,m.price,m.downloads,DATEDIFF(CURRENT_TIMESTAMP,m.upload_date) as upload_date from marketplace_datasets m,users u";
+      
+       return execute_query($sql);
+   }
+
+   function get_mp_mine_datasets_V2()
+   {
+    $username = $_SESSION['username'];       
+       $sql = "SELECT m.mds_id,m.title,u.pp_path,m.short_description,m.uploader,m.tags,m.price,m.downloads,DATEDIFF(CURRENT_TIMESTAMP,m.upload_date) as upload_date from marketplace_datasets m,users u where m.uploader=u.username ;";
+       return execute_query($sql);
+   }
+
 
    function get_mp_datasets_by_user()
    {
@@ -114,5 +135,25 @@
     $result = execute_query($sql);
      return $result;    
    }
-
+   
+   function get_mp_featured_count()
+   {
+    $sql = "SELECT COUNT(*) as total FROM marketplace_datasets where status=1";
+    $result = execute_query($sql);
+    return mysqli_fetch_assoc($result)['total'];
+   }
+   function get_mp_all_count()
+   {
+    $sql = "SELECT COUNT(*) as total FROM marketplace_datasets";
+    $result = execute_query($sql);
+    return mysqli_fetch_assoc($result)['total'];
+   }
+   function get_mine_count()
+   {
+        $username = $_SESSION['username'];
+        $sql = "SELECT COUNT(*) as total FROM marketplace_datasets where username = '$username'";
+        $result = execute_query($sql);
+        return mysqli_fetch_assoc($result)['total'];
+   }
+   
 ?>

@@ -54,7 +54,7 @@
 
             <tr>
               <td rowspan="2" width="18%" align="center" valign="top">
-                <img src="<?$pp_path?>" alt="Profile Picture" height="150">
+                <img src="<?=$pp_path?>" alt="Profile Picture" height="150">
               </td>
 
               <td>

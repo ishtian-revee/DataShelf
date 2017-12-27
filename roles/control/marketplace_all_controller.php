@@ -1,4 +1,5 @@
 <?php
+    require_once '../../data/marketplace_db.php';
     if(isset($_SESSION['is_logged_in']))
     {
         $mine = 
@@ -20,6 +21,7 @@
         </a>
       </td>
         ';
+        $total = get_mp_all_count();
     }
     else
     {

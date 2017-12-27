@@ -203,8 +203,7 @@
     {
       $username = $_SESSION['username'];
       $sql = "UPDATE users SET pp_path = '$path' where username = '$username'";
-      echo $sql;
-     // die();
+      $_SESSION['pp_path'] = $path;
       return execute_query($sql);
     }
     function approve_user($username)
