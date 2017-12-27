@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DataShelf-Admin(users/admins)</title>
+  </head>
+
+  <body>
+    <br>
+    <table width="1000" align="center" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="800">
+          <a href="admin_dashboard.html">
+            <img src="../../res/admin/datashelf_admin_logo.png" alt="DataShelf Company Logo" height="45" title="DataShelf Admin">
+          </a>
+        </td>
+
+        <td align="center">
+          <a href="admin_profile.html"><h3><font face="calibri" color="#888888">Admin</font></h3></a>
+        </td>
+
+        <td width="36" align="center">
+          <a href="admin_profile.html"><img src="../../res/admin/ic_admin.png" alt="Admin Logo" width="22"></a>
+        </td>
+
+        <td width="10" align="center"><h3><font face="calibri" color="#444444"> | </font></h3></td>
+
+        <td width="80" align="center">
+          <a href="admin_login.html"><h3><font face="calibri" color="#444444">Logout</font></h3></a>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <table width="1000" align="center" cellspacing="0" cellpadding="0">
+      <tr height="400">
+        <td width="220" valign="top">
+          <fieldset>
+            <table width="100%" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../../res/admin/ic_dashboard.png" alt="Dashboard Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_dashboard.html"><h3><font face="calibri" color="#888888">Dashboard</font></h3></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../../res/admin/ic_profile.png" alt="Profile Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_profile.html"><h3><font face="calibri" color="#888888">My Profile</font></h3></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../../res/admin/ic_users.png" alt="Users Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_users.html"><h3><font face="calibri" color="#444444">Users</font></h3></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../../res/admin/ic_posts.png" alt="Posts Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_posts.html"><h3><font face="calibri" color="#888888">Posts</font></h3></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../../res/admin/ic_pendings.png" alt="Pendings Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_pendings.html"><h3><font face="calibri" color="#888888">Pendings</font></h3></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="25%" align="center">
+                  <img src="../../res/admin/ic_history.png" alt="History Icon" width="22">
+                </td>
+
+                <td>
+                  <a href="admin_history.html"><h3><font face="calibri" color="#888888">History</font></h3></a>
+                </td>
+              </tr>
+            </table>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </fieldset>
+        </td>
+
+        <td valign="top">
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="4">
+                <fieldset align="center">
+                  <h3><font face="calibri" color="#444444">Admins</font></h3>
+                </fieldset>
+              </td>
+            </tr>
+
+            <!-- necessary codes of users table and admin table will be written from here -->
+
+            <tr>
+              <td width="8%" align="center">
+                <a href="admin_users.html">
+                  <h3><font face="calibri" color="#888888">Users</font></h3>
+                </a>
+              </td>
+
+              <td width="4%" align="center">
+                <h3><font face="calibri" color="#444444">&middot;</font></h3>
+              </td>
+
+              <td width="68%">
+                <a href="admin_users_admins.html">
+                  <h3><font face="calibri" color="#444444">Admins</font></h3>
+                </a>
+              </td>
+
+              <td width="20%" align="right">
+                <a href="admin_users_add_admin.html">
+                  <h3><font face="calibri" color="#888888">+ Add Admin</font></h3>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4"><hr noshade="noshade"></td>
+            </tr>
+
+            <tr>
+              <td colspan="4">
+                <table width="100%" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="10%" align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>Search</b></font></p>
+                    </td>
+
+                    <td><input type="text" name="search" value="" size="45"></td>
+
+                    <td width="18%" align="right">
+                      <h3><font face="calibri" color="#888888">5 admins</font></h3>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4">
+                <br>
+                <table border="1" width="100%" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <th width="4%"><font face="calibri" color="#444444">SL.</font></th>
+                    <th width="42%"><font face="calibri" color="#444444">Name</font></th>
+                    <th width="28%"><font face="calibri" color="#444444">Email</font></th>
+                    <th width="26%"><font face="calibri" color="#444444">Action</font></th>
+                  </tr>
+
+                  <tr>
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>1.</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <table width="100%" cellspacing="0">
+                        <tr>
+                          <td align="center">
+                            <a href="admin_users_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
+                            </a>
+                          </td>
+
+                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
+
+                          <td align="center">
+                            <a href="admin_users_edit_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p>
+                            </a>
+                          </td>
+
+                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
+
+                          <td align="center">
+                            <a href="admin_users_delete_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- __________ temporary __________ -->
+
+                  <tr>
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>2.</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>Barry Allen</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>barry@allen.flash</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <table width="100%" cellspacing="0">
+                        <tr>
+                          <td align="center">
+                            <a href="admin_users_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
+                            </a>
+                          </td>
+
+                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
+
+                          <td align="center">
+                            <a href="admin_users_edit_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p>
+                            </a>
+                          </td>
+
+                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
+
+                          <td align="center">
+                            <a href="admin_users_delete_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>3.</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <table width="100%" cellspacing="0">
+                        <tr>
+                          <td align="center">
+                            <a href="admin_users_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
+                            </a>
+                          </td>
+
+                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
+
+                          <td align="center">
+                            <a href="admin_users_edit_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p>
+                            </a>
+                          </td>
+
+                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
+
+                          <td align="center">
+                            <a href="admin_users_delete_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>4.</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>Barry Allen</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>barry@allen.flash</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <table width="100%" cellspacing="0">
+                        <tr>
+                          <td align="center">
+                            <a href="admin_users_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
+                            </a>
+                          </td>
+
+                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
+
+                          <td align="center">
+                            <a href="admin_users_edit_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p>
+                            </a>
+                          </td>
+
+                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
+
+                          <td align="center">
+                            <a href="admin_users_delete_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>5.</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
+                    </td>
+
+                    <td align="center">
+                      <table width="100%" cellspacing="0">
+                        <tr>
+                          <td align="center">
+                            <a href="admin_users_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
+                            </a>
+                          </td>
+
+                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
+
+                          <td align="center">
+                            <a href="admin_users_edit_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p>
+                            </a>
+                          </td>
+
+                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
+
+                          <td align="center">
+                            <a href="admin_users_delete_admin_profile.html">
+                              <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- __________ temporary __________ -->
+
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
