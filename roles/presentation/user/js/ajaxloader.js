@@ -1,5 +1,6 @@
 function deal_with_day(day)
 {
+    day = Math.abs(day)
     if(day>=365)
     {
         year = parseInt((day/365));
@@ -17,6 +18,152 @@ function deal_with_day(day)
     }
     
 }
+////////////////////Search
+function search_from_mine(search_term)
+{
+  search_term = search_term.trim();
+  if(search_term != '')
+  {
+    div_id = 'mp-ds-mine'
+    d1 = document.getElementById(div_id);
+    d1.innerHTML= '<img src="./loading.gif"/>';
+
+    var request = new XMLHttpRequest();
+
+    request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=sm&term='+search_term,true);
+    request.send();
+  
+    request.onreadystatechange = function()
+    {
+        if (this.readyState == 4 && this.status == 200)
+        {
+          d1.innerHTML = "";
+          var ds = JSON.parse(request.responseText);
+         console.log(ds.length);
+         for(i=0;i<ds.length;i++)
+         {
+            var id = ds[i].mds_id;
+            //console.log(id);
+            var title = (ds[i].title);
+            console.log(title);
+            var short_description = ds[i].short_description;
+            var price = ds[i].price;
+            var upload_date = deal_with_day(ds[i].upload_date);
+            
+            var uploader = ds[i].uploader;
+            var downloads = ds[i].downloads;
+            var tags = ds[i].tags;
+            var pp_path = ds[i].pp_path;
+
+            add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path);
+         }
+      }
+    }
+  }
+  else
+  {
+    load_marketplace_datasets_mine();
+  }
+   
+}
+
+function search_from_all(search_term)
+{
+  search_term = search_term.trim();
+  if(search_term != '')
+  {
+    div_id = 'mp-ds-all'
+    d1 = document.getElementById(div_id);
+    d1.innerHTML= '<img src="./loading.gif"/>';
+
+    var request = new XMLHttpRequest();
+
+    request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=sm&term='+search_term,true);
+    request.send();
+  
+    request.onreadystatechange = function()
+    {
+        if (this.readyState == 4 && this.status == 200)
+        {
+          d1.innerHTML = "";
+          var ds = JSON.parse(request.responseText);
+         console.log(ds.length);
+         for(i=0;i<ds.length;i++)
+         {
+            var id = ds[i].mds_id;
+            //console.log(id);
+            var title = (ds[i].title);
+            console.log(title);
+            var short_description = ds[i].short_description;
+            var price = ds[i].price;
+            var upload_date = deal_with_day(ds[i].upload_date);
+            
+            var uploader = ds[i].uploader;
+            var downloads = ds[i].downloads;
+            var tags = ds[i].tags;
+            var pp_path = ds[i].pp_path;
+
+            add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path);
+         }
+      }
+    }
+  }
+  else
+  {
+    load_marketplace_datasets_all();
+  }
+   
+}
+
+function search_from_featured(search_term)
+{
+  search_term = search_term.trim();
+  console.log(search_term);
+  if(search_term != '')
+  {
+    div_id = 'mp-ds'
+    d1 = document.getElementById(div_id);
+    d1.innerHTML= '<img src="./loading.gif"/>';
+
+    var request = new XMLHttpRequest();
+
+    request.open('GET','http://localhost/DataShelf/roles/data/apis.php?api=sm&term='+search_term,true);
+    request.send();
+  
+    request.onreadystatechange = function()
+    {
+        if (this.readyState == 4 && this.status == 200)
+        {
+          d1.innerHTML = "";
+          var ds = JSON.parse(request.responseText);
+         console.log(ds.length);
+         for(i=0;i<ds.length;i++)
+         {
+            var id = ds[i].mds_id;
+            //console.log(id);
+            var title = (ds[i].title);
+            console.log(title);
+            var short_description = ds[i].short_description;
+            var price = ds[i].price;
+            var upload_date = deal_with_day(ds[i].upload_date);
+            
+            var uploader = ds[i].uploader;
+            var downloads = ds[i].downloads;
+            var tags = ds[i].tags;
+            var pp_path = ds[i].pp_path;
+
+            add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path);
+         }
+      }
+    }
+  }
+  else
+  {
+    load_marketplace_datasets();
+  }
+   
+}
+
  function add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path)
       {
         console.log('div-id form add');
