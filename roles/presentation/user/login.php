@@ -154,6 +154,6 @@
       </tr>
     </table>
 
-    <script src="/js/login_validator.js"></script>
+    <script src="./js/login_validator.js"></script>
   </body>
 </html>

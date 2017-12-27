@@ -31,5 +31,7 @@
     {
         $mine='';
         $newdataset = '';
+        $total_featured = get_mp_featured_count();
+        
     }
 ?>

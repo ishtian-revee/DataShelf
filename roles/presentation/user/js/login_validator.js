@@ -9,7 +9,7 @@ function is_username_valid(username){
   }else{
 
     // checking if the username contains at least 2 characters
-    if(strlen(username) > 1){
+    if(username.length > 1){
 
       // checking if the username is valid or not
       for(var i=0; i<username.length; i++){
@@ -44,7 +44,7 @@ function is_password_valid(password){
   }else{
 
     // checking for 8 characters password
-    if(strlen(password) >= 8){
+    if(password.length >= 8){
 
       // checking if the password contains a special character or not
       if(password.search("@") || password.search("#") || password.search("$") || password.search("%")){
@@ -67,8 +67,15 @@ function is_password_valid(password){
 function validateForm(){
 
   // input data
-  var username = document.forms["signup_form"]["username"].value;
-  var password = document.forms["signup_form"]["password"].value;
+  var username = document.forms["login_form"]["username"].value;
+  var password = document.forms["login_form"]["password"].value;
 
-  return is_username_valid(username) && is_password_valid(password);
+  if(is_username_valid(username) && is_password_valid(password))
+  {
+      return true;
+  }
+  else
+  {
+    return false;
+  }
 }

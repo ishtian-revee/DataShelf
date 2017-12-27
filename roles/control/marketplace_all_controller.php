@@ -27,5 +27,6 @@
     {
         $mine='';
         $newdataset='';
+        $total = get_mp_all_count();        
     }
 ?>

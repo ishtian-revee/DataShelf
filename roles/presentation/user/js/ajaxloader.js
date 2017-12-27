@@ -100,7 +100,7 @@
               var content = ds[i].content;
               var downloads = ds[i].downloads;
               var tags = ds[i].tags;
-              var upload_date = ds[i].upload_date;
+              var upload_date = ds[i].upload_date==0?"Today":ds[i].upload_date+" days ago";
               var pp_path = ds[i].pp_path;
               //add_dataset(id,title,short_description,upload,date,price,uploader,downloads,tags,div_id);
               add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path);
