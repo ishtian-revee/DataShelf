@@ -12,6 +12,10 @@ if(isset($_SESSION['is_admin'])){
     $gender = $admin_info['gender'];
     $phone = $admin_info['phone'];
     $hire_date = $admin_info['hire_date'];
+    $year = explode("-",$hire_date)[0];
+    $month = explode("-",$hire_date)[1];
+    $day = explode("-",$hire_date)[2];
+    $pp_path = $admin_info['pp_path'];
   }else{
 
     echo "Logged in: false";
