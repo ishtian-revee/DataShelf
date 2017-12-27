@@ -15,7 +15,7 @@
        isset($_POST['tags'])
     )
     {
-       $uploader = $_SESSION['name'];
+       $uploader = $_SESSION['username'];
        $title = $_POST['title'] ;
        $short_description = $_POST['short_description'] ;
       

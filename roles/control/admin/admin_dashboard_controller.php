@@ -10,8 +10,9 @@
      return mysqli_fetch_assoc($result)['total'];
 
  }
- $pending = get_pending_user_count();
+ $pending = get_daily_pending_user_count();
  $dataset = get_total_dataset_count();
+ $daily_upload = get_daily_download_count();
  $downloads = get_total_download_count();
  $active_admins = get_total_active_admins();
 ?>

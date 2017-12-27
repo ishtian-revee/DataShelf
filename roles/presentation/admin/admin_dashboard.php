@@ -136,14 +136,14 @@
 
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#444444">15</font></h1>
+                  <h1><font face="calibri" color="#444444"><?=$daily_upload?></font></h1>
                   <p><font face="calibri" color="#888888" size="4"><br><b>Uploads</b></font></p>
                 </fieldset>
               </td>
 
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#444444">$1200</font></h1>
+                  <h1><font face="calibri" color="#444444">-</font></h1>
                   <p><font face="calibri" color="#888888" size="4"><b>Money<br>Transaction</b></font></p>
                 </fieldset>
               </td>
@@ -183,7 +183,7 @@
 
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#444444">48</font></h1>
+                  <h1><font face="calibri" color="#444444">-</font></h1>
                   <p><font face="calibri" color="#888888" size="4"><b>Active<br>Competetions</b></font></p>
                 </fieldset>
               </td>

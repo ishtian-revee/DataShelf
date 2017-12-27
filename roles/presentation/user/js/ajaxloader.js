@@ -35,7 +35,7 @@
     {
         div_id="mp-ds";
       d1 = document.getElementById('mp-ds');
-      d1.innerHTML= '<img src="https://i.pinimg.com/originals/05/74/15/05741525b70c7ca6bcb88afd4aa16632.gif"/>';
+      d1.innerHTML= '<img src="./loading.gif"/>';
 
       var request = new XMLHttpRequest();
 
@@ -73,7 +73,7 @@
     {
         div_id="mp-ds-all";
       d1 = document.getElementById(div_id);
-      d1.innerHTML= '<img src="https://i.pinimg.com/originals/05/74/15/05741525b70c7ca6bcb88afd4aa16632.gif"/>';
+      d1.innerHTML= '<img src="./loading.gif"/>';
 
       var request = new XMLHttpRequest();
 
@@ -115,7 +115,7 @@
     {
       div_id='mp-ds-mine';
       d1 = document.getElementById(div_id);
-      d1.innerHTML= '<img src="https://i.pinimg.com/originals/05/74/15/05741525b70c7ca6bcb88afd4aa16632.gif"/>';
+      d1.innerHTML= '<img src="./loading.gif"/>';
 
       var request = new XMLHttpRequest();
 
@@ -143,7 +143,7 @@
               var downloads = ds[i].downloads;
               var tags = ds[i].tags;
               var pp_path = ds[i].pp_path;
-              var upload_date = ds[i].upload_date;
+              var upload_date = ds[i].upload_date==0?"Today":ds[i].upload_date+" days ago";             
               add_dataset(id,title,short_description,upload_date,price,uploader,downloads,tags,div_id,pp_path);             
               
            }

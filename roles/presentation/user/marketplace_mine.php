@@ -67,7 +67,7 @@
           <table width="100%" cellspacing="0" cellpadding="0">
             <tr>
               <td colspan="6">
-                <h3><font face="calibri" color="#888888">3 your datasets</font></h3>
+                <h3><font face="calibri" color="#888888"><?=$mine_count?> of your datasets</font></h3>
               </td>
 
               <td align="right">
