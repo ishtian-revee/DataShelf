@@ -143,7 +143,7 @@
 
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#444444">-</font></h1>
+                  <h1><font face="calibri" color="#444444">$ <?=$daily_transection?></font></h1>
                   <p><font face="calibri" color="#888888" size="4"><b>Money<br>Transaction</b></font></p>
                 </fieldset>
               </td>

@@ -1,6 +1,7 @@
 <?php
  require_once "../../data/user_db.php";
  require_once "../../data/marketplace_db.php";
+ require_once "../../data/purchase_db.php";
  //require_once "../../data/admin_db.php";
 
  function get_total_active_admins()
@@ -15,4 +16,5 @@
  $daily_upload = get_daily_download_count();
  $downloads = get_total_download_count();
  $active_admins = get_total_active_admins();
+ $daily_transection = get_daily_transection();
 ?>

@@ -1,6 +1,5 @@
 function deal_with_day(day)
 {
-    day= Math.abs(day)
     if(day>=365)
     {
         year = parseInt((day/365));

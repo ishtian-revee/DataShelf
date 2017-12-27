@@ -33,7 +33,10 @@
 
     function get_daily_transection()
     {
-        return true;
+        $sql = "SELECT sum(price) as total from purchases where CAST(purchase_date AS DATE)=CURRENT_DATE()";
+        $result = execute_query($sql);
+        return mysqli_fetch_assoc($result)['total'];
+
     }
 
 
