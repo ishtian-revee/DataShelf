@@ -1,6 +1,6 @@
-<?php require_once "../../control/admin/login_check.php" ?>
-
-<!DOCTYPE html>
+<?php require_once "../../control/admin/login_check.php" ;
+ require_once "../../control/admin/admin_dashboard_controller.php"; 
+?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -122,14 +122,14 @@
             <tr>
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#444444">5</font></h1>
+                  <h1><font face="calibri" color="#444444"><?=$pending?></font></h1>
                   <p><font face="calibri" color="#888888" size="4"><br><b>Pendings</b></font></p>
                 </fieldset>
               </td>
 
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#444444">22</font></h1>
+                  <h1><font face="calibri" color="#444444"><?=$downloads?></font></h1>
                   <p><font face="calibri" color="#888888" size="4"><br><b>Downloads</b></font></p>
                 </fieldset>
               </td>
@@ -162,21 +162,21 @@
             <tr>
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#444444">160</font></h1>
+                  <h1><font face="calibri" color="#444444">-</font></h1>
                   <p><font face="calibri" color="#888888" size="4"><br><b>Users</b></font></p>
                 </fieldset>
               </td>
 
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#444444">8</font></h1>
+                  <h1><font face="calibri" color="#444444"><?=$active_admins?></font></h1>
                   <p><font face="calibri" color="#888888" size="4"><br><b>Admins</b></font></p>
                 </fieldset>
               </td>
 
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#444444">690</font></h1>
+                  <h1><font face="calibri" color="#444444"><?=$dataset?></font></h1>
                   <p><font face="calibri" color="#888888" size="4"><br><b>Datasets</b></font></p>
                 </fieldset>
               </td>

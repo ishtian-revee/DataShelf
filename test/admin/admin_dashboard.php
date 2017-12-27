@@ -1,3 +1,6 @@
+<?php
+ require_once "../../admin/control/admin_dashboard_controller.php"; 
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -120,7 +123,7 @@
             <tr>
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#163e64">5</font></h1>
+                  <h1><font face="calibri" color="#163e64"><?=$pending?></font></h1>
                   <p><font face="calibri" color="#7030a0" size="4"><br><b>Pendings</b></font></p>
                 </fieldset>
               </td>
