@@ -314,8 +314,15 @@ function validateForm(){
   var year = document.forms["signup_form"]["year"].value;
   var term = document.forms["signup_form"]["term"].value;
 
-  return is_name_valid(name) && is_email_valid(email) && is_username_valid(username)
+  if(is_name_valid(name) && is_email_valid(email) && is_username_valid(username)
   && is_password_valid(password) && is_password_matching(password, confirm) &&
   is_phone_valid(phone) && is_profession_valid(profession) && is_gender_valid(gender)
-  && is_dob_valid(day, month, year) && is_term_valid(term);
+  && is_dob_valid(day, month, year) && is_term_valid(term))
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
