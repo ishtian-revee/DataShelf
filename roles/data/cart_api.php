@@ -1,6 +1,5 @@
 <?php
-    
-    require_once "cart_db.php";
+        require_once "cart_db.php";
    if(isset($_POST['mds_id']) and isset($_POST['action']))
    {
        $status['status'] = '';

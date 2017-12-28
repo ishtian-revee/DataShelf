@@ -2,7 +2,7 @@
 
     require_once "dbcon.php";
     require_once "marketplace_db.php";
-    //session_start();
+    session_start();
     function add_to_cart($username,$mds_id)
     {
 
