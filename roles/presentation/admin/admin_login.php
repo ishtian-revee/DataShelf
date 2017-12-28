@@ -1,3 +1,19 @@
+<?php
+if(isset($_GET['status']))
+  {
+    $status = $_GET['status'];
+    if($status == "failed")
+    {
+      $status = ' <h3><font face="calibri" color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invalid Credentials</font></h3>';
+    }
+
+  }
+  else
+  {
+    $status = '';
+  }
+
+  ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,6 +45,8 @@
               <input type="password" name="password" size="45"><br>
 
               <br><hr noshade="noshade"><br>
+              
+              <?=$status?>
 
               <input type="submit" name="login" value="LOGIN">
             </fieldset>

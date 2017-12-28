@@ -15,15 +15,15 @@
                 session_start();
                 $_SESSION['is_admin'] = true;
                 $_SESSION['admin_username'] = $username;
-                // $_SESSION['name'] = get_name($username);
+               
 
                 header('location:../../presentation/admin/admin_dashboard.php');
             }
         }
         else
         {
-           echo ("<hr>login failed");
-           header( "refresh:5; url=http://localhost/DataShelf/roles/presentation/admin/admin_login.php" );
+           
+           header( "location:http://localhost/DataShelf/roles/presentation/admin/admin_login.php?status=failed" );
 
         }
     }
