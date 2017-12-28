@@ -5,11 +5,21 @@
     if(isset($_GET['api']) and !empty($_GET['api']))
     {
         $api_name = $_GET['api'];
-        $filter = $_GET['filter'];        
+       
+       if(isset($_GET['filter']))
+       {
+        $filter = $_GET['filter'];  
+       }
+       
+        if(isset($_GET['term']))
+        {
+            $term = $_GET['term'];
+
+        }
 
         if($api_name == 'mpds')
         {
-            if($filter=='mine')
+            if($filter =='mine')
             {
                 $result = get_mp_mine_datasets_V2();
                 $rows = array();
@@ -63,7 +73,11 @@
             }
         }
 
+       
+
     }
+
+    
     
     else
     {

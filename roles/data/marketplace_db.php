@@ -208,62 +208,45 @@
         return mysqli_fetch_assoc($result)['total'];
    }
 
-   function get_dataset_list(){
+   function search_by_anything_all($term)
+   {
+    
+     session_start();
+     $username = $_SESSION['username'];       
+     $sql = "SELECT  distinct m.mds_id,m.title,u.pp_path,m.short_description,m.uploader,m.tags,m.price,m.downloads,DATEDIFF(m.upload_date,CURRENT_TIMESTAMP) as upload_date from marketplace_datasets m,users u where m.uploader=u.username and m.uploader = '$username' 
+     and m.title LIKE '%$term%' or m.short_description LIKE '%$term%' or m.price LIKE '%$term%' or
+     m.uploader LIKE '%$term%' or m.tags LIKE '%$term%' or m.downloads LIKE '%$term%' or m.upload_date LIKE '%$term%';
+     ;";
 
-     $serial_no = 0;
-
-     $sql = "SELECT `title`,`downloads` FROM marketplace_datasets";
-     $result = execute_query($sql);
-
-     echo '
-     <table border="1" width="100%" cellspacing="0" cellpadding="0">
-       <tr>
-         <th width="4%"><font face="calibri" color="#444444">SL.</font></th>
-         <th width="60%"><font face="calibri" color="#444444">Dataset</font></th>
-         <th width="12%"><font face="calibri" color="#444444">Downloads</font></th>
-         <th width="24%"><font face="calibri" color="#444444">Action</font></th>
-       </tr>
-     ';
-
-     while($row = mysqli_fetch_array($result)){
-
-       echo '
-       <tr>
-         <td align="center">
-           <p><font face="calibri" color="#888888" size="4"><b>'. $serial_no++ .'.</b></font></p>
-         </td>
-
-         <td align="center">
-           <p><font face="calibri" color="#888888" size="4"><b>'. $row["title"] .'</b></font></p>
-         </td>
-
-         <td align="center">
-           <p><font face="calibri" color="#888888" size="4"><b>'. $row["downloads"] .'</b></font></p>
-         </td>
-
-         <td align="center">
-           <table width="100%" cellspacing="0">
-             <tr>
-               <td align="center">
-                 <a href="admin_posts_datasets_details.php">
-                   <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
-                 </a>
-               </td>
-
-               <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
-
-               <td align="center">
-                 <a href="admin_posts_datasets_details.php">
-                   <p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p>
-                 </a>
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-       ';
-     }
+     
+     return execute_query($sql);
    }
+
+   function search_by_anything_mine($term)
+   {
+    
+     session_start();
+     $username = $_SESSION['username'];       
+     $sql = "SELECT distinct m.mds_id,m.title,u.pp_path,m.short_description,m.uploader,m.tags,m.price,m.downloads,DATEDIFF(m.upload_date,CURRENT_TIMESTAMP) as upload_date from marketplace_datasets m,users u where m.uploader=u.username and m.uploader = '$username' and m.uploader = '$username'
+    and m.title LIKE '%$term%' or m.short_description LIKE '%$term%' or m.price LIKE '%$term%' or
+     m.uploader LIKE '%$term%' or m.tags LIKE '%$term%' or m.downloads LIKE '%$term%' or m.upload_date LIKE '%$term%';
+     ;";
+     return execute_query($sql);
+   }
+
+   function search_by_anything_featured($term)
+   {
+    
+     session_start();
+     $username = $_SESSION['username'];       
+     $sql = "SELECT distinct m.mds_id,m.title,u.pp_path,m.short_description,m.uploader,m.tags,m.price,m.downloads,DATEDIFF(m.upload_date,CURRENT_TIMESTAMP) as upload_date from marketplace_datasets m,users u where m.uploader=u.username and m.uploader = '$username' and m.status=1 
+     and m.title LIKE '%$term%' or m.short_description LIKE '%$term%' or m.price LIKE '%$term%' or
+     m.uploader LIKE '%$term%' or m.tags LIKE '%$term%' or m.downloads LIKE '%$term%' or m.upload_date LIKE '%$term%';
+     ;";
+     return execute_query($sql);
+   }
+   
+   
 
    // retrieve data -----------------------------------------------------------
 

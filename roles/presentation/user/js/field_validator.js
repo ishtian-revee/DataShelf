@@ -35,9 +35,9 @@ function is_name_valid(name){
         }
       }
     }else{
-
-      alert("First character of the name must be a letter and name must be more than 1 word");
-      return false;
+      return true;
+      // alert("First character of the name must be a letter and name must be more than 1 word");
+      // return false;
     }
   }
 }

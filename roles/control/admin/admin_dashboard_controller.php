@@ -17,4 +17,5 @@
  $downloads = get_total_download_count();
  $active_admins = get_total_active_admins();
  $daily_transection = get_daily_transection();
+ $total_users = get_total_user_count();
 ?>

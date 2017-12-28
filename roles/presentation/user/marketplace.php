@@ -96,7 +96,7 @@
               </td>
 
               <td width="36%" align="center">
-                <input type="text" name="search" value="" size="45">
+                <input type="text" name="search" value="" size="45" onkeyup="search_from_featured(this.value)">
               </td>
             </tr>
 

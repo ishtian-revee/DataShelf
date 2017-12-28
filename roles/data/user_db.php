@@ -286,6 +286,12 @@
       $result = execute_query($sql);
       return mysqli_fetch_assoc($result)['total'];
     }
+    function get_total_user_count()
+    {
+      $sql = "SELECT COUNT(*) as total FROM users";
+      $result = execute_query($sql);
+      return mysqli_fetch_assoc($result)['total'];
+    }
     function approve_user($username)
     {
 
