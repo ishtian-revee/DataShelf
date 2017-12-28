@@ -112,85 +112,10 @@
             </tr>
 
             <!-- necessary codes of users table and admin table will be written from here -->
+              <?php require_once "../../user_db.php";
+              get_user_list(); 
 
-            <tr>
-              <td width="8%" align="center">
-                <a href="../admin/admin_users.html">
-                  <h3><font face="calibri" color="#444444">Users</font></h3>
-                </a>
-              </td>
-
-              <td width="4%" align="center">
-                <h3><font face="calibri" color="#444444">&middot;</font></h3>
-              </td>
-
-              <td width="68%">
-                <a href="../admin/admin_users_admins.html">
-                  <h3><font face="calibri" color="#888888">Admins</font></h3>
-                </a>
-              </td>
-
-              <td width="20%" align="right">
-                <a href="../admin/admin_users_add_admin.html">
-                  <h3><font face="calibri" color="#888888">+ Add Admin</font></h3>
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td colspan="4"><hr noshade="noshade"></td>
-            </tr>
-
-            <tr>
-              <td colspan="4">
-                <table width="100%" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td width="10%" align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>Search</b></font></p>
-                    </td>
-                    <td><input type="text" name="search" value="" size="45"></td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <tr>
-              <td colspan="4">
-                <br>
-                <table border="1" width="100%" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <th width="4%"><font face="calibri" color="#444444">SL.</font></th>
-                    <th width="42%"><font face="calibri" color="#444444">Name</font></th>
-                    <th width="28%"><font face="calibri" color="#444444">Email</font></th>
-                    <th width="26%"><font face="calibri" color="#444444">Action</font></th>
-                  </tr>
-
-                  <tr>
-                    <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>1.</b></font></p>
-                    </td>
-
-                    <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
-                    </td>
-
-                    <td align="center">
-                      <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
-                    </td>
-
-                    <td align="center">
-                      <table width="100%" cellspacing="0">
-                        <tr>
-                          <td align="center"><a href="#"><p><font face="calibri" color="#888888" size="4"><b>View</b></font></p></a></td>
-                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
-                          <td align="center"><a href="#"><p><font face="calibri" color="#888888" size="4"><b>Edit</b></font></p></a></td>
-                          <td align="center"><p><font face="calibri" color="#888888" size="4"><b>|</b></font></p></td>
-                          <td align="center"><a href="#"><p><font face="calibri" color="#888888" size="4"><b>Delete</b></font></p></a></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
+              ?>
                   <!-- __________ temporary __________ -->
 
                   <tr>
