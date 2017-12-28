@@ -160,7 +160,7 @@
         }
       }else{
 
-        echo "Phone number must contain 11 digits and first digit should be 0!");
+        echo "Phone number must contain 11 digits and first digit should be 0!";
         return false;
       }
     }else{
