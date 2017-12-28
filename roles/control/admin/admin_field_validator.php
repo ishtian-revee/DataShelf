@@ -1,6 +1,6 @@
 <?php
 
-  $errors = array();
+  // $errors = array();
 
   function is_name_valid($name)
   {
@@ -19,7 +19,6 @@
                 return true;
               }else{
 
-                array_push($errors,"Name can contain only alphabets, alpha-numerics, dot(.), dash(-) and space!");
                 echo "Name can contain only alphabets, alpha-numerics, dot(.), dash(-) and space!";
                 return  false;
               }
@@ -27,14 +26,13 @@
           }
           else
           {
-              array_push($errors,"First character of the name must be a letter and name must be more than 1 word");
               echo "First character of the name must be a letter and name must be more than 1 word";
               return false;
           }
       }
       else
       {
-          array_push($errors,"Name field is null!");
+          echo "Name field is null!";
           return false;
       }
   }
@@ -55,14 +53,13 @@
           }
           else
           {
-              array_push($errors,"Email is not valid. Please insert a valid input.");
               echo "Email is not valid. Please insert a valid input.";
               return false;
           }
       }
       else
       {
-          array_push($errors,"Email field is null!");
+          echo "Email field is null!";
           return false;
       }
   }
@@ -82,20 +79,18 @@
           }
           else
           {
-              array_push($errors,"Username can contain only alpha numeric characters, period(.), dash(-) or underscore(_) only.");
               echo "Username can contain only alpha numeric characters, period(.), dash(-) or underscore(_) only.";
               return false;
           }
         }else {
 
-          array_push($errors,"Username should be atleast 2 characters.");
           echo "Username should be atleast 2 characters.";
           return false;
         }
       }
       else
       {
-          array_push($errors,"Username field is null!");
+          echo "Username field is null!";
           return false;
       }
   }
@@ -114,21 +109,19 @@
                 return true;
               }else{
 
-                array_push($errors,"Password must contain atleas 1 special characters.");
                 echo "Password must contain atleas 1 special characters.";
                 return $validPassword2 = false;
               }
           }
           else
           {
-              array_push($errors,"Password should be at least 6 character long");
               echo "Password should be at least 6 character long";
               return false;
           }
       }
       else
       {
-          array_push($errors,"Password field is null!");
+          echo "Password field is null!";
           return false;
       }
   }
@@ -142,7 +135,6 @@
       }
       else
       {
-          array_push($errors,"Password Doesn't Match");
           echo "Password Doesn't Match";
           return false;
       }
@@ -162,20 +154,18 @@
             return true;
           }else{
 
-            array_push($errors,"Phone number is not valid. Please insert a valid phone number!");
             echo "Phone number is not valid. Please insert a valid phone number!";
             return false;
           }
         }
       }else{
 
-        array_push($errors,"Phone number must contain 11 digits and first digit should be 0!");
-        echo "Phone number must contain 11 digits and first digit should be 0!";
+        echo "Phone number must contain 11 digits and first digit should be 0!");
         return false;
       }
     }else{
 
-      array_push($errors,"Phone field is null");
+      echo "Phone field is null";
       return false;
     }
   }
@@ -187,7 +177,6 @@
         return true;
       }else{
 
-        array_push($errors,"Gender field is null!");
         echo "Gender field is null!";
         return false;
       }
@@ -206,14 +195,13 @@
           }
           else
           {
-              array_push($errors,"Invalid Date");
               echo "Invalid Date";
               return false;
           }
       }
       else
       {
-          array_push($errors,"Invalid Date");
+          echo "Invalid Date";
           return false;
       }
   }
