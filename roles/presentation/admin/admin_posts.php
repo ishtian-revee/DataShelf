@@ -1,5 +1,6 @@
 <?php require_once "../../control/admin/login_check.php" ?>
 <?php require_once "../../control/admin/admin_posts_controller.php"?>
+<?php require_once "../../control/admin/admin_dashboard_controller.php"?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -133,7 +134,7 @@
               </td>
 
               <td width="20%" align="right">
-                <h3><font face="calibri" color="#888888">611 datasets</font></h3>
+                <h3><font face="calibri" color="#888888"><?=$dataset?> datasets</font></h3>
               </td>
             </tr>
 
@@ -161,7 +162,7 @@
 
                   <!-- __________ temporary __________ -->
 
-                 
+
                   <!-- __________ temporary __________ -->
 
                 </table>

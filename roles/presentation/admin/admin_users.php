@@ -1,4 +1,7 @@
-<?php require_once "../../control/admin/login_check.php" ?>
+<?php
+require_once "../../control/admin/login_check.php";
+require_once "../../control/admin/admin_dashboard_controller.php";
+?>
 
 <!DOCTYPE html>
 <html>
@@ -152,7 +155,7 @@
                     <td><input type="text" name="search" value="" size="45"></td>
 
                     <td width="18%" align="right">
-                      <h3><font face="calibri" color="#888888">5 users</font></h3>
+                      <h3><font face="calibri" color="#888888"><?=$total_users?> users</font></h3>
                     </td>
                   </tr>
                 </table>
