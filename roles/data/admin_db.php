@@ -112,7 +112,7 @@
     function get_admin_list(){
 
       $serial_no = 0;
- 
+
       $sql = "SELECT `name`,`email` FROM admins";
       $result = execute_query($sql);
 
@@ -131,7 +131,7 @@
         echo '
         <tr>
           <td align="center">
-            <p><font face="calibri" color="#888888" size="4"><b>'. $serial_no++ .'.</b></font></p>
+            <p><font face="calibri" color="#888888" size="4"><b>'. ++$serial_no .'.</b></font></p>
           </td>
 
           <td align="center">

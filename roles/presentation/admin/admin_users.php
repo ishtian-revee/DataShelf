@@ -160,10 +160,8 @@
             </tr>
 
             <?php require_once "../../data/user_db.php";
-              get_user_list(); 
+              get_user_list();
          ?>
-                  
-                  <!-- __________ temporary __________ -->
 
                 </table>
               </td>
