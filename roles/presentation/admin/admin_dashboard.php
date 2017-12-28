@@ -162,7 +162,7 @@
             <tr>
               <td width="25%">
                 <fieldset>
-                  <h1><font face="calibri" color="#444444">-</font></h1>
+                  <h1><font face="calibri" color="#444444"><?=$total_users?></font></h1>
                   <p><font face="calibri" color="#888888" size="4"><br><b>Users</b></font></p>
                 </fieldset>
               </td>

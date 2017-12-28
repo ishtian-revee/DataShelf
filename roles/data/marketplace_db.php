@@ -211,8 +211,8 @@
      session_start();
      $username = $_SESSION['username'];       
      $sql = "SELECT distinct m.mds_id,m.title,u.pp_path,m.short_description,m.uploader,m.tags,m.price,m.downloads,DATEDIFF(m.upload_date,CURRENT_TIMESTAMP) as upload_date from marketplace_datasets m,users u where m.uploader=u.username and m.uploader = '$username' and m.uploader = '$username'
-     and m.title LIKE '%$term%' or m.short_description LIKE '$term' or m.price LIKE '$term' or
-     m.uploader LIKE '%$term%' or m.tags LIKE '%$term% or m.downloads LIKE '$term' or m.upload_date LIKE '%$term%';
+    and m.title LIKE '%$term%' or m.short_description LIKE '%$term%' or m.price LIKE '%$term%' or
+     m.uploader LIKE '%$term%' or m.tags LIKE '%$term%' or m.downloads LIKE '%$term%' or m.upload_date LIKE '%$term%';
      ;";
      return execute_query($sql);
    }
@@ -223,9 +223,9 @@
      session_start();
      $username = $_SESSION['username'];       
      $sql = "SELECT distinct m.mds_id,m.title,u.pp_path,m.short_description,m.uploader,m.tags,m.price,m.downloads,DATEDIFF(m.upload_date,CURRENT_TIMESTAMP) as upload_date from marketplace_datasets m,users u where m.uploader=u.username and m.uploader = '$username' and m.status=1 
-     and m.title LIKE '%$term%' or m.short_description LIKE '$term' or m.price LIKE '$term' or
-     m.uploader LIKE '%$term%' or m.tags LIKE '%$term% or m.downloads LIKE '$term' or m.upload_date LIKE '%$term%';
-     ";
+     and m.title LIKE '%$term%' or m.short_description LIKE '%$term%' or m.price LIKE '%$term%' or
+     m.uploader LIKE '%$term%' or m.tags LIKE '%$term%' or m.downloads LIKE '%$term%' or m.upload_date LIKE '%$term%';
+     ;";
      return execute_query($sql);
    }
    
