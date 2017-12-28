@@ -1,5 +1,18 @@
 <?php
-  require "../../control/logincheck.php"
+  require "../../control/logincheck.php";
+  if(isset($_GET['status']))
+  {
+    $status = $_GET['status'];
+    if($status == "failed")
+    {
+      $status = ' <h3><font face="calibri" color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invalid Credentials</font></h3>';
+    }
+
+  }
+  else
+  {
+    $status = '';
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -71,6 +84,10 @@
                 <td colspan="4"><br></td>
               </tr>
 
+              <tr>
+                <td colspan="4"><?=$status?></td>
+              </tr>
+            
               <tr>
                 <td colspan="4">
                   <h3><font face="calibri" color="#444444">Username</font></h3>

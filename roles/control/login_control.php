@@ -20,10 +20,24 @@
 
                 header('location:../presentation/user/home.php');
             }
+            else
+            {
+                echo "
+
+                <script>
+
+                    alert('Invalid Credentials');
+
+                </script>
+                
+                ";
+                header('location:../presentation/user/login.php?status=failed');
+                
+            }
         }
         else
         {
-           echo ("<hr>login failed");
+            header('location:../presentation/user/login.php?status=failed');         
         }
     }
 
