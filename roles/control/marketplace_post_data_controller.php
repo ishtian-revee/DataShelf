@@ -36,7 +36,11 @@ if(isset($_GET['id']))
     $data_path = $all_info['data_path'];
     $filename = explode('/',$data_path)[5];
     $filesize = human_filesize(filesize(realpath($data_path)));
+
     
 }
+
+
+
 
 ?>

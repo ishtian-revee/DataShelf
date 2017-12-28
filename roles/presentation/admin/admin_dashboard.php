@@ -289,35 +289,12 @@
                   </legend>
 
                   <table width="100%" cellspacing="0" cellpadding="0">
-                    <tr>
+                  <tr>
                       <th width="8%"><font face="calibri" color="#444444" size="4">SL.</b></font></th>
                       <th width="72%"><font face="calibri" color="#444444" size="4">Datasets</b></font></th>
                       <th width="20%"><font face="calibri" color="#444444" size="4">Downloads</b></font></th>
                     </tr>
-
-                    <tr>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">1.</b></font></p></td>
-                      <td><p><font face="calibri" color="#888888" size="4">Credit Card Fraud Detection</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">22</b></font></p></td>
-                    </tr>
-
-                    <tr>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">2.</b></font></p></td>
-                      <td><p><font face="calibri" color="#888888" size="4">Credit Card Fraud Detection</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">19</b></font></p></td>
-                    </tr>
-
-                    <tr>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">3.</b></font></p></td>
-                      <td><p><font face="calibri" color="#888888" size="4">Credit Card Fraud Detection</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">14</b></font></p></td>
-                    </tr>
-
-                    <tr>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">4.</b></font></p></td>
-                      <td><p><font face="calibri" color="#888888" size="4">Credit Card Fraud Detection</b></font></p></td>
-                      <td align="center"><p><font face="calibri" color="#888888" size="4">9</b></font></p></td>
-                    </tr>
+                <?php load_top_5() ?>
                   </table>
                 </fieldset>
               </td>

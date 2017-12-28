@@ -15,7 +15,6 @@ if(isset($_GET['id']))
     $date = get_upload_date_by_id($mds_id);
     $upload_date = ($date == 0 ? "Today" : $date." days ago");
     
-
     $contextd = $all_info['context'];
     $contentd = $all_info['content'];
     

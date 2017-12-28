@@ -25,6 +25,13 @@
         ';
 
         $total_featured = get_mp_featured_count();
+        $cart_button = 
+        '
+        <td width="16%" align="right">
+        <button type="button" id="cart-add" name="addToCart" onclick="add(<?=$mds_id?>)" >Add to Cart</button>
+        <button type="button" style="display: none;" id="cart-remove" name="addToCart" onclick="remove(<?=$mds_id?>)" >Remove from Cart</button>
+        </td>
+        ';
 
     }
     else
@@ -32,6 +39,7 @@
         $mine='';
         $newdataset = '';
         $total_featured = get_mp_featured_count();
+        $cart_button = "";        
         
     }
 ?>

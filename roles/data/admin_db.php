@@ -109,11 +109,13 @@
       }
     }
 
+    
+
     function get_admin_list(){
 
       $serial_no = 0;
 
-      $sql = "SELECT `name`,`email` FROM admins";
+      $sql = "SELECT `name`,`email`,`username` FROM admins";
       $result = execute_query($sql);
 
       echo '
@@ -146,7 +148,7 @@
             <table width="100%" cellspacing="0">
               <tr>
                 <td align="center">
-                  <a href="admin_users_user_profile.php">
+                  <a href="admin_users_user_profile.php?type=admin&username='. $row["username"] .'">
                     <p><font face="calibri" color="#888888" size="4"><b>View</b></font></p>
                   </a>
                 </td>
@@ -177,6 +179,13 @@
     }
 
 
+    function get_total_admin_count()
+    {
+      $sql = "SELECT COUNT(*) as total from admins";
+      $result = execute_query($sql);
+
+      echo mysqli_fetch_assoc($result)['total'];
+    }
 
     // retrieve data -----------------------------------------------------------
 
@@ -203,6 +212,8 @@
 
       return execute_query($sql);
     }
+
+  
 
     // update data -------------------------------------------------------------
 

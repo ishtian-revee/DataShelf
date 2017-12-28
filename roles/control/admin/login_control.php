@@ -22,7 +22,9 @@
         }
         else
         {
-           echo ("login failed");
+           echo ("<hr>login failed");
+           header( "refresh:5; url=http://localhost/DataShelf/roles/presentation/admin/admin_login.php" );
+
         }
     }
 

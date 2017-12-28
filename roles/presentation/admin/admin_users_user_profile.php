@@ -1,5 +1,5 @@
 <?php require_once "../../control/admin/login_check.php" ?>
-
+<?php require_once "../../control/admin/admin_user_profile_control.php" ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -142,11 +142,11 @@
                     </td>
 
                     <td width="45%">
-                      <p><font face="calibri" color="#888888" size="4"><b>Bruce Wayne</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$name?></b></font></p>
                     </td>
 
                     <td width="30%" align="center" valign="center" rowspan="4">
-                      <img src="../res/admin/temp_user.png" alt="Profile Picture" height="220">
+                      <img src="<?=$pp_path?>" alt="Profile Picture" height="210">
                     </td>
                   </tr>
 
@@ -156,7 +156,7 @@
                     </td>
 
                     <td width="45%">
-                      <p><font face="calibri" color="#888888" size="4"><b>bruce</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$username?></b></font></p>
                     </td>
                   </tr>
 
@@ -166,7 +166,7 @@
                     </td>
 
                     <td width="45%">
-                      <p><font face="calibri" color="#888888" size="4"><b>bruce@wayne.batman</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$email?></b></font></p>
                     </td>
                   </tr>
 
@@ -176,7 +176,7 @@
                     </td>
 
                     <td width="45%">
-                      <p><font face="calibri" color="#888888" size="4"><b>01777777777</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$phone?></b></font></p>
                     </td>
                   </tr>
 
@@ -186,7 +186,7 @@
                     </td>
 
                     <td width="45%">
-                      <p><font face="calibri" color="#888888" size="4"><b>Machine Learning Engineer</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$profession?></b></font></p>
                     </td>
                   </tr>
 
@@ -196,7 +196,7 @@
                     </td>
 
                     <td colspan="2">
-                      <p><font face="calibri" color="#888888" size="4"><b>Male</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$gender?></b></font></p>
                     </td>
                   </tr>
 
@@ -206,7 +206,7 @@
                     </td>
 
                     <td colspan="2">
-                      <p><font face="calibri" color="#888888" size="4"><b>01.01.1990</b></font></p>
+                      <p><font face="calibri" color="#888888" size="4"><b><?=$dob?></b></font></p>
                     </td>
                   </tr>
 

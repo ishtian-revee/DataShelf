@@ -23,7 +23,7 @@
         }
         else
         {
-           echo ("login failed");
+           echo ("<hr>login failed");
         }
     }
 

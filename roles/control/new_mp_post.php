@@ -65,6 +65,11 @@
             {
                 header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_new_dataset.php?status=success#status');
             }
+            else
+            {
+                header('location:http://localhost/DataShelf/roles/presentation/user/marketplace_new_dataset.php?status=success#status');
+                
+            }
         }
         else
         {

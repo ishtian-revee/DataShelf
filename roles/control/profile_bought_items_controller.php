@@ -34,14 +34,14 @@ function load_bought_items()
         $date = get_upload_date_by_id($mds_id);
         $upload_date = ($date == 0 ? "Today" : $date." days ago");
         $data_path = $all_info['data_path'];
-        //$pp_path = get_pp_path();
+        $pp_path = get_pp_path();
         
       
         $data = '
         
         <tr>
         <td colspan="2" align="center">
-          <img src="../res/website/ic_user_3.png" alt="User Profile Pic" width="50">
+          <img src="'.$pp_path.'" alt="User Profile Pic" width="50">
         </td>
 
         <td colspan="6">

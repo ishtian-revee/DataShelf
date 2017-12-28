@@ -1,5 +1,5 @@
 <?php require_once "../../control/admin/login_check.php" ?>
-
+<?php require_once "../../data/admin_db.php"; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -154,7 +154,7 @@
                     <td><input type="text" name="search" value="" size="45"></td>
 
                     <td width="18%" align="right">
-                      <h3><font face="calibri" color="#888888">5 admins</font></h3>
+                      <h3><font face="calibri" color="#888888"><?php get_total_admin_count() ?> admins</font></h3>
                     </td>
                   </tr>
                 </table>
@@ -165,7 +165,7 @@
               <td colspan="4">
                 <br>
 
-                <?php require_once "../../data/admin_db.php";
+                <?php 
                   get_admin_list();
              ?>
 

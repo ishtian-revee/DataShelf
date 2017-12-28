@@ -2,7 +2,12 @@
 
     require_once "dbcon.php";
     require_once "marketplace_db.php";
-    session_start();
+    if(!isset($_SESSION))
+    {
+        session_start();
+    }
+
+   
     function add_to_cart($username,$mds_id)
     {
 
@@ -37,5 +42,6 @@
         $sql = "SELECT * from carts where username = '$username'";
         return execute_query($sql);
     }
+    
 
 ?>
