@@ -154,7 +154,7 @@ require_once "../../control/admin/admin_profile_controller.php"
                       </td>
 
                       <td width="30%" align="center" valign="center" rowspan="4">
-                        <img src="../res/admin/temp_user.png" alt="Profile Picture" height="220">
+                        <img src="<?=$pp_path?>" alt="Profile Picture" height="220">
                         <br><br>
                         <input type="file" name="profile_picture">
                       </td>
