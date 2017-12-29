@@ -3,7 +3,7 @@
 
 # DataShelf
 
-A Data-commerce Site is same as an e-commerce site. The only difference is that instead of
+DataShelf is a data-commerce site which is same as an e-commerce site. The only difference is that instead of
 buying and selling physical products it deals with buying and selling of datasets, trained
 data and other data related to predictive modelling, analytics competitions and data mining.
 This is a platform for data scientists, machine learning engineers and data miners where
@@ -23,7 +23,7 @@ those raw data.
 **Admin side:**
 
 * Login
-* User registration approvement
+* User registration and post approvement
 * User management
 * Analytics
 
@@ -37,8 +37,7 @@ those raw data.
 * Download data
 * Problem generation
 * Contribute and share data in a particular dataset or a problem
-* Post data to the problem
-* Data repository
+* Discussions
 
 ## Important Websites
 
