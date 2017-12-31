@@ -1,4 +1,31 @@
 
+## Group And Project Structure Overview
+
+### Group
+
+Course: Web Technologies
+Section: F
+Group: F-01
+Super Visor: **SHOVRA DAS**
+
+Group Members:
+
+***Ishtian, Rahim Md.		15-28490-1***
+***Ahmed, Niaz			    15-28535-1***
+***Jahan, Fatema			  15-28374-1***
+***Rahim, Raihana			  15-29009-1***
+
+---
+
+### Structure
+
+This project is to build a website that contains 2 main part which are ***The Website***
+and ***The Admin Portal***
+
+`index.php` will redirect to the website landing page.
+
+`admin_index.php` will redirect to the admin portal landing page.
+
 **NOTE: CONTRIBUTORS, DO NOT CHANGE README. CHECK FOR YOUR TASKS IN BACKLOG.md**
 
 # DataShelf
